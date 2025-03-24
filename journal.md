@@ -10,4 +10,12 @@ Week of 3/3:
         - I hope to compare this to two-component architectures
 
 Week of 3/10:
-- 
+- Explored the Weave Dataset a lot more, thinking primarily about how I want to tackle a dataset of this size
+     - Browsed through some of the specific parquet files in the Weave S3 bucket -- it appears they've split the data by month. 
+     - Perhaps, the best course of action is to zero in on a specific month and download the corresponding parquet file. I think this avoids the seasonal changes that occur which may likely be an exogenous variable affecting energy consumption
+
+Week of 3/17:
+- Explored this repo (https://github.com/ddz16/TSFpaper?tab=readme-ov-file#tcncnn) which provided links to papers, some of which were on spatio-temporal forecasting
+- Did a bit of general reading on graph neural networks:
+    - Read this gentle introduction: https://distill.pub/2021/gnn-intro/
+    - Read the Graph Attention Networks Paper: https://arxiv.org/abs/1710.10903
