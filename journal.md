@@ -19,3 +19,13 @@ Week of 3/17:
 - Did a bit of general reading on graph neural networks:
     - Read this gentle introduction: https://distill.pub/2021/gnn-intro/
     - Read the Graph Attention Networks Paper: https://arxiv.org/abs/1710.10903
+
+Week of 3/31:
+- Decided to start with a very small subset of the data (one substation with 6 feeders for december, 2024)
+- Came to the realization that the spatial information about feeders does not really contribute to the energy consumption -- maybe at the substation level? This is something to explore. I think this puts GNNs and GCNs out of scope right now because of its independence to the energy consumption itself
+- Wrote a basic LSTM to perform energy consumption prediction for the last 20% of December -- pretty good results
+
+Week of 4/7:
+- Cleaned up the data processing so that the timestamps are also tracked -- generated plots are much clearer and more understandable (in the etc/plots folder)
+- Looking more into ideas about incorpotation 
+
