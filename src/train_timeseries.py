@@ -5,58 +5,57 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
-# Check if MPS is available
 device = (
     "mps" if torch.backends.mps.is_available()
     else "cpu"
 )
 print(f"Using device: {device}")
 
-# 1. Load and preprocess data
 def load_and_preprocess_data(file_path, sequence_length=24):
-    # Load data
     df = pd.read_csv(file_path)
-    
-    # Get unique feeders
+    df['data_collection_log_timestamp'] = pd.to_datetime(df['data_collection_log_timestamp'])
+
     feeders = df['lv_feeder_unique_id'].unique()
     
-    # Dictionary to store scaled data for each feeder
     feeder_data = {}
     
     for feeder in feeders:
-        # Get data for this feeder
-        feeder_df = df[df['lv_feeder_unique_id'] == feeder]['total_consumption_active_import'].values.reshape(-1, 1)
+        feeder_df = df[df['lv_feeder_unique_id'] == feeder]
         
-        # Scale the data
+        timestamps = feeder_df['data_collection_log_timestamp'].values
+        consumption = feeder_df['total_consumption_active_import'].values.reshape(-1, 1)
+
         scaler = MinMaxScaler()
-        data_scaled = scaler.fit_transform(feeder_df)
+        data_scaled = scaler.fit_transform(consumption)
         
-        # Create sequences
-        X, y = [], []
+        X, y, y_timestamps = [], [], []
         for i in range(len(data_scaled) - sequence_length):
             X.append(data_scaled[i:(i + sequence_length)])
             y.append(data_scaled[i + sequence_length])
-        
+            y_timestamps.append(timestamps[i + sequence_length])
         X = np.array(X)
         y = np.array(y)
+        y_timestamps = np.array(y_timestamps)
         
-        # Split into train and test
         train_size = int(len(X) * 0.8)
         X_train, X_test = X[:train_size], X[train_size:]
         y_train, y_test = y[:train_size], y[train_size:]
+        y_timestamps_train, y_timestamps_test = y_timestamps[:train_size], y_timestamps[train_size:]
         
         feeder_data[feeder] = {
             'X_train': X_train,
             'X_test': X_test,
             'y_train': y_train,
             'y_test': y_test,
-            'scaler': scaler
+            'scaler': scaler,
+            'y_timestamps_train': y_timestamps_train,
+            'y_timestamps_test': y_timestamps_test
         }
     
     return feeder_data
 
-# 2. Create Dataset class
 class TimeSeriesDataset(Dataset):
     def __init__(self, X, y):
         self.X = torch.FloatTensor(X)
@@ -68,7 +67,6 @@ class TimeSeriesDataset(Dataset):
     def __getitem__(self, idx):
         return self.X[idx], self.y[idx]
 
-# 3. Define the RNN model
 class RNNModel(nn.Module):
     def __init__(self, input_size=1, hidden_size=64, num_layers=2):
         super(RNNModel, self).__init__()
@@ -93,13 +91,11 @@ class RNNModel(nn.Module):
         out = self.fc(out[:, -1, :])
         return out
 
-# 4. Training function
 def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
     model.train()
     for epoch in range(num_epochs):
         total_loss = 0
         for batch_X, batch_y in train_loader:
-            # Move batch to device
             batch_X = batch_X.to(device)
             batch_y = batch_y.to(device)
             
@@ -113,36 +109,28 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
         if (epoch + 1) % 10 == 0:
             print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss/len(train_loader):.4f}')
 
-# 5. Main execution
 def main():
-    # Parameters
     sequence_length = 24
     batch_size = 32
     num_epochs = 100
     learning_rate = 0.001
     
-    # Load data for all feeders
     feeder_data = load_and_preprocess_data('NGED-110191.csv', sequence_length)
     print(feeder_data)
     
-    # Process each feeder
     results = {}
     for feeder_id, data in feeder_data.items():
         print(f"\nProcessing feeder: {feeder_id}")
         
-        # Create data loaders
         train_dataset = TimeSeriesDataset(data['X_train'], data['y_train'])
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
         
-        # Initialize model, loss, and optimizer
-        model = RNNModel().to(device)  # Move model to device
+        model = RNNModel().to(device)
         criterion = nn.MSELoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
         
-        # Train the model
         train_model(model, train_loader, criterion, optimizer, num_epochs, device)
         
-        # Evaluate
         model.eval()
         test_dataset = TimeSeriesDataset(data['X_test'], data['y_test'])
         test_loader = DataLoader(test_dataset, batch_size=batch_size)
@@ -152,18 +140,15 @@ def main():
         
         with torch.no_grad():
             for batch_X, batch_y in test_loader:
-                # Move batch to device
                 batch_X = batch_X.to(device)
                 outputs = model(batch_X)
-                # Move predictions back to CPU for numpy conversion
                 predictions.extend(outputs.cpu().numpy())
                 actuals.extend(batch_y.numpy())
         
-        # Inverse transform predictions
         predictions = data['scaler'].inverse_transform(np.array(predictions))
         actuals = data['scaler'].inverse_transform(np.array(actuals))
-        
-        # Calculate metrics
+        timestamps = data['y_timestamps_test']
+
         mse = np.mean((predictions - actuals) ** 2)
         rmse = np.sqrt(mse)
         mae = np.mean(np.abs(predictions - actuals))
@@ -172,22 +157,32 @@ def main():
             'predictions': predictions,
             'actuals': actuals,
             'rmse': rmse,
-            'mae': mae
+            'mae': mae,
+            'timestamps': timestamps
         }
         
-        # Plot results for this feeder
+        if isinstance(timestamps[0], str):
+            timestamps = pd.to_datetime(timestamps)
+
         plt.figure(figsize=(12, 6))
-        plt.plot(actuals, label='Actual')
-        plt.plot(predictions, label='Predicted')
+
+        plt.plot(timestamps, actuals, label='Actual', marker='o', markersize=2)
+        plt.plot(timestamps, predictions, label='Predicted', marker='x', markersize=2)
+        
+        plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
+        plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=2))
+        plt.gcf().autofmt_xdate()
+        
         plt.legend()
         plt.title(f'Energy Consumption Forecasting - Feeder {feeder_id}')
-        plt.xlabel('Time')
+        plt.xlabel('Date and Time')
         plt.ylabel('Consumption')
-        plt.show()
-        
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
+        plt.savefig(f'{feeder_id}_dec2024.png')
+        plt.clf()
         print(f'Feeder {feeder_id} - Test RMSE: {rmse:.2f}, MAE: {mae:.2f}')
     
-    # Print overall summary
     print("\nOverall Results:")
     avg_rmse = np.mean([r['rmse'] for r in results.values()])
     avg_mae = np.mean([r['mae'] for r in results.values()])
