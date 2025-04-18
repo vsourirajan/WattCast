@@ -161,13 +161,21 @@ def main():
             'timestamps': timestamps
         }
         
-        if isinstance(timestamps[0], str):
-            timestamps = pd.to_datetime(timestamps)
+        # Get full timeline of actual data
+        full_actuals = data['scaler'].inverse_transform(np.vstack([data['y_train'], data['y_test']]))
+        full_timestamps = np.concatenate([data['y_timestamps_train'], data['y_timestamps_test']])
+        
+        if isinstance(full_timestamps[0], str):
+            full_timestamps = pd.to_datetime(full_timestamps)
 
         plt.figure(figsize=(12, 6))
 
-        plt.plot(timestamps, actuals, label='Actual', marker='o', markersize=2)
-        plt.plot(timestamps, predictions, label='Predicted', marker='x', markersize=2)
+        # Plot full timeline of actual data
+        plt.plot(full_timestamps, full_actuals, label='Actual', linewidth=0.8)
+        
+        # Plot predictions only for test period
+        test_start_idx = len(data['y_timestamps_train'])
+        plt.plot(full_timestamps[test_start_idx:], predictions, label='Predicted', linewidth=0.8)
         
         plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
         plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=2))
