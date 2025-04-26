@@ -6,6 +6,9 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+from models.LSTM import LSTMModel
+from models.RNN import RNN
+
 
 device = (
     "mps" if torch.backends.mps.is_available()
@@ -13,7 +16,7 @@ device = (
 )
 print(f"Using device: {device}")
 
-def load_and_preprocess_data(file_path, sequence_length=24):
+def load_and_preprocess_data(file_path, sequence_length=48):
     df = pd.read_csv(file_path)
     df['data_collection_log_timestamp'] = pd.to_datetime(df['data_collection_log_timestamp'])
 
@@ -67,29 +70,6 @@ class TimeSeriesDataset(Dataset):
     def __getitem__(self, idx):
         return self.X[idx], self.y[idx]
 
-class RNNModel(nn.Module):
-    def __init__(self, input_size=1, hidden_size=64, num_layers=2):
-        super(RNNModel, self).__init__()
-        self.hidden_size = hidden_size
-        self.num_layers = num_layers
-        
-        self.lstm = nn.LSTM(
-            input_size=input_size,
-            hidden_size=hidden_size,
-            num_layers=num_layers,
-            batch_first=True,
-            dropout=0.2
-        )
-        
-        self.fc = nn.Linear(hidden_size, 1)
-    
-    def forward(self, x):
-        h0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
-        c0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
-        
-        out, _ = self.lstm(x, (h0, c0))
-        out = self.fc(out[:, -1, :])
-        return out
 
 def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
     model.train()
@@ -110,13 +90,12 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
             print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss/len(train_loader):.4f}')
 
 def main():
-    sequence_length = 24
+    sequence_length = 48
     batch_size = 32
     num_epochs = 100
     learning_rate = 0.001
     
     feeder_data = load_and_preprocess_data('NGED-110191.csv', sequence_length)
-    print(feeder_data)
     
     results = {}
     for feeder_id, data in feeder_data.items():
@@ -125,7 +104,7 @@ def main():
         train_dataset = TimeSeriesDataset(data['X_train'], data['y_train'])
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
         
-        model = RNNModel().to(device)
+        model = LSTMModel().to(device)
         criterion = nn.MSELoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
         
@@ -161,7 +140,6 @@ def main():
             'timestamps': timestamps
         }
         
-        # Get full timeline of actual data
         full_actuals = data['scaler'].inverse_transform(np.vstack([data['y_train'], data['y_test']]))
         full_timestamps = np.concatenate([data['y_timestamps_train'], data['y_timestamps_test']])
         
@@ -170,10 +148,8 @@ def main():
 
         plt.figure(figsize=(12, 6))
 
-        # Plot full timeline of actual data
         plt.plot(full_timestamps, full_actuals, label='Actual', linewidth=0.8)
         
-        # Plot predictions only for test period
         test_start_idx = len(data['y_timestamps_train'])
         plt.plot(full_timestamps[test_start_idx:], predictions, label='Predicted', linewidth=0.8)
         
