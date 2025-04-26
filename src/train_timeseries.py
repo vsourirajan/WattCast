@@ -6,7 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from models.LSTM import LSTMModel
+from models.LSTM import LSTM
 from models.RNN import RNN
 
 
