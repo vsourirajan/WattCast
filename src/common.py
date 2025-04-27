@@ -1,6 +1,19 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
+from torch.utils.data import Dataset
+import torch
+
+class TimeSeriesDataset(Dataset):
+    def __init__(self, X, y):
+        self.X = torch.FloatTensor(X)
+        self.y = torch.FloatTensor(y)
+    
+    def __len__(self):
+        return len(self.X)
+    
+    def __getitem__(self, idx):
+        return self.X[idx], self.y[idx]
 
 def load_and_split_data(file_path, sequence_length=48, test_ratio=0.2):
     df = pd.read_csv(file_path)

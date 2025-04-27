@@ -1,10 +1,11 @@
 import os
+import numpy as np  # Import numpy
 from common import load_and_split_data
 from utils.metrics import calculate_metrics
 from baselines.naive import naive_forecast
 from baselines.average import mean_forecast
 from baselines.arima import arima_forecast
-#from baselines.boosting import boosting_forecast
+from baselines.lgbm import boosting_forecast
 from baselines.prophet import prophet_forecast
 
 def main():
@@ -14,47 +15,131 @@ def main():
 
     files = [os.path.join(data_dir, f) for f in os.listdir(data_dir) if f.endswith('.csv')]
     
+    # Initialize dictionary of dictionaries for metrics
+    all_metrics = {
+        'Naive': {'RMSE': [], 'MAE': [], 'MSE': []},
+        'Mean': {'RMSE': [], 'MAE': [], 'MSE': []},
+        'ARIMA': {'RMSE': [], 'MAE': [], 'MSE': []},
+        # 'Boosting': {'RMSE': [], 'MAE': [], 'MSE': []}, # Uncomment if Boosting is used
+        'Prophet': {'RMSE': [], 'MAE': [], 'MSE': []}
+    }
+
     for file_path in files:
         print(f"\nProcessing {file_path}")
-        feeder_data = load_and_split_data(file_path, sequence_length, test_ratio)
+        # Handle potential errors during file loading/processing
+        try:
+            feeder_data = load_and_split_data(file_path, sequence_length, test_ratio)
+        except Exception as e:
+            print(f"  Error loading or splitting data for {file_path}: {e}")
+            continue # Skip to the next file
 
         for feeder_id, data in feeder_data.items():
-            print(f"Feeder {feeder_id}:")
+            print(f"  Processing Feeder {feeder_id}...") # Indicate processing
+
+            # Check if data is valid before proceeding
+            if 'train' not in data or 'test' not in data or 'scaler' not in data or \
+               len(data['train']) == 0 or len(data['test']) == 0:
+                print(f"    Skipping Feeder {feeder_id} due to insufficient data.")
+                continue
 
             train = data['train']
             test = data['test']
             scaler = data['scaler']
+            test_actuals = scaler.inverse_transform(test) # Inverse transform once
 
             # Naive
-            naive_preds = naive_forecast(train, test)
-            naive_preds = scaler.inverse_transform(naive_preds)
-            test_actuals = scaler.inverse_transform(test)
-            naive_metrics = calculate_metrics(test_actuals, naive_preds)
-            print(f"Naive RMSE: {naive_metrics['RMSE']:.2f}")
+            try:
+                naive_preds = naive_forecast(train, test)
+                naive_preds = scaler.inverse_transform(naive_preds.reshape(-1, 1))
+                naive_metrics = calculate_metrics(test_actuals, naive_preds)
+                # Append each metric to its respective list
+                all_metrics['Naive']['RMSE'].append(naive_metrics['RMSE'])
+                all_metrics['Naive']['MAE'].append(naive_metrics['MAE'])
+                all_metrics['Naive']['MSE'].append(naive_metrics['MSE'])
+            except Exception as e:
+                print(f"    Error running Naive forecast for Feeder {feeder_id}: {e}")
 
             # Mean
-            mean_preds = mean_forecast(train, test)
-            mean_preds = scaler.inverse_transform(mean_preds)
-            mean_metrics = calculate_metrics(test_actuals, mean_preds)
-            print(f"Mean RMSE: {mean_metrics['RMSE']:.2f}")
+            try:
+                mean_preds = mean_forecast(train, test)
+                mean_preds = scaler.inverse_transform(mean_preds.reshape(-1, 1))
+                mean_metrics = calculate_metrics(test_actuals, mean_preds)
+                # Append each metric to its respective list
+                all_metrics['Mean']['RMSE'].append(mean_metrics['RMSE'])
+                all_metrics['Mean']['MAE'].append(mean_metrics['MAE'])
+                all_metrics['Mean']['MSE'].append(mean_metrics['MSE'])
+            except Exception as e:
+                 print(f"    Error running Mean forecast for Feeder {feeder_id}: {e}")
 
+            '''
             # ARIMA
-            arima_preds = arima_forecast(train, len(test))
-            arima_preds = scaler.inverse_transform(arima_preds)
-            arima_metrics = calculate_metrics(test_actuals, arima_preds)
-            print(f"ARIMA RMSE: {arima_metrics['RMSE']:.2f}")
+            try:
+                arima_preds = arima_forecast(train, len(test))
+                arima_preds = scaler.inverse_transform(arima_preds.reshape(-1, 1))
+                arima_metrics = calculate_metrics(test_actuals, arima_preds)
+                # Append each metric to its respective list
+                all_metrics['ARIMA']['RMSE'].append(arima_metrics['RMSE'])
+                all_metrics['ARIMA']['MAE'].append(arima_metrics['MAE'])
+                all_metrics['ARIMA']['MSE'].append(arima_metrics['MSE'])
+            except Exception as e:
+                 print(f"    Error running ARIMA forecast for Feeder {feeder_id}: {e}")
 
-            # Boosting
-            boosting_preds = boosting_forecast(train, len(test))
-            boosting_preds = scaler.inverse_transform(boosting_preds)
-            boosting_metrics = calculate_metrics(test_actuals, boosting_preds)
-            print(f"Boosting RMSE: {boosting_metrics['RMSE']:.2f}")
+            # Boosting (Keep commented out structure)
+            try:
+                boosting_preds = boosting_forecast(train, len(test))
+                boosting_preds = scaler.inverse_transform(boosting_preds.reshape(-1, 1))
+                boosting_metrics = calculate_metrics(test_actuals, boosting_preds)
+                # Append each metric to its respective list
+                all_metrics['Boosting']['RMSE'].append(boosting_metrics['RMSE'])
+                all_metrics['Boosting']['MAE'].append(boosting_metrics['MAE'])
+                all_metrics['Boosting']['MSE'].append(boosting_metrics['MSE'])
+            except Exception as e:
+                print(f"    Error running Boosting forecast for Feeder {feeder_id}: {e}")
 
             # Prophet
-            prophet_preds = prophet_forecast(train, data['train_timestamps'], len(test))
-            prophet_preds = scaler.inverse_transform(prophet_preds)
-            prophet_metrics = calculate_metrics(test_actuals, prophet_preds)
-            print(f"Prophet RMSE: {prophet_metrics['RMSE']:.2f}")
+            # Ensure 'train_timestamps' exists before calling prophet
+            if 'train_timestamps' in data:
+                 try:
+                    prophet_preds = prophet_forecast(train, data['train_timestamps'], len(test))
+                    prophet_preds = scaler.inverse_transform(prophet_preds.reshape(-1, 1))
+                    prophet_metrics = calculate_metrics(test_actuals, prophet_preds)
+                    # Append each metric to its respective list
+                    all_metrics['Prophet']['RMSE'].append(prophet_metrics['RMSE'])
+                    all_metrics['Prophet']['MAE'].append(prophet_metrics['MAE'])
+                    all_metrics['Prophet']['MSE'].append(prophet_metrics['MSE'])
+                 except Exception as e:
+                    print(f"    Error running Prophet forecast for Feeder {feeder_id}: {e}")
+            else:
+                print(f"    Skipping Prophet for Feeder {feeder_id} due to missing 'train_timestamps'.")
+            '''
+
+    # Calculate and print average metrics
+    print("\n--- Average Baseline Metrics Across All Processed Feeders ---")
+    
+    for model_name, metrics_dict in all_metrics.items():
+        # Count of feeders processed for this model (use the RMSE list length)
+        num_feeders = len(metrics_dict['RMSE'])
+        
+        if num_feeders == 0:
+            print(f"\n{model_name}: No data processed.")
+            continue
+        
+        # Debug to check for NaN or infinite values
+        rmse_values = np.array(metrics_dict['RMSE'])
+        
+        # Count NaN or infinite values
+        nan_count = np.isnan(rmse_values).sum()
+        inf_count = np.isinf(rmse_values).sum()
+        print(f"NaN count: {nan_count}, Inf count: {inf_count}")
+        
+        avg_rmse = np.nanmean(rmse_values) if len(rmse_values) > 0 else float('nan')
+        avg_mae = np.nanmean(metrics_dict['MAE']) if len(metrics_dict['MAE']) > 0 else float('nan')
+        avg_mse = np.nanmean(metrics_dict['MSE']) if len(metrics_dict['MSE']) > 0 else float('nan')
+
+        print(f"\n{model_name} (Processed {num_feeders} feeders):")
+        print(f"  Average RMSE: {avg_rmse:.2f}")
+        print(f"  Average MAE: {avg_mae:.2f}")
+        print(f"  Average MSE: {avg_mse:.2f}")
 
 if __name__ == "__main__":
     main()
