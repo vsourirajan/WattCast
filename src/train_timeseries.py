@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from models.LSTM import LSTM
 from models.RNN import RNN
-
+from common import TimeSeriesDataset
 
 device = (
     "mps" if torch.backends.mps.is_available()
@@ -59,16 +59,6 @@ def load_and_preprocess_data(file_path, sequence_length=48):
     
     return feeder_data
 
-class TimeSeriesDataset(Dataset):
-    def __init__(self, X, y):
-        self.X = torch.FloatTensor(X)
-        self.y = torch.FloatTensor(y)
-    
-    def __len__(self):
-        return len(self.X)
-    
-    def __getitem__(self, idx):
-        return self.X[idx], self.y[idx]
 
 
 def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
@@ -104,7 +94,7 @@ def main():
         train_dataset = TimeSeriesDataset(data['X_train'], data['y_train'])
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
         
-        model = LSTMModel().to(device)
+        model = LSTM().to(device)
         criterion = nn.MSELoss()
         optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
         
