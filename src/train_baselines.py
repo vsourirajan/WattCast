@@ -18,12 +18,12 @@ def main():
     
     # Initialize dictionary of dictionaries for metrics
     all_metrics = {
-        'Naive': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': []},
-        'Mean (1 day)': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': []},
-        'Persistence': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': []},
-        'ARIMA': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': []},
-        # 'Boosting': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': []}, # Uncomment if Boosting is used
-        'Prophet': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': []}
+        'Naive': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
+        'Mean (1 day)': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
+        'Persistence': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
+        'ARIMA': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
+        # 'Boosting': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []}, # Uncomment if Boosting is used
+        'Prophet': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []}
     }
 
     for file_path in files:
@@ -59,6 +59,7 @@ def main():
                 all_metrics['Naive']['MAE'].append(naive_metrics['MAE'])
                 all_metrics['Naive']['MSE'].append(naive_metrics['MSE'])
                 all_metrics['Naive']['MAPE'].append(naive_metrics['MAPE'])
+                all_metrics['Naive']['R2'].append(naive_metrics['R2'])
             except Exception as e:
                 print(f"    Error running Naive forecast for Feeder {feeder_id}: {e}")
 
@@ -72,6 +73,7 @@ def main():
                 all_metrics['Mean (1 day)']['MAE'].append(mean_metrics['MAE'])
                 all_metrics['Mean (1 day)']['MSE'].append(mean_metrics['MSE'])
                 all_metrics['Mean (1 day)']['MAPE'].append(mean_metrics['MAPE'])
+                all_metrics['Mean (1 day)']['R2'].append(mean_metrics['R2'])
             except Exception as e:
                  print(f"    Error running Mean forecast for Feeder {feeder_id}: {e}")
                  
@@ -85,6 +87,7 @@ def main():
                 all_metrics['Persistence']['MAE'].append(persistence_metrics['MAE'])
                 all_metrics['Persistence']['MSE'].append(persistence_metrics['MSE'])
                 all_metrics['Persistence']['MAPE'].append(persistence_metrics['MAPE'])
+                all_metrics['Persistence']['R2'].append(persistence_metrics['R2'])
             except Exception as e:
                  print(f"    Error running Persistence forecast for Feeder {feeder_id}: {e}")
 
@@ -99,6 +102,7 @@ def main():
                 all_metrics['ARIMA']['MAE'].append(arima_metrics['MAE'])
                 all_metrics['ARIMA']['MSE'].append(arima_metrics['MSE'])
                 all_metrics['ARIMA']['MAPE'].append(arima_metrics['MAPE'])
+                all_metrics['ARIMA']['R2'].append(arima_metrics['R2'])
             except Exception as e:
                  print(f"    Error running ARIMA forecast for Feeder {feeder_id}: {e}")
 
@@ -163,12 +167,15 @@ def main():
         std_mse = np.nanstd(metrics_dict['MSE']) if len(metrics_dict['MSE']) > 0 else float('nan')
         avg_mape = np.nanmean(metrics_dict['MAPE']) if len(metrics_dict['MAPE']) > 0 else float('nan')
         std_mape = np.nanstd(metrics_dict['MAPE']) if len(metrics_dict['MAPE']) > 0 else float('nan')
+        avg_r2 = np.nanmean(metrics_dict['R2']) if len(metrics_dict['R2']) > 0 else float('nan')
+        std_r2 = np.nanstd(metrics_dict['R2']) if len(metrics_dict['R2']) > 0 else float('nan')
 
         print(f"\n{model_name} (Processed {num_feeders} feeders):")
         print(f"  Average RMSE: {avg_rmse:.2f} (std: {std_rmse:.2f})")
         print(f"  Average MAE: {avg_mae:.2f} (std: {std_mae:.2f})")
         print(f"  Average MSE: {avg_mse:.2f} (std: {std_mse:.2f})")
         print(f"  Average MAPE: {avg_mape:.2f}% (std: {std_mape:.2f}%)")
+        print(f"  Average R²: {avg_r2:.4f} (std: {std_r2:.4f})")
 
 if __name__ == "__main__":
     main()
