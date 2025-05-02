@@ -5,4 +5,5 @@ def calculate_metrics(y_true, y_pred):
     rmse = np.sqrt(mse)
     mae = np.mean(np.abs(y_true - y_pred))
     mape = np.mean(np.abs((y_true - y_pred) / y_true)) * 100
-    return {'MSE': mse, 'RMSE': rmse, 'MAE': mae, 'MAPE': mape}
+    r2 = 1 - np.sum((y_true - y_pred) ** 2) / np.sum((y_true - np.mean(y_true)) ** 2)
+    return {'MSE': mse, 'RMSE': rmse, 'MAE': mae, 'MAPE': mape, 'R2': r2}

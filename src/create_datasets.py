@@ -35,7 +35,7 @@ def filter_and_save_substations(substation_list_file, parquet_file_path, output_
     print("Substation filtering complete.")
 
 def main():
-    substation_list_path = 'substations_sample.txt'
+    substation_list_path = 'substations.txt'
     parquet_path = '../2024-12.parquet' 
     output_data_dir = '../data'
     filter_and_save_substations(substation_list_path, parquet_path, output_data_dir)
