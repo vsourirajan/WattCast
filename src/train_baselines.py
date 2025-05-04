@@ -1,5 +1,5 @@
 import os
-import numpy as np  # Import numpy
+import numpy as np
 from common import load_and_split_data
 from utils.metrics import calculate_metrics
 from baselines.naive import naive_forecast
@@ -8,6 +8,9 @@ from baselines.arima import arima_forecast
 from baselines.persistence import persistence_forecast
 from baselines.lgbm import boosting_forecast
 from baselines.prophet import prophet_forecast
+
+import warnings
+warnings.filterwarnings('ignore')
 
 def main():
     sequence_length = 48
@@ -22,7 +25,7 @@ def main():
         'Mean (1 day)': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
         'Persistence': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
         'ARIMA': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
-        # 'Boosting': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []}, # Uncomment if Boosting is used
+        'Boosting': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []},
         'Prophet': {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []}
     }
 
@@ -107,7 +110,6 @@ def main():
                  print(f"    Error running ARIMA forecast for Feeder {feeder_id}: {e}")
 
                  
-            '''
             # Boosting (Keep commented out structure)
             try:
                 boosting_preds = boosting_forecast(train, len(test))
@@ -120,24 +122,23 @@ def main():
                 all_metrics['Boosting']['MAPE'].append(boosting_metrics['MAPE'])
             except Exception as e:
                 print(f"    Error running Boosting forecast for Feeder {feeder_id}: {e}")
-            '''
 
             # Prophet
             # Ensure 'train_timestamps' exists before calling prophet
-            # if 'train_timestamps' in data:
-            #      try:
-            #         prophet_preds = prophet_forecast(train, data['train_timestamps'], len(test))
-            #         prophet_preds = scaler.inverse_transform(prophet_preds.reshape(-1, 1))
-            #         prophet_metrics = calculate_metrics(test_actuals, prophet_preds)
-            #         # Append each metric to its respective list
-            #         all_metrics['Prophet']['RMSE'].append(prophet_metrics['RMSE'])
-            #         all_metrics['Prophet']['MAE'].append(prophet_metrics['MAE'])
-            #         all_metrics['Prophet']['MSE'].append(prophet_metrics['MSE'])
-            #         all_metrics['Prophet']['MAPE'].append(prophet_metrics['MAPE'])
-            #      except Exception as e:
-            #         print(f"    Error running Prophet forecast for Feeder {feeder_id}: {e}")
-            # else:
-            #     print(f"    Skipping Prophet for Feeder {feeder_id} due to missing 'train_timestamps'.")
+            if 'train_timestamps' in data:
+                 try:
+                    prophet_preds = prophet_forecast(train, data['train_timestamps'], len(test))
+                    prophet_preds = scaler.inverse_transform(prophet_preds.reshape(-1, 1))
+                    prophet_metrics = calculate_metrics(test_actuals, prophet_preds)
+                    # Append each metric to its respective list
+                    all_metrics['Prophet']['RMSE'].append(prophet_metrics['RMSE'])
+                    all_metrics['Prophet']['MAE'].append(prophet_metrics['MAE'])
+                    all_metrics['Prophet']['MSE'].append(prophet_metrics['MSE'])
+                    all_metrics['Prophet']['MAPE'].append(prophet_metrics['MAPE'])
+                 except Exception as e:
+                    print(f"    Error running Prophet forecast for Feeder {feeder_id}: {e}")
+            else:
+                print(f"    Skipping Prophet for Feeder {feeder_id} due to missing 'train_timestamps'.")
 
     # Calculate and print average metrics
     print("\n--- Average Baseline Metrics Across All Processed Feeders ---")

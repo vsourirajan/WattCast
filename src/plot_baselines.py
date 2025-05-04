@@ -9,14 +9,17 @@ from baselines.naive import naive_forecast
 from baselines.average import mean_forecast
 from baselines.arima import arima_forecast
 from baselines.persistence import persistence_forecast
-# from baselines.lgbm import boosting_forecast # Keep commented if not used
+from baselines.lgbm import boosting_forecast
 from baselines.prophet import prophet_forecast
+
+import warnings
+warnings.filterwarnings('ignore')
 
 # --- Configuration ---
 SEQUENCE_LENGTH = 48
 TEST_RATIO = 0.2
 DATA_DIR = '../data'
-PLOT_DIR = '../plots/full_timeline' # Directory to save plots
+PLOT_DIR = '../etc/plots/full_timeline' # Directory to save plots
 NUM_FEEDERS_TO_PLOT = 1
 # --- End Configuration ---
 
@@ -63,30 +66,30 @@ def plot_feeder_baselines(feeder_id, data):
     # ARIMA
     try:
         arima_preds = arima_forecast(train, len(test))
-        predictions['ARIMA'] = scaler.inverse_transform(arima_preds.reshape(-1, 1))
+        predictions['SARIMA'] = scaler.inverse_transform(arima_preds.reshape(-1, 1))
     except Exception as e:
-         print(f"    Error running ARIMA for Feeder {feeder_id}: {e}")
-         predictions['ARIMA'] = None
+         print(f"    Error running SARIMA for Feeder {feeder_id}: {e}")
+         predictions['SARIMA'] = None
 
-    # Boosting (Keep commented out structure)
-    # try:
-    #     boosting_preds = boosting_forecast(train, len(test))
-    #     predictions['Boosting'] = scaler.inverse_transform(boosting_preds.reshape(-1, 1))
-    # except Exception as e:
-    #     print(f"    Error running Boosting for Feeder {feeder_id}: {e}")
-    #     predictions['Boosting'] = None
+    # Boosting
+    try:
+        boosting_preds = boosting_forecast(train, len(test))
+        predictions['LGBM'] = scaler.inverse_transform(boosting_preds.reshape(-1, 1))
+    except Exception as e:
+        print(f"    Error running LGBM for Feeder {feeder_id}: {e}")
+        predictions['LGBM'] = None
 
     # Prophet
-    # if 'train_timestamps' in data:
-    #      try:
-    #         prophet_preds = prophet_forecast(train, data['train_timestamps'], len(test))
-    #         predictions['Prophet'] = scaler.inverse_transform(prophet_preds.reshape(-1, 1))
-    #      except Exception as e:
-    #         print(f"    Error running Prophet for Feeder {feeder_id}: {e}")
-    #         predictions['Prophet'] = None
-    # else:
-    #     print(f"    Skipping Prophet for Feeder {feeder_id} due to missing 'train_timestamps'.")
-    #     predictions['Prophet'] = None
+    if 'train_timestamps' in data:
+         try:
+            prophet_preds = prophet_forecast(train, data['train_timestamps'], len(test))
+            predictions['Prophet'] = scaler.inverse_transform(prophet_preds.reshape(-1, 1))
+         except Exception as e:
+            print(f"    Error running Prophet for Feeder {feeder_id}: {e}")
+            predictions['Prophet'] = None
+    else:
+        print(f"    Skipping Prophet for Feeder {feeder_id} due to missing 'train_timestamps'.")
+        predictions['Prophet'] = None
 
     # Persistence
     try:
@@ -117,6 +120,7 @@ def plot_feeder_baselines(feeder_id, data):
 
     for model_name, preds_inv in predictions.items():
         if preds_inv is not None:
+            print(model_name)
             # Ensure prediction length matches timestamp length
             if len(preds_inv) == len(test_timestamps):
                  plt.plot(test_timestamps, preds_inv, label=model_name, linewidth=0.8)
