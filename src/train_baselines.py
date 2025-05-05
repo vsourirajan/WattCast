@@ -13,7 +13,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 def main():
-    sequence_length = 48
     test_ratio = 0.2
     data_dir = '../data'  # where all your CSVs live
 
@@ -33,7 +32,7 @@ def main():
         print(f"\nProcessing {file_path}")
         # Handle potential errors during file loading/processing
         try:
-            feeder_data = load_and_split_data(file_path, sequence_length, test_ratio)
+            feeder_data = load_and_split_data(file_path, test_ratio)
         except Exception as e:
             print(f"  Error loading or splitting data for {file_path}: {e}")
             continue # Skip to the next file

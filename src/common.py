@@ -15,7 +15,7 @@ class TimeSeriesDataset(Dataset):
     def __getitem__(self, idx):
         return self.X[idx], self.y[idx]
 
-def load_and_split_data(file_path, sequence_length=48, test_ratio=0.2):
+def load_and_split_data(file_path, test_ratio=0.2):
     df = pd.read_csv(file_path)
     df['data_collection_log_timestamp'] = pd.to_datetime(df['data_collection_log_timestamp'])
     
