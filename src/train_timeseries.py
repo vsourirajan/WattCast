@@ -4,24 +4,24 @@ import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
+import os
 from models.LSTM import LSTM
-from models.RNN import RNN
-from common import TimeSeriesDataset
-
+from utils.metrics import calculate_metrics
 
 class HistoryAwareTimeSeriesDataset(Dataset):
-    def __init__(self, full_series, sequence_length):
+    def __init__(self, energy_values, timestamps, sequence_length, start_idx, end_idx):
         self.X = []
         self.y = []
         self.timestamps = []
         self.sequence_length = sequence_length
 
-        for i in range(len(full_series) - sequence_length):
-            self.X.append(full_series[i:i + sequence_length])
-            self.y.append(full_series[i + sequence_length][0])
-            self.timestamps.append(full_series[i + sequence_length][1])
+        for i in range(start_idx, end_idx - sequence_length):
+            # Get sequence of energy values
+            sequence = energy_values[i:i + sequence_length]
+            self.X.append(sequence)
+            # Get target value and timestamp
+            self.y.append(energy_values[i + sequence_length])
+            self.timestamps.append(timestamps[i + sequence_length])
 
         self.X = np.array(self.X)
         self.y = np.array(self.y).reshape(-1, 1)
@@ -46,34 +46,41 @@ def load_and_preprocess_data(file_path, sequence_length=48):
         consumption = feeder_df['total_consumption_active_import'].values.reshape(-1, 1)
 
         scaler = MinMaxScaler()
-        consumption_scaled = scaler.fit_transform(consumption)
-        full_series = list(zip(consumption_scaled, timestamps))
+        consumption_scaled = scaler.fit_transform(consumption).flatten()  # Flatten to 1D array
 
-        dataset = HistoryAwareTimeSeriesDataset(full_series, sequence_length)
-
-        train_size = int(len(dataset) * 0.8)
-
-        X_train = dataset.X[:train_size]
-        y_train = dataset.y[:train_size]
-        timestamps_train = dataset.timestamps[:train_size]
-
-        # To ensure test has enough history, slice from (train_size - sequence_length)
-        X_test = dataset.X[train_size:]
-        y_test = dataset.y[train_size:]
-        timestamps_test = dataset.timestamps[train_size:]
+        total_length = len(consumption_scaled)
+        train_size = int(total_length * 0.8)
+        
+        # Create training dataset
+        train_dataset = HistoryAwareTimeSeriesDataset(
+            consumption_scaled,
+            timestamps,
+            sequence_length,
+            start_idx=0,
+            end_idx=train_size
+        )
+        
+        # Create validation dataset that includes necessary history
+        val_dataset = HistoryAwareTimeSeriesDataset(
+            consumption_scaled,
+            timestamps,
+            sequence_length,
+            start_idx=train_size - sequence_length,
+            end_idx=total_length
+        )
 
         feeder_data[feeder] = {
-            'X_train': X_train,
-            'X_test': X_test,
-            'y_train': y_train,
-            'y_test': y_test,
+            'train_dataset': train_dataset,
+            'val_dataset': val_dataset,
             'scaler': scaler,
-            'y_timestamps_train': timestamps_train,
-            'y_timestamps_test': timestamps_test
+            'train_timestamps': train_dataset.timestamps,
+            'val_timestamps': val_dataset.timestamps,
+            'energy_values': consumption_scaled,
+            'timestamps': timestamps,
+            'train_size': train_size
         }
 
     return feeder_data
-
 
 def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
     model.train()
@@ -93,93 +100,119 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
         if (epoch + 1) % 10 == 0:
             print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss/len(train_loader):.4f}')
 
-
 def main():
+    # Configuration
     sequence_length = 48
     batch_size = 32
     num_epochs = 100
     learning_rate = 0.001
+    data_dir = '../data'
+    results_dir = '../results/lstm'
+    
+    # Create results directory if it doesn't exist
+    os.makedirs(results_dir, exist_ok=True)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     print(f"Using device: {device}")
 
-    feeder_data = load_and_preprocess_data('NGED-110191.csv', sequence_length)
+    # Get all CSV files in the data directory
+    data_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
+    
+    all_results = {}
+    
+    for file_name in data_files:
+        print(f"\nProcessing file: {file_name}")
+        file_path = os.path.join(data_dir, file_name)
+        
+        try:
+            feeder_data = load_and_preprocess_data(file_path, sequence_length)
+        except Exception as e:
+            print(f"Error loading data from {file_name}: {e}")
+            continue
 
-    results = {}
-    for feeder_id, data in feeder_data.items():
-        print(f"\nProcessing feeder: {feeder_id}")
+        file_results = {}
+        
+        for feeder_id, data in feeder_data.items():
+            print(f"\nProcessing feeder: {feeder_id}")
 
-        train_dataset = TimeSeriesDataset(data['X_train'], data['y_train'])
-        train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+            try:
+                train_loader = DataLoader(data['train_dataset'], batch_size=batch_size, shuffle=True)
+                val_loader = DataLoader(data['val_dataset'], batch_size=batch_size)
 
-        model = LSTM().to(device)
-        criterion = nn.MSELoss()
-        optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+                model = LSTM().to(device)
+                criterion = nn.MSELoss()
+                optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-        train_model(model, train_loader, criterion, optimizer, num_epochs, device)
+                train_model(model, train_loader, criterion, optimizer, num_epochs, device)
 
-        model.eval()
-        test_dataset = TimeSeriesDataset(data['X_test'], data['y_test'])
-        test_loader = DataLoader(test_dataset, batch_size=batch_size)
+                model.eval()
+                predictions = []
+                actuals = []
 
-        predictions = []
-        actuals = []
+                with torch.no_grad():
+                    for batch_X, batch_y in val_loader:
+                        batch_X = batch_X.to(device)
+                        outputs = model(batch_X)
+                        predictions.extend(outputs.cpu().numpy())
+                        actuals.extend(batch_y.numpy())
 
-        with torch.no_grad():
-            for batch_X, batch_y in test_loader:
-                batch_X = batch_X.to(device)
-                outputs = model(batch_X)
-                predictions.extend(outputs.cpu().numpy())
-                actuals.extend(batch_y.numpy())
+                predictions = data['scaler'].inverse_transform(np.array(predictions))
+                actuals = data['scaler'].inverse_transform(np.array(actuals))
+                timestamps = data['val_timestamps']
 
-        predictions = data['scaler'].inverse_transform(np.array(predictions))
-        actuals = data['scaler'].inverse_transform(np.array(actuals))
-        timestamps = data['y_timestamps_test']
+                # Calculate metrics
+                metrics = calculate_metrics(actuals, predictions)
+                
+                # Print metrics for this feeder
+                print(f"\n--- Metrics for Feeder {feeder_id} ---")
+                print(f"  RMSE: {metrics['RMSE']:.2f}")
+                print(f"  MAE: {metrics['MAE']:.2f}")
+                print(f"  MSE: {metrics['MSE']:.2f}")
+                print(f"  MAPE: {metrics['MAPE']:.2f}%")
+                print(f"  R²: {metrics['R2']:.4f}")
 
-        mse = np.mean((predictions - actuals) ** 2)
-        rmse = np.sqrt(mse)
-        mae = np.mean(np.abs(predictions - actuals))
+                file_results[feeder_id] = {
+                    'predictions': predictions,
+                    'actuals': actuals,
+                    'metrics': metrics,
+                    'timestamps': timestamps
+                }
 
-        results[feeder_id] = {
-            'predictions': predictions,
-            'actuals': actuals,
-            'rmse': rmse,
-            'mae': mae,
-            'timestamps': timestamps
-        }
+            except Exception as e:
+                print(f"Error processing feeder {feeder_id}: {e}")
+                continue
 
-        full_actuals = data['scaler'].inverse_transform(np.vstack([data['y_train'], data['y_test']]))
-        full_timestamps = np.concatenate([data['y_timestamps_train'], data['y_timestamps_test']])
+        all_results[file_name] = file_results
 
-        if isinstance(full_timestamps[0], str):
-            full_timestamps = pd.to_datetime(full_timestamps)
-
-        plt.figure(figsize=(12, 6))
-        plt.plot(full_timestamps, full_actuals, label='Actual', linewidth=0.8)
-
-        test_start_idx = len(data['y_timestamps_train'])
-        plt.plot(full_timestamps[test_start_idx:], predictions, label='Predicted', linewidth=0.8)
-
-        plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
-        plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=2))
-        plt.gcf().autofmt_xdate()
-
-        plt.legend()
-        plt.title(f'Energy Consumption Forecasting - Feeder {feeder_id}')
-        plt.xlabel('Date and Time')
-        plt.ylabel('Consumption')
-        plt.grid(True, alpha=0.3)
-        plt.tight_layout()
-        plt.savefig(f'{feeder_id}_dec2024.png')
-        plt.clf()
-        print(f'Feeder {feeder_id} - Test RMSE: {rmse:.2f}, MAE: {mae:.2f}')
-
+    # Print overall results
     print("\nOverall Results:")
-    avg_rmse = np.mean([r['rmse'] for r in results.values()])
-    avg_mae = np.mean([r['mae'] for r in results.values()])
-    print(f'Average RMSE across all feeders: {avg_rmse:.2f}')
-    print(f'Average MAE across all feeders: {avg_mae:.2f}')
+    all_metrics = {
+        'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []
+    }
+    
+    for file_name, file_results in all_results.items():
+        for feeder_id, results in file_results.items():
+            for metric_name, value in results['metrics'].items():
+                all_metrics[metric_name].append(value)
+    
+    print("\nAverage Metrics Across All Feeders:")
+    for metric_name, values in all_metrics.items():
+        if values:  # Check if we have any values
+            avg_value = np.mean(values)
+            if metric_name == 'R2':
+                print(f'Average {metric_name}: {avg_value:.4f}')
+            else:
+                print(f'Average {metric_name}: {avg_value:.2f}')
 
+    # Save results to file
+    results_file = os.path.join(results_dir, 'lstm_results.csv')
+    with open(results_file, 'w') as f:
+        f.write('file_name,feeder_id,rmse,mae,mse,mape,r2\n')
+        for file_name, file_results in all_results.items():
+            for feeder_id, results in file_results.items():
+                metrics = results['metrics']
+                f.write(f'{file_name},{feeder_id},{metrics["RMSE"]:.2f},{metrics["MAE"]:.2f},'
+                       f'{metrics["MSE"]:.2f},{metrics["MAPE"]:.2f},{metrics["R2"]:.4f}\n')
 
 if __name__ == "__main__":
     main()

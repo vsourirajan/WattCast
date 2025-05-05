@@ -18,6 +18,7 @@ class LSTM(nn.Module):
         self.fc = nn.Linear(hidden_size, 1)
     
     def forward(self, x):
+        x = x.unsqueeze(-1)
         h0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
         c0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)
         
