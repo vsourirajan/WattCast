@@ -5,8 +5,12 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from sklearn.preprocessing import MinMaxScaler
 import os
+import logging
 from models.LSTM import LSTM
 from utils.metrics import calculate_metrics
+
+# Set up logging
+logging.basicConfig(filename='lstm_training.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 class HistoryAwareTimeSeriesDataset(Dataset):
     def __init__(self, energy_values, timestamps, sequence_length, start_idx, end_idx):
@@ -98,7 +102,7 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
             total_loss += loss.item()
 
         if (epoch + 1) % 10 == 0:
-            print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss/len(train_loader):.4f}')
+            logging.info(f'Epoch [{epoch+1}/{num_epochs}], Loss: {total_loss/len(train_loader):.4f}')
 
 def main():
     # Configuration
@@ -113,7 +117,7 @@ def main():
     os.makedirs(results_dir, exist_ok=True)
 
     device = "mps" if torch.backends.mps.is_available() else "cpu"
-    print(f"Using device: {device}")
+    logging.info(f"Using device: {device}")
 
     # Get all CSV files in the data directory
     data_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
@@ -121,19 +125,19 @@ def main():
     all_results = {}
     
     for file_name in data_files:
-        print(f"\nProcessing file: {file_name}")
+        logging.info(f"\nProcessing file: {file_name}")
         file_path = os.path.join(data_dir, file_name)
         
         try:
             feeder_data = load_and_preprocess_data(file_path, sequence_length)
         except Exception as e:
-            print(f"Error loading data from {file_name}: {e}")
+            logging.error(f"Error loading data from {file_name}: {e}")
             continue
 
         file_results = {}
         
         for feeder_id, data in feeder_data.items():
-            print(f"\nProcessing feeder: {feeder_id}")
+            logging.info(f"\nProcessing feeder: {feeder_id}")
 
             try:
                 train_loader = DataLoader(data['train_dataset'], batch_size=batch_size, shuffle=True)
@@ -163,13 +167,13 @@ def main():
                 # Calculate metrics
                 metrics = calculate_metrics(actuals, predictions)
                 
-                # Print metrics for this feeder
-                print(f"\n--- Metrics for Feeder {feeder_id} ---")
-                print(f"  RMSE: {metrics['RMSE']:.2f}")
-                print(f"  MAE: {metrics['MAE']:.2f}")
-                print(f"  MSE: {metrics['MSE']:.2f}")
-                print(f"  MAPE: {metrics['MAPE']:.2f}%")
-                print(f"  R²: {metrics['R2']:.4f}")
+                # Log metrics for this feeder
+                logging.info(f"\n--- Metrics for Feeder {feeder_id} ---")
+                logging.info(f"  RMSE: {metrics['RMSE']:.2f}")
+                logging.info(f"  MAE: {metrics['MAE']:.2f}")
+                logging.info(f"  MSE: {metrics['MSE']:.2f}")
+                logging.info(f"  MAPE: {metrics['MAPE']:.2f}%")
+                logging.info(f"  R²: {metrics['R2']:.4f}")
 
                 file_results[feeder_id] = {
                     'predictions': predictions,
@@ -179,13 +183,13 @@ def main():
                 }
 
             except Exception as e:
-                print(f"Error processing feeder {feeder_id}: {e}")
+                logging.error(f"Error processing feeder {feeder_id}: {e}")
                 continue
 
         all_results[file_name] = file_results
 
-    # Print overall results
-    print("\nOverall Results:")
+    # Log overall results
+    logging.info("\nOverall Results:")
     all_metrics = {
         'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []
     }
@@ -195,14 +199,14 @@ def main():
             for metric_name, value in results['metrics'].items():
                 all_metrics[metric_name].append(value)
     
-    print("\nAverage Metrics Across All Feeders:")
+    logging.info("\nAverage Metrics Across All Feeders:")
     for metric_name, values in all_metrics.items():
         if values:  # Check if we have any values
             avg_value = np.mean(values)
             if metric_name == 'R2':
-                print(f'Average {metric_name}: {avg_value:.4f}')
+                logging.info(f'Average {metric_name}: {avg_value:.4f}')
             else:
-                print(f'Average {metric_name}: {avg_value:.2f}')
+                logging.info(f'Average {metric_name}: {avg_value:.2f}')
 
     # Save results to file
     results_file = os.path.join(results_dir, 'lstm_results.csv')
@@ -213,6 +217,8 @@ def main():
                 metrics = results['metrics']
                 f.write(f'{file_name},{feeder_id},{metrics["RMSE"]:.2f},{metrics["MAE"]:.2f},'
                        f'{metrics["MSE"]:.2f},{metrics["MAPE"]:.2f},{metrics["R2"]:.4f}\n')
+    
+    logging.info(f"Results saved to {results_file}")
 
 if __name__ == "__main__":
     main()
