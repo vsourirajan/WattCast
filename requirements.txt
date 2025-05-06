@@ -69,10 +69,9 @@ statsmodels==0.14.4
 sympy==1.13.1
 threadpoolctl==3.6.0
 toolz==1.0.0
-torch==2.6.0
+torch==2.5.0
 torch-geometric==2.6.1
-torchaudio==0.11.0
-torchvision==0.12.0
+torchvision==0.20.0
 tqdm==4.67.1
 tzdata==2025.1
 urllib3==2.3.0
