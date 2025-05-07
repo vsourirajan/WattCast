@@ -7,7 +7,7 @@ import numpy as np
 
 def create_substation_graph(loc_csv_path, profile_csv_path, output_path, k=5):
     """
-    Constructs a substation graph using profile features and spatial edges.
+    Constructs a substation graph using profile features and spatial edges with weighted edges based on Euclidean distances.
 
     Args:
         loc_csv_path (str): Path to CSV with 'secondary_substation_unique_id', 'latitude', 'longitude'
@@ -36,7 +36,7 @@ def create_substation_graph(loc_csv_path, profile_csv_path, output_path, k=5):
         raise ValueError("No matching substations found between location and profile files.")
 
     coords = merged_df[['latitude', 'longitude']].values
-    profile_features = merged_df[[col for col in profile_df.columns if col.startswith("raw_") or col.startswith("normalized_")]].values
+    profile_features = merged_df[[col for col in profile_df.columns if col.startswith("magnitude_log_")]].values
     substation_ids = merged_df['secondary_substation_unique_id'].values
 
     # Build edge index with kNN
@@ -44,14 +44,18 @@ def create_substation_graph(loc_csv_path, profile_csv_path, output_path, k=5):
     distances, indices = nbrs.kneighbors(coords)
 
     edge_index = []
+    edge_weights = []
+
     for i, neighbors in enumerate(indices):
-        for j in neighbors[1:]:
+        for j, dist in zip(neighbors[1:], distances[i][1:]):  # Exclude self-loop
             edge_index.append([i, j])
+            edge_weights.append(1 / (dist + 1e-5))  # Inverse distance as weight
 
     edge_index = torch.tensor(edge_index, dtype=torch.long).t().contiguous()
+    edge_weights = torch.tensor(edge_weights, dtype=torch.float)
     x = torch.tensor(profile_features, dtype=torch.float)
 
-    data = Data(x=x, edge_index=edge_index)
+    data = Data(x=x, edge_index=edge_index, edge_attr=edge_weights)
     data.substation_ids = substation_ids
 
     torch.save(data, output_path)
