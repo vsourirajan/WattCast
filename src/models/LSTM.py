@@ -25,3 +25,21 @@ class LSTM(nn.Module):
         out, _ = self.lstm(x, (h0, c0))
         out = self.fc(out[:, -1, :])
         return out
+    
+
+class LSTMWithEmbedding(nn.Module):
+    def __init__(self, input_size=1, hidden_size=64, embedding_dim=64, num_layers=2):
+        super().__init__()
+        self.lstm = nn.LSTM(input_size, hidden_size, num_layers, batch_first=True)
+        self.fc = nn.Linear(hidden_size + embedding_dim, 1)  # dynamically match sizes
+
+    def forward(self, x_seq, x_emb):
+        out, _ = self.lstm(x_seq)  # [B, T, hidden]
+        lstm_out = out[:, -1, :]   # [B, hidden]
+        combined = torch.cat([lstm_out, x_emb], dim=-1)  # [B, hidden + embedding_dim]
+        return self.fc(combined)
+
+    
+    
+        
+        
