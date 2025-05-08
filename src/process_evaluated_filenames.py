@@ -23,6 +23,6 @@ def extract_processed_files(log_file_path, output_file_path):
 
 # Usage example (adjust file paths as needed)
 if __name__ == "__main__":
-    log_file_path = "./lstm_training.log"  # Replace with your log file path
-    output_file_path = "processed_files.txt"     # Output file name
+    log_file_path = "./lstm_training_embeddings.log"  # Replace with your log file path
+    output_file_path = "processed_files_embeddings.txt"     # Output file name
     extract_processed_files(log_file_path, output_file_path)
