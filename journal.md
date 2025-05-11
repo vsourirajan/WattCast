@@ -29,3 +29,20 @@ Week of 4/7:
 - Cleaned up the data processing so that the timestamps are also tracked -- generated plots are much clearer and more understandable (in the etc/plots folder)
 - Looking more into ideas about incorpotation 
 
+Week of 4/14:
+- Created new data files for all the substations in the bounding box
+- Explored SARIMA and tuned hyperparameters to better make predictions
+- Re-ran baseline models
+
+Week of 4/21:
+- Trained vanilla LSTM on all of the feeders and obtained results
+- Explored ways to create consumptions profiles for the substations
+
+Week of 4/28:
+- Created graph and trained a GCN
+- Modularized the code for easy set up on GCP instances
+
+Week of 5/5:
+- Finished Wattcast training and eval
+- Analyzed all the results
+- Wrote the paper
