@@ -110,7 +110,7 @@ def main():
     batch_size = 32
     num_epochs = 100
     learning_rate = 0.001
-    data_dir = '../data'
+    data_dir = './data'
     results_dir = '../results/lstm'
     
     # Create results directory if it doesn't exist
