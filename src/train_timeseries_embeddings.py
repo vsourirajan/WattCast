@@ -10,7 +10,7 @@ from models.LSTM import LSTMWithEmbedding
 from utils.metrics import calculate_metrics
 
 # Set up logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename = 'lstm_training_embeddings3.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 class HistoryAwareTimeSeriesDataset(Dataset):
     def __init__(self, energy_values, timestamps, sequence_length, start_idx, end_idx, embedding):
@@ -112,6 +112,16 @@ def main():
     device = "mps" if torch.backends.mps.is_available() else "cpu"
     logging.info(f"Using device: {device}")
 
+    # Load processed files into a set
+    processed_files = set()
+    try:
+        with open('processed_files_embeddings.txt', 'r') as f:
+            processed_files = set(line.strip() for line in f)
+        logging.info(f"Loaded {len(processed_files)} previously processed files")
+    except FileNotFoundError:
+        logging.info("No processed files record found. Starting fresh.")
+        processed_files = set()
+
     # Load embeddings and mapping
     emb_dict = np.load('../etc/substation_embeddings.npy', allow_pickle=True).item()
     logging.info("Original embedding statistics:")
@@ -134,6 +144,12 @@ def main():
     all_results = {}
 
     for file_name in data_files:
+        
+        # Skip if file has already been processed
+        if file_name in processed_files:
+            logging.info(f"Skipping already processed file: {file_name}")
+            continue
+
         logging.info(f"\nProcessing file: {file_name}")
         file_path = os.path.join(data_dir, file_name)
 
@@ -146,6 +162,7 @@ def main():
         file_results = {}
 
         for feeder_id, data in feeder_data.items():
+            
             logging.info(f"\nProcessing feeder: {feeder_id}")
 
             try:
@@ -171,6 +188,7 @@ def main():
                         actuals.extend(batch_y.numpy())
 
                 predictions = data['scaler'].inverse_transform(np.array(predictions))
+                print(predictions)
                 actuals = data['scaler'].inverse_transform(np.array(actuals))
                 timestamps = data['val_timestamps']
 
@@ -195,7 +213,13 @@ def main():
 
         all_results[file_name] = file_results
 
-    logging.info("\nOverall Results:")
+        # Add successfully processed file to the set and update the file
+        processed_files.add(file_name)
+        with open('processed_files_embeddings.txt', 'a') as f:
+            f.write(f"{file_name}\n")
+        logging.info(f"Added {file_name} to processed files list")
+
+    print("\nOverall Results:")
     all_metrics = {'RMSE': [], 'MAE': [], 'MSE': [], 'MAPE': [], 'R2': []}
 
     for file_name, file_results in all_results.items():
@@ -203,11 +227,11 @@ def main():
             for metric_name, value in results['metrics'].items():
                 all_metrics[metric_name].append(value)
 
-    logging.info("\nAverage Metrics Across All Feeders:")
+    print("\nAverage Metrics Across All Feeders:")
     for metric_name, values in all_metrics.items():
         if values:
             avg_value = np.mean(values)
-            logging.info(f'Average {metric_name}: {avg_value:.4f}' if metric_name == 'R2' else f'Average {metric_name}: {avg_value:.2f}')
+            print(f'Average {metric_name}: {avg_value:.4f}' if metric_name == 'R2' else f'Average {metric_name}: {avg_value:.2f}')
 
     results_file = os.path.join(results_dir, 'lstm_results.csv')
     with open(results_file, 'w') as f:
@@ -218,7 +242,7 @@ def main():
                 f.write(f'{file_name},{feeder_id},{metrics["RMSE"]:.2f},{metrics["MAE"]:.2f},'
                         f'{metrics["MSE"]:.2f},{metrics["MAPE"]:.2f},{metrics["R2"]:.4f}\n')
 
-    logging.info(f"Results saved to {results_file}")
+    print(f"Results saved to {results_file}")
 
 if __name__ == "__main__":
     main()

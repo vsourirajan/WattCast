@@ -15,7 +15,7 @@ def extract_processed_files(log_file_path, output_file_path):
                 processed_files.append(match.group(1))
 
     # Write the processed file names to output file
-    with open(output_file_path, 'w') as output_file:
+    with open(output_file_path, 'a') as output_file:
         for file in processed_files:
             output_file.write(file + '\n')
 
@@ -23,6 +23,6 @@ def extract_processed_files(log_file_path, output_file_path):
 
 # Usage example (adjust file paths as needed)
 if __name__ == "__main__":
-    log_file_path = "./lstm_training_embeddings.log"  # Replace with your log file path
-    output_file_path = "processed_files_embeddings.txt"     # Output file name
+    log_file_path = "../etc/lstm_logs/lstm_training_3.log"  # Replace with your log file path
+    output_file_path = "processed_files.txt"     # Output file name
     extract_processed_files(log_file_path, output_file_path)

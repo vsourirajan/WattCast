@@ -10,7 +10,7 @@ from models.LSTM import LSTM
 from utils.metrics import calculate_metrics
 
 # Set up logging
-logging.basicConfig(filename='lstm_training.log', level=logging.INFO, format='%(asctime)s - %(message)s')
+logging.basicConfig(filename='lstm_training_4.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 class HistoryAwareTimeSeriesDataset(Dataset):
     def __init__(self, energy_values, timestamps, sequence_length, start_idx, end_idx):
@@ -123,8 +123,23 @@ def main():
     data_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
     
     all_results = {}
+
+    # Load processed files into a set
+    processed_files = set()
+    try:
+        with open('processed_files.txt', 'r') as f:
+            processed_files = set(line.strip() for line in f)
+        logging.info(f"Loaded {len(processed_files)} previously processed files")
+    except FileNotFoundError:
+        logging.info("No processed files record found. Starting fresh.")
+        processed_files = set()
     
     for file_name in data_files:
+        # Skip if file has already been processed
+        if file_name in processed_files:
+            logging.info(f"Skipping already processed file: {file_name}")
+            continue
+
         logging.info(f"\nProcessing file: {file_name}")
         file_path = os.path.join(data_dir, file_name)
         

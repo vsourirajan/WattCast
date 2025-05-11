@@ -25,10 +25,13 @@ def visualize_graph(graph_data, embeddings=None, title="Graph Visualization"):
     # Create figure with two subplots
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
     
-    # Plot graph structure
-    pos = nx.spring_layout(G)
-    nx.draw(G, pos, with_labels=True, node_color='lightblue', 
-            node_size=500, ax=ax1, font_size=8)
+    # Plot graph structure without node labels
+    # Use k parameter to increase repulsion between nodes
+    pos = nx.spring_layout(G, k=1.5, iterations=50)
+    nx.draw(G, pos, with_labels=False, node_color='lightblue', 
+            node_size=50,  # Reduced from 500 to 50
+            ax=ax1, font_size=8,
+            width=0.5)  # Make edges thinner
     ax1.set_title("Graph Structure")
     
     # Plot embeddings if provided
@@ -39,7 +42,8 @@ def visualize_graph(graph_data, embeddings=None, title="Graph Visualization"):
         
         # Plot embeddings
         scatter = ax2.scatter(embeddings_2d[:, 0], embeddings_2d[:, 1], 
-                            c=np.arange(len(embeddings_2d)), cmap='viridis')
+                            c=np.arange(len(embeddings_2d)), cmap='viridis',
+                            s=20)  # Make embedding points smaller too
         ax2.set_title("Node Embeddings (t-SNE)")
         
         # Add colorbar
