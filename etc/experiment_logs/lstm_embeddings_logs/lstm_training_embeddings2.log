@@ -1,0 +1,2981 @@
+2025-05-08 10:33:53,011 - Using device: mps
+2025-05-08 10:33:53,011 - Loaded 442 previously processed files
+2025-05-08 10:33:53,012 - Original embedding statistics:
+2025-05-08 10:33:53,012 - Shape: (829, 16)
+2025-05-08 10:33:53,012 - Min: 0.0000, Max: 7.8109, Mean: 0.7779
+2025-05-08 10:33:53,013 - 
+Scaled embedding statistics:
+2025-05-08 10:33:53,013 - Min: 0.0000, Max: 1.0000, Mean: 0.1542
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803005160.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2818009040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2808001060.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803016120.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803012420.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822010020.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822028030.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2526010030.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529015040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2508023040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822011100.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2807003390.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2818006005.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2511006200.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803008040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822024030.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529009290.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803004120.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2512012080.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529015120.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822011060.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803022130.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2811016090.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2818009120.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2818005040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803016040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2809612026.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2807001020.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822010140.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803006290.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822008040.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803008280.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529013020.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2807003420.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822009160.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529001140.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2803010140.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822026140.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529012060.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2822005160.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2521008140.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2529001020.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2818003020.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2818006170.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2526017010.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2501008042.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2808007160.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2501016095.csv
+2025-05-08 10:33:53,024 - Skipping already processed file: 2024-12-SSEN-2504608160.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2804604040.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822004040.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2803002140.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2808006040.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2816010080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818007050.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2512002127.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822004097.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2811013260.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2805006080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529015280.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2511012100.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818003220.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2809610034.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818009080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822009200.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2816004020.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818002300.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2512004030.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2808001275.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529015080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2816005100.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529009330.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2803004080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2512012040.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2511009130.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818002260.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2504601230.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529009250.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822008240.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822010180.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2511012060.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2803016043.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2512007115.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2816001010.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529001340.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2816008020.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818005080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2803016080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822005200.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822011260.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2816006030.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529015320.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2501016135.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822008080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2512014140.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529002310.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2818003180.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822010340.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2822026180.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2803020080.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2501017015.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2529001180.csv
+2025-05-08 10:33:53,025 - Skipping already processed file: 2024-12-SSEN-2803005200.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2822010220.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2812002400.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816010040.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803002180.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2529015240.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2805006040.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2501016055.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2804604080.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803008320.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2511006160.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2512014020.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2812002160.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2512002120.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2512014030.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2511010060.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2504601180.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803001300.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816010050.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2818007080.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2805006050.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2508023085.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2511011140.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2528001440.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2822006320.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2812002570.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2511011020.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2529002300.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2822008251.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816011010.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2822026190.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2501016125.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803016046.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2512014150.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816006020.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-1909006320.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816008025.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816008030.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2529004200.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2822006080.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2529011180.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2809608045.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803006240.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2504601220.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2805005160.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2529009240.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2816009110.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2808001305.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2807005080.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2511009120.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2511005040.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2811016040.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2809602030.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2818001180.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803012180.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2529009320.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2512004020.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803022080.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2818007240.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2818009090.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2512013010.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2803006320.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2809604053.csv
+2025-05-08 10:33:53,026 - Skipping already processed file: 2024-12-SSEN-2818007040.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-1909006280.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2512004220.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2501005012.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2805006090.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803018120.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822005400.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803012380.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2529009120.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807003020.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2808002020.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818006160.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2808007170.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807002100.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2812003080.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803006040.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803010150.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822026150.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822006280.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822024035.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807002060.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822008246.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807003430.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818011030.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2529009040.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2804601060.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2529001420.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2512014190.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822009400.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803006280.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2808001110.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818009130.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2809612036.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822002030.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807005040.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803022120.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2811016080.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803001060.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818006015.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803005560.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2511006210.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803012020.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818001020.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2813001420.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2812002200.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807005120.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2511009080.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818007280.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2508023050.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803022040.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803001100.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2812002360.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822028020.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818001140.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2803012140.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822006120.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2808001070.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2512013060.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818003240.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2822009260.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2813001080.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2807005190.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2818002360.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2512004050.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2528001380.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2512008130.csv
+2025-05-08 10:33:53,027 - Skipping already processed file: 2024-12-SSEN-2811013160.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512012020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803002240.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822008220.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2807001080.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803006230.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512013100.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2805001160.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816010140.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803002080.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816006050.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2528012060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2529015340.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-1909006350.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2501016155.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2511006060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2811015060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512014120.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2529002370.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822008235.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2812002500.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2809611015.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2511002010.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2501017075.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818003080.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822010240.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822026080.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816011100.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2813001240.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512003070.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2501017115.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2529017190.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816006130.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822011360.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816010020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512002150.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803008340.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2526007060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803005100.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816004080.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803016140.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803012440.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818004060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803004020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822028050.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2529015020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2508023020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818004100.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512002230.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818006065.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803006025.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2511009190.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2529015140.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2512008090.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803002280.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803005060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818009140.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2808001160.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818005020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2803016020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2813001120.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2807001040.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818001290.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2807006060.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2822008020.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2818011040.csv
+2025-05-08 10:33:53,028 - Skipping already processed file: 2024-12-SSEN-2816006090.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803002040.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803020020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822005060.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2529001120.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822009100.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822016020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807003440.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2529017030.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803010120.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803006030.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822026120.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2526008030.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822005100.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2813001280.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807002170.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822009060.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2521008120.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803006150.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2818003040.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803010040.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2808007100.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2809607072.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807006100.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803008380.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822004020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2804604020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2508006060.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2811013200.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2526009060.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2818007020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803018140.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2526005100.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2813006070.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2808003160.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822011373.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822005460.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807003040.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2808007110.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807002160.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2803006020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2809607102.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822026130.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2511011080.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822008232.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807003450.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2812003180.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2816006080.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2818007140.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-1909006380.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2504601040.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807003120.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2529001440.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2822006020.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2504606060.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2807004100.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2529002160.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2818009150.csv
+2025-05-08 10:33:53,029 - Skipping already processed file: 2024-12-SSEN-2813001130.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2511009180.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2807005020.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2512008080.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803022140.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2512002220.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2813001440.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2822010520.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2807005140.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803022020.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2508023030.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-1909002285.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803005460.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2511010200.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803001160.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2807003280.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2818006115.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2526010040.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2818001120.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803012120.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2822028040.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2807004060.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803008420.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2812003220.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2818009030.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2816004090.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2818001320.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2529009180.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2807003080.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2816006120.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2816010030.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2511011120.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2812010060.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2811011160.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2501017105.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2812003020.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803010090.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2820004460.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2528001420.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2808002080.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803006180.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2822026090.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2816011110.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2512003100.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2511011040.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2529002360.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2820004500.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2501016145.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2512014130.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2816006040.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2528012070.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-1909006340.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803006220.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2816005010.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2805005100.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2822008230.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2822010480.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2803022180.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2512008040.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2511005020.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2811016020.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2529009340.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2805005060.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2807005180.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2512004040.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2511005140.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2501006035.csv
+2025-05-08 10:33:53,030 - Skipping already processed file: 2024-12-SSEN-2805004140.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2512013070.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2803006340.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2511006120.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2512014060.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2818001310.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2816006110.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2822011340.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2822009080.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2812010050.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2512003050.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2816011120.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2822010260.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2803005240.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2812002520.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2512003130.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2529002350.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2511006040.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2811015040.csv
+2025-05-08 10:33:53,031 - Skipping already processed file: 2024-12-SSEN-2807006080.csv
+2025-05-08 10:33:53,031 - 
+Processing file: 2024-12-SSEN-2528012040.csv
+2025-05-08 10:33:53,050 - 
+Processing feeder: SSEN-252801204001
+2025-05-08 10:33:59,279 - Epoch [10/100], Loss: 0.0148
+2025-05-08 10:34:04,480 - Epoch [20/100], Loss: 0.0111
+2025-05-08 10:34:09,494 - Epoch [30/100], Loss: 0.0081
+2025-05-08 10:34:14,449 - Epoch [40/100], Loss: 0.0076
+2025-05-08 10:34:20,269 - Epoch [50/100], Loss: 0.0071
+2025-05-08 10:34:27,675 - Epoch [60/100], Loss: 0.0071
+2025-05-08 10:34:32,491 - Epoch [70/100], Loss: 0.0069
+2025-05-08 10:34:37,450 - Epoch [80/100], Loss: 0.0070
+2025-05-08 10:34:42,281 - Epoch [90/100], Loss: 0.0070
+2025-05-08 10:34:47,130 - Epoch [100/100], Loss: 0.0068
+2025-05-08 10:34:47,206 - 
+--- Metrics for Feeder SSEN-252801204001 ---
+2025-05-08 10:34:47,206 -   RMSE: 3039.40
+2025-05-08 10:34:47,206 -   MAE: 2334.92
+2025-05-08 10:34:47,206 -   MSE: 9237941.00
+2025-05-08 10:34:47,206 -   MAPE: 10.04%
+2025-05-08 10:34:47,206 -   R²: 0.7450
+2025-05-08 10:34:47,206 - 
+Processing feeder: SSEN-252801204002
+2025-05-08 10:34:52,042 - Epoch [10/100], Loss: nan
+2025-05-08 10:34:56,892 - Epoch [20/100], Loss: nan
+2025-05-08 10:35:01,744 - Epoch [30/100], Loss: nan
+2025-05-08 10:35:08,517 - Epoch [40/100], Loss: nan
+2025-05-08 10:35:15,865 - Epoch [50/100], Loss: nan
+2025-05-08 10:35:21,222 - Epoch [60/100], Loss: nan
+2025-05-08 10:35:26,293 - Epoch [70/100], Loss: nan
+2025-05-08 10:35:31,196 - Epoch [80/100], Loss: nan
+2025-05-08 10:35:36,092 - Epoch [90/100], Loss: nan
+2025-05-08 10:35:41,085 - Epoch [100/100], Loss: nan
+2025-05-08 10:35:41,144 - 
+--- Metrics for Feeder SSEN-252801204002 ---
+2025-05-08 10:35:41,144 -   RMSE: nan
+2025-05-08 10:35:41,144 -   MAE: nan
+2025-05-08 10:35:41,144 -   MSE: nan
+2025-05-08 10:35:41,144 -   MAPE: nan%
+2025-05-08 10:35:41,144 -   R²: nan
+2025-05-08 10:35:41,145 - Added 2024-12-SSEN-2528012040.csv to processed files list
+2025-05-08 10:35:41,145 - 
+Processing file: 2024-12-SSEN-2816006070.csv
+2025-05-08 10:35:41,175 - 
+Processing feeder: SSEN-281600607001
+2025-05-08 10:35:46,073 - Epoch [10/100], Loss: 0.0109
+2025-05-08 10:35:51,097 - Epoch [20/100], Loss: 0.0076
+2025-05-08 10:35:56,012 - Epoch [30/100], Loss: 0.0068
+2025-05-08 10:36:00,898 - Epoch [40/100], Loss: 0.0065
+2025-05-08 10:36:06,001 - Epoch [50/100], Loss: 0.0064
+2025-05-08 10:36:10,848 - Epoch [60/100], Loss: 0.0064
+2025-05-08 10:36:15,720 - Epoch [70/100], Loss: 0.0060
+2025-05-08 10:36:20,583 - Epoch [80/100], Loss: 0.0059
+2025-05-08 10:36:25,452 - Epoch [90/100], Loss: 0.0057
+2025-05-08 10:36:30,321 - Epoch [100/100], Loss: 0.0059
+2025-05-08 10:36:30,383 - 
+--- Metrics for Feeder SSEN-281600607001 ---
+2025-05-08 10:36:30,384 -   RMSE: 2285.53
+2025-05-08 10:36:30,384 -   MAE: 1877.38
+2025-05-08 10:36:30,384 -   MSE: 5223665.00
+2025-05-08 10:36:30,384 -   MAPE: 13.79%
+2025-05-08 10:36:30,384 -   R²: 0.7752
+2025-05-08 10:36:30,384 - 
+Processing feeder: SSEN-281600607002
+2025-05-08 10:36:35,235 - Epoch [10/100], Loss: 0.0128
+2025-05-08 10:36:42,061 - Epoch [20/100], Loss: 0.0108
+2025-05-08 10:36:46,816 - Epoch [30/100], Loss: 0.0103
+2025-05-08 10:36:52,013 - Epoch [40/100], Loss: 0.0098
+2025-05-08 10:36:57,170 - Epoch [50/100], Loss: 0.0099
+2025-05-08 10:37:07,374 - Epoch [60/100], Loss: 0.0095
+2025-05-08 10:37:12,483 - Epoch [70/100], Loss: 0.0096
+2025-05-08 10:37:17,738 - Epoch [80/100], Loss: 0.0093
+2025-05-08 10:37:22,832 - Epoch [90/100], Loss: 0.0095
+2025-05-08 10:37:27,866 - Epoch [100/100], Loss: 0.0093
+2025-05-08 10:37:27,924 - 
+--- Metrics for Feeder SSEN-281600607002 ---
+2025-05-08 10:37:27,924 -   RMSE: 947.45
+2025-05-08 10:37:27,924 -   MAE: 721.94
+2025-05-08 10:37:27,924 -   MSE: 897653.12
+2025-05-08 10:37:27,924 -   MAPE: 19.46%
+2025-05-08 10:37:27,924 -   R²: 0.7160
+2025-05-08 10:37:27,924 - 
+Processing feeder: SSEN-281600607003
+2025-05-08 10:37:33,333 - Epoch [10/100], Loss: 0.0087
+2025-05-08 10:37:38,976 - Epoch [20/100], Loss: 0.0071
+2025-05-08 10:37:44,264 - Epoch [30/100], Loss: 0.0067
+2025-05-08 10:37:49,571 - Epoch [40/100], Loss: 0.0065
+2025-05-08 10:37:55,300 - Epoch [50/100], Loss: 0.0060
+2025-05-08 10:38:00,473 - Epoch [60/100], Loss: 0.0057
+2025-05-08 10:38:05,818 - Epoch [70/100], Loss: 0.0053
+2025-05-08 10:38:10,971 - Epoch [80/100], Loss: 0.0053
+2025-05-08 10:38:16,098 - Epoch [90/100], Loss: 0.0053
+2025-05-08 10:38:21,184 - Epoch [100/100], Loss: 0.0051
+2025-05-08 10:38:21,245 - 
+--- Metrics for Feeder SSEN-281600607003 ---
+2025-05-08 10:38:21,245 -   RMSE: 1215.11
+2025-05-08 10:38:21,245 -   MAE: 931.99
+2025-05-08 10:38:21,245 -   MSE: 1476495.25
+2025-05-08 10:38:21,245 -   MAPE: 12.09%
+2025-05-08 10:38:21,245 -   R²: 0.8672
+2025-05-08 10:38:21,245 - 
+Processing feeder: SSEN-281600607004
+2025-05-08 10:38:26,389 - Epoch [10/100], Loss: 0.0290
+2025-05-08 10:38:31,492 - Epoch [20/100], Loss: 0.0234
+2025-05-08 10:38:36,632 - Epoch [30/100], Loss: 0.0167
+2025-05-08 10:38:41,778 - Epoch [40/100], Loss: 0.0123
+2025-05-08 10:38:46,687 - Epoch [50/100], Loss: 0.0116
+2025-05-08 10:38:51,535 - Epoch [60/100], Loss: 0.0116
+2025-05-08 10:38:56,461 - Epoch [70/100], Loss: 0.0111
+2025-05-08 10:39:01,292 - Epoch [80/100], Loss: 0.0109
+2025-05-08 10:39:06,318 - Epoch [90/100], Loss: 0.0108
+2025-05-08 10:39:11,457 - Epoch [100/100], Loss: 0.0103
+2025-05-08 10:39:11,514 - 
+--- Metrics for Feeder SSEN-281600607004 ---
+2025-05-08 10:39:11,514 -   RMSE: 1185.73
+2025-05-08 10:39:11,514 -   MAE: 901.46
+2025-05-08 10:39:11,514 -   MSE: 1405966.88
+2025-05-08 10:39:11,514 -   MAPE: 19.93%
+2025-05-08 10:39:11,514 -   R²: 0.6758
+2025-05-08 10:39:11,514 - 
+Processing feeder: SSEN-281600607005
+2025-05-08 10:39:16,369 - Epoch [10/100], Loss: 0.0116
+2025-05-08 10:39:21,281 - Epoch [20/100], Loss: 0.0087
+2025-05-08 10:39:26,444 - Epoch [30/100], Loss: 0.0074
+2025-05-08 10:39:31,412 - Epoch [40/100], Loss: 0.0063
+2025-05-08 10:39:36,344 - Epoch [50/100], Loss: 0.0055
+2025-05-08 10:39:41,345 - Epoch [60/100], Loss: 0.0053
+2025-05-08 10:39:46,343 - Epoch [70/100], Loss: 0.0053
+2025-05-08 10:39:51,246 - Epoch [80/100], Loss: 0.0054
+2025-05-08 10:39:56,118 - Epoch [90/100], Loss: 0.0052
+2025-05-08 10:40:00,981 - Epoch [100/100], Loss: 0.0054
+2025-05-08 10:40:01,036 - 
+--- Metrics for Feeder SSEN-281600607005 ---
+2025-05-08 10:40:01,036 -   RMSE: 1989.72
+2025-05-08 10:40:01,036 -   MAE: 1468.01
+2025-05-08 10:40:01,036 -   MSE: 3958974.75
+2025-05-08 10:40:01,036 -   MAPE: 9.97%
+2025-05-08 10:40:01,036 -   R²: 0.8318
+2025-05-08 10:40:01,037 - Added 2024-12-SSEN-2816006070.csv to processed files list
+2025-05-08 10:40:01,037 - 
+Processing file: 2024-12-SSEN-2805001140.csv
+2025-05-08 10:40:01,050 - 
+Processing feeder: SSEN-280500114001
+2025-05-08 10:40:06,062 - Epoch [10/100], Loss: 0.0152
+2025-05-08 10:40:11,029 - Epoch [20/100], Loss: 0.0121
+2025-05-08 10:40:15,902 - Epoch [30/100], Loss: 0.0100
+2025-05-08 10:40:20,857 - Epoch [40/100], Loss: 0.0089
+2025-05-08 10:40:25,771 - Epoch [50/100], Loss: 0.0082
+2025-05-08 10:40:30,678 - Epoch [60/100], Loss: 0.0082
+2025-05-08 10:40:35,571 - Epoch [70/100], Loss: 0.0082
+2025-05-08 10:40:40,691 - Epoch [80/100], Loss: 0.0082
+2025-05-08 10:40:45,526 - Epoch [90/100], Loss: 0.0083
+2025-05-08 10:40:50,630 - Epoch [100/100], Loss: 0.0083
+2025-05-08 10:40:50,687 - 
+--- Metrics for Feeder SSEN-280500114001 ---
+2025-05-08 10:40:50,687 -   RMSE: 1478.47
+2025-05-08 10:40:50,687 -   MAE: 1167.88
+2025-05-08 10:40:50,687 -   MSE: 2185864.00
+2025-05-08 10:40:50,687 -   MAPE: 12.10%
+2025-05-08 10:40:50,687 -   R²: 0.6746
+2025-05-08 10:40:50,694 - Added 2024-12-SSEN-2805001140.csv to processed files list
+2025-05-08 10:40:50,694 - 
+Processing file: 2024-12-SSEN-2822016200.csv
+2025-05-08 10:40:50,713 - 
+Processing feeder: SSEN-282201620003
+2025-05-08 10:40:55,706 - Epoch [10/100], Loss: 0.0200
+2025-05-08 10:41:00,618 - Epoch [20/100], Loss: 0.0140
+2025-05-08 10:41:06,851 - Epoch [30/100], Loss: 0.0124
+2025-05-08 10:41:11,995 - Epoch [40/100], Loss: 0.0120
+2025-05-08 10:41:17,227 - Epoch [50/100], Loss: 0.0116
+2025-05-08 10:41:22,194 - Epoch [60/100], Loss: 0.0112
+2025-05-08 10:41:27,118 - Epoch [70/100], Loss: 0.0109
+2025-05-08 10:41:32,036 - Epoch [80/100], Loss: 0.0106
+2025-05-08 10:41:36,988 - Epoch [90/100], Loss: 0.0103
+2025-05-08 10:41:41,795 - Epoch [100/100], Loss: 0.0103
+2025-05-08 10:41:41,852 - 
+--- Metrics for Feeder SSEN-282201620003 ---
+2025-05-08 10:41:41,852 -   RMSE: 1245.48
+2025-05-08 10:41:41,852 -   MAE: 962.93
+2025-05-08 10:41:41,852 -   MSE: 1551232.88
+2025-05-08 10:41:41,852 -   MAPE: 22.62%
+2025-05-08 10:41:41,852 -   R²: 0.6316
+2025-05-08 10:41:41,853 - Added 2024-12-SSEN-2822016200.csv to processed files list
+2025-05-08 10:41:41,853 - 
+Processing file: 2024-12-SSEN-2529017210.csv
+2025-05-08 10:41:41,867 - 
+Processing feeder: SSEN-252901721004
+2025-05-08 10:41:46,693 - Epoch [10/100], Loss: 0.0165
+2025-05-08 10:41:51,462 - Epoch [20/100], Loss: 0.0138
+2025-05-08 10:41:56,363 - Epoch [30/100], Loss: 0.0109
+2025-05-08 10:42:01,365 - Epoch [40/100], Loss: 0.0107
+2025-05-08 10:42:06,747 - Epoch [50/100], Loss: 0.0104
+2025-05-08 10:42:11,721 - Epoch [60/100], Loss: 0.0105
+2025-05-08 10:42:16,689 - Epoch [70/100], Loss: 0.0103
+2025-05-08 10:42:21,624 - Epoch [80/100], Loss: 0.0103
+2025-05-08 10:42:26,545 - Epoch [90/100], Loss: 0.0102
+2025-05-08 10:42:31,502 - Epoch [100/100], Loss: 0.0103
+2025-05-08 10:42:31,567 - 
+--- Metrics for Feeder SSEN-252901721004 ---
+2025-05-08 10:42:31,567 -   RMSE: 1040.45
+2025-05-08 10:42:31,567 -   MAE: 806.15
+2025-05-08 10:42:31,567 -   MSE: 1082527.50
+2025-05-08 10:42:31,567 -   MAPE: 15.82%
+2025-05-08 10:42:31,567 -   R²: 0.5653
+2025-05-08 10:42:31,568 - Added 2024-12-SSEN-2529017210.csv to processed files list
+2025-05-08 10:42:31,568 - 
+Processing file: 2024-12-SSEN-2816001050.csv
+2025-05-08 10:42:31,597 - 
+Processing feeder: SSEN-281600105001
+2025-05-08 10:42:36,711 - Epoch [10/100], Loss: 0.0137
+2025-05-08 10:42:41,578 - Epoch [20/100], Loss: 0.0110
+2025-05-08 10:42:46,521 - Epoch [30/100], Loss: 0.0094
+2025-05-08 10:42:51,484 - Epoch [40/100], Loss: 0.0089
+2025-05-08 10:42:56,349 - Epoch [50/100], Loss: 0.0086
+2025-05-08 10:43:01,229 - Epoch [60/100], Loss: 0.0084
+2025-05-08 10:43:06,222 - Epoch [70/100], Loss: 0.0084
+2025-05-08 10:43:11,103 - Epoch [80/100], Loss: 0.0085
+2025-05-08 10:43:15,940 - Epoch [90/100], Loss: 0.0083
+2025-05-08 10:43:20,770 - Epoch [100/100], Loss: 0.0082
+2025-05-08 10:43:20,825 - 
+--- Metrics for Feeder SSEN-281600105001 ---
+2025-05-08 10:43:20,825 -   RMSE: 488.62
+2025-05-08 10:43:20,825 -   MAE: 341.17
+2025-05-08 10:43:20,825 -   MSE: 238753.27
+2025-05-08 10:43:20,825 -   MAPE: 12.27%
+2025-05-08 10:43:20,825 -   R²: 0.6872
+2025-05-08 10:43:20,825 - 
+Processing feeder: SSEN-281600105002
+2025-05-08 10:43:25,626 - Epoch [10/100], Loss: 0.0120
+2025-05-08 10:43:30,508 - Epoch [20/100], Loss: 0.0080
+2025-05-08 10:43:35,399 - Epoch [30/100], Loss: 0.0068
+2025-05-08 10:43:40,225 - Epoch [40/100], Loss: 0.0062
+2025-05-08 10:43:45,104 - Epoch [50/100], Loss: 0.0058
+2025-05-08 10:43:49,953 - Epoch [60/100], Loss: 0.0058
+2025-05-08 10:43:54,750 - Epoch [70/100], Loss: 0.0060
+2025-05-08 10:43:59,636 - Epoch [80/100], Loss: 0.0058
+2025-05-08 10:44:04,454 - Epoch [90/100], Loss: 0.0052
+2025-05-08 10:44:09,364 - Epoch [100/100], Loss: 0.0050
+2025-05-08 10:44:09,420 - 
+--- Metrics for Feeder SSEN-281600105002 ---
+2025-05-08 10:44:09,420 -   RMSE: 1114.11
+2025-05-08 10:44:09,420 -   MAE: 821.27
+2025-05-08 10:44:09,420 -   MSE: 1241231.50
+2025-05-08 10:44:09,420 -   MAPE: 13.09%
+2025-05-08 10:44:09,420 -   R²: 0.8444
+2025-05-08 10:44:09,420 - 
+Processing feeder: SSEN-281600105003
+2025-05-08 10:44:14,324 - Epoch [10/100], Loss: 0.0149
+2025-05-08 10:44:19,151 - Epoch [20/100], Loss: 0.0119
+2025-05-08 10:44:24,020 - Epoch [30/100], Loss: 0.0110
+2025-05-08 10:44:28,852 - Epoch [40/100], Loss: 0.0108
+2025-05-08 10:44:33,709 - Epoch [50/100], Loss: 0.0104
+2025-05-08 10:44:38,633 - Epoch [60/100], Loss: 0.0102
+2025-05-08 10:44:43,470 - Epoch [70/100], Loss: 0.0102
+2025-05-08 10:44:48,373 - Epoch [80/100], Loss: 0.0101
+2025-05-08 10:44:53,198 - Epoch [90/100], Loss: 0.0100
+2025-05-08 10:44:58,028 - Epoch [100/100], Loss: 0.0099
+2025-05-08 10:44:58,087 - 
+--- Metrics for Feeder SSEN-281600105003 ---
+2025-05-08 10:44:58,087 -   RMSE: 771.27
+2025-05-08 10:44:58,087 -   MAE: 574.67
+2025-05-08 10:44:58,087 -   MSE: 594854.38
+2025-05-08 10:44:58,087 -   MAPE: 26.14%
+2025-05-08 10:44:58,087 -   R²: 0.5913
+2025-05-08 10:44:58,087 - 
+Processing feeder: SSEN-281600105004
+2025-05-08 10:45:02,965 - Epoch [10/100], Loss: 0.0190
+2025-05-08 10:45:07,899 - Epoch [20/100], Loss: 0.0176
+2025-05-08 10:45:12,786 - Epoch [30/100], Loss: 0.0140
+2025-05-08 10:45:17,637 - Epoch [40/100], Loss: 0.0123
+2025-05-08 10:45:22,524 - Epoch [50/100], Loss: 0.0125
+2025-05-08 10:45:27,311 - Epoch [60/100], Loss: 0.0122
+2025-05-08 10:45:32,191 - Epoch [70/100], Loss: 0.0122
+2025-05-08 10:45:37,168 - Epoch [80/100], Loss: 0.0122
+2025-05-08 10:45:42,009 - Epoch [90/100], Loss: 0.0122
+2025-05-08 10:45:46,936 - Epoch [100/100], Loss: 0.0121
+2025-05-08 10:45:46,992 - 
+--- Metrics for Feeder SSEN-281600105004 ---
+2025-05-08 10:45:46,992 -   RMSE: 1332.63
+2025-05-08 10:45:46,992 -   MAE: 1048.54
+2025-05-08 10:45:46,992 -   MSE: 1775905.38
+2025-05-08 10:45:46,992 -   MAPE: 20.98%
+2025-05-08 10:45:46,992 -   R²: 0.4858
+2025-05-08 10:45:46,992 - 
+Processing feeder: SSEN-281600105005
+2025-05-08 10:45:51,843 - Epoch [10/100], Loss: 0.0168
+2025-05-08 10:45:56,731 - Epoch [20/100], Loss: 0.0123
+2025-05-08 10:46:01,577 - Epoch [30/100], Loss: 0.0103
+2025-05-08 10:46:06,479 - Epoch [40/100], Loss: 0.0100
+2025-05-08 10:46:11,375 - Epoch [50/100], Loss: 0.0100
+2025-05-08 10:46:16,242 - Epoch [60/100], Loss: 0.0099
+2025-05-08 10:46:21,075 - Epoch [70/100], Loss: 0.0097
+2025-05-08 10:46:25,930 - Epoch [80/100], Loss: 0.0098
+2025-05-08 10:46:30,718 - Epoch [90/100], Loss: 0.0098
+2025-05-08 10:46:35,595 - Epoch [100/100], Loss: 0.0099
+2025-05-08 10:46:35,652 - 
+--- Metrics for Feeder SSEN-281600105005 ---
+2025-05-08 10:46:35,652 -   RMSE: 1427.87
+2025-05-08 10:46:35,652 -   MAE: 976.21
+2025-05-08 10:46:35,652 -   MSE: 2038826.50
+2025-05-08 10:46:35,652 -   MAPE: 16.27%
+2025-05-08 10:46:35,652 -   R²: 0.5755
+2025-05-08 10:46:35,653 - Added 2024-12-SSEN-2816001050.csv to processed files list
+2025-05-08 10:46:35,653 - 
+Processing file: 2024-12-SSEN-2529001300.csv
+2025-05-08 10:46:35,669 - 
+Processing feeder: SSEN-252900130001
+2025-05-08 10:46:40,555 - Epoch [10/100], Loss: 0.0167
+2025-05-08 10:46:45,361 - Epoch [20/100], Loss: 0.0127
+2025-05-08 10:46:50,198 - Epoch [30/100], Loss: 0.0107
+2025-05-08 10:46:55,095 - Epoch [40/100], Loss: 0.0102
+2025-05-08 10:46:59,967 - Epoch [50/100], Loss: 0.0101
+2025-05-08 10:47:04,810 - Epoch [60/100], Loss: 0.0095
+2025-05-08 10:47:09,642 - Epoch [70/100], Loss: 0.0093
+2025-05-08 10:47:14,502 - Epoch [80/100], Loss: 0.0091
+2025-05-08 10:47:20,330 - Epoch [90/100], Loss: 0.0095
+2025-05-08 10:47:25,233 - Epoch [100/100], Loss: 0.0089
+2025-05-08 10:47:25,289 - 
+--- Metrics for Feeder SSEN-252900130001 ---
+2025-05-08 10:47:25,289 -   RMSE: 1117.29
+2025-05-08 10:47:25,290 -   MAE: 819.84
+2025-05-08 10:47:25,290 -   MSE: 1248327.62
+2025-05-08 10:47:25,290 -   MAPE: 13.28%
+2025-05-08 10:47:25,290 -   R²: 0.7115
+2025-05-08 10:47:25,290 - 
+Processing feeder: SSEN-252900130002
+2025-05-08 10:47:30,366 - Epoch [10/100], Loss: 0.0165
+2025-05-08 10:47:35,745 - Epoch [20/100], Loss: 0.0110
+2025-05-08 10:47:40,831 - Epoch [30/100], Loss: 0.0093
+2025-05-08 10:47:45,756 - Epoch [40/100], Loss: 0.0083
+2025-05-08 10:47:51,032 - Epoch [50/100], Loss: 0.0075
+2025-05-08 10:47:56,025 - Epoch [60/100], Loss: 0.0074
+2025-05-08 10:48:01,299 - Epoch [70/100], Loss: 0.0071
+2025-05-08 10:48:08,076 - Epoch [80/100], Loss: 0.0075
+2025-05-08 10:48:14,353 - Epoch [90/100], Loss: 0.0063
+2025-05-08 10:48:19,666 - Epoch [100/100], Loss: 0.0062
+2025-05-08 10:48:19,738 - 
+--- Metrics for Feeder SSEN-252900130002 ---
+2025-05-08 10:48:19,738 -   RMSE: 1359.51
+2025-05-08 10:48:19,738 -   MAE: 912.22
+2025-05-08 10:48:19,738 -   MSE: 1848262.88
+2025-05-08 10:48:19,738 -   MAPE: 20.00%
+2025-05-08 10:48:19,738 -   R²: 0.7955
+2025-05-08 10:48:19,739 - Added 2024-12-SSEN-2529001300.csv to processed files list
+2025-05-08 10:48:19,739 - 
+Processing file: 2024-12-SSEN-2803006210.csv
+2025-05-08 10:48:19,757 - 
+Processing feeder: SSEN-280300621002
+2025-05-08 10:48:25,688 - Epoch [10/100], Loss: 0.0148
+2025-05-08 10:48:31,463 - Epoch [20/100], Loss: 0.0120
+2025-05-08 10:48:37,549 - Epoch [30/100], Loss: 0.0096
+2025-05-08 10:48:42,957 - Epoch [40/100], Loss: 0.0088
+2025-05-08 10:48:47,907 - Epoch [50/100], Loss: 0.0088
+2025-05-08 10:48:52,834 - Epoch [60/100], Loss: 0.0084
+2025-05-08 10:48:57,721 - Epoch [70/100], Loss: 0.0083
+2025-05-08 10:49:02,888 - Epoch [80/100], Loss: 0.0081
+2025-05-08 10:49:08,088 - Epoch [90/100], Loss: 0.0081
+2025-05-08 10:49:13,058 - Epoch [100/100], Loss: 0.0080
+2025-05-08 10:49:13,117 - 
+--- Metrics for Feeder SSEN-280300621002 ---
+2025-05-08 10:49:13,117 -   RMSE: 1002.87
+2025-05-08 10:49:13,117 -   MAE: 734.89
+2025-05-08 10:49:13,117 -   MSE: 1005754.88
+2025-05-08 10:49:13,117 -   MAPE: 19.38%
+2025-05-08 10:49:13,117 -   R²: 0.7677
+2025-05-08 10:49:13,117 - 
+Processing feeder: SSEN-280300621004
+2025-05-08 10:49:18,139 - Epoch [10/100], Loss: 0.0155
+2025-05-08 10:49:23,129 - Epoch [20/100], Loss: 0.0114
+2025-05-08 10:49:28,083 - Epoch [30/100], Loss: 0.0091
+2025-05-08 10:49:33,055 - Epoch [40/100], Loss: 0.0086
+2025-05-08 10:49:37,959 - Epoch [50/100], Loss: 0.0087
+2025-05-08 10:49:42,997 - Epoch [60/100], Loss: 0.0086
+2025-05-08 10:49:47,894 - Epoch [70/100], Loss: 0.0084
+2025-05-08 10:49:53,692 - Epoch [80/100], Loss: 0.0082
+2025-05-08 10:49:58,840 - Epoch [90/100], Loss: 0.0080
+2025-05-08 10:50:03,887 - Epoch [100/100], Loss: 0.0080
+2025-05-08 10:50:03,945 - 
+--- Metrics for Feeder SSEN-280300621004 ---
+2025-05-08 10:50:03,945 -   RMSE: 956.78
+2025-05-08 10:50:03,945 -   MAE: 744.69
+2025-05-08 10:50:03,945 -   MSE: 915423.69
+2025-05-08 10:50:03,945 -   MAPE: 17.52%
+2025-05-08 10:50:03,945 -   R²: 0.8476
+2025-05-08 10:50:03,946 - Added 2024-12-SSEN-2803006210.csv to processed files list
+2025-05-08 10:50:03,946 - 
+Processing file: 2024-12-SSEN-2511012020.csv
+2025-05-08 10:50:03,976 - 
+Processing feeder: SSEN-251101202001
+2025-05-08 10:50:09,157 - Epoch [10/100], Loss: 0.0145
+2025-05-08 10:50:14,357 - Epoch [20/100], Loss: 0.0080
+2025-05-08 10:50:19,494 - Epoch [30/100], Loss: 0.0060
+2025-05-08 10:50:24,734 - Epoch [40/100], Loss: 0.0054
+2025-05-08 10:50:29,852 - Epoch [50/100], Loss: 0.0047
+2025-05-08 10:50:34,847 - Epoch [60/100], Loss: 0.0044
+2025-05-08 10:50:39,904 - Epoch [70/100], Loss: 0.0044
+2025-05-08 10:50:45,096 - Epoch [80/100], Loss: 0.0040
+2025-05-08 10:50:50,202 - Epoch [90/100], Loss: 0.0040
+2025-05-08 10:50:55,147 - Epoch [100/100], Loss: 0.0038
+2025-05-08 10:50:55,206 - 
+--- Metrics for Feeder SSEN-251101202001 ---
+2025-05-08 10:50:55,206 -   RMSE: 2114.91
+2025-05-08 10:50:55,206 -   MAE: 1710.71
+2025-05-08 10:50:55,206 -   MSE: 4472839.00
+2025-05-08 10:50:55,206 -   MAPE: 8.87%
+2025-05-08 10:50:55,206 -   R²: 0.8260
+2025-05-08 10:50:55,208 - Added 2024-12-SSEN-2511012020.csv to processed files list
+2025-05-08 10:50:55,208 - 
+Processing file: 2024-12-SSEN-2809608015.csv
+2025-05-08 10:50:55,227 - 
+Processing feeder: SSEN-280960801501
+2025-05-08 10:51:00,479 - Epoch [10/100], Loss: 0.0203
+2025-05-08 10:51:05,679 - Epoch [20/100], Loss: 0.0126
+2025-05-08 10:51:10,641 - Epoch [30/100], Loss: 0.0103
+2025-05-08 10:51:16,083 - Epoch [40/100], Loss: 0.0081
+2025-05-08 10:51:21,408 - Epoch [50/100], Loss: 0.0075
+2025-05-08 10:51:26,397 - Epoch [60/100], Loss: 0.0073
+2025-05-08 10:51:31,586 - Epoch [70/100], Loss: 0.0074
+2025-05-08 10:51:36,473 - Epoch [80/100], Loss: 0.0073
+2025-05-08 10:51:41,672 - Epoch [90/100], Loss: 0.0074
+2025-05-08 10:51:46,614 - Epoch [100/100], Loss: 0.0072
+2025-05-08 10:51:46,673 - 
+--- Metrics for Feeder SSEN-280960801501 ---
+2025-05-08 10:51:46,673 -   RMSE: 4425.66
+2025-05-08 10:51:46,673 -   MAE: 3505.22
+2025-05-08 10:51:46,673 -   MSE: 19586484.00
+2025-05-08 10:51:46,673 -   MAPE: 7.59%
+2025-05-08 10:51:46,673 -   R²: 0.7119
+2025-05-08 10:51:46,675 - Added 2024-12-SSEN-2809608015.csv to processed files list
+2025-05-08 10:51:46,675 - 
+Processing file: 2024-12-SSEN-2822008200.csv
+2025-05-08 10:51:46,690 - 
+Processing feeder: SSEN-282200820002
+2025-05-08 10:51:51,697 - Epoch [10/100], Loss: 0.0120
+2025-05-08 10:51:56,519 - Epoch [20/100], Loss: 0.0082
+2025-05-08 10:52:01,628 - Epoch [30/100], Loss: 0.0065
+2025-05-08 10:52:06,631 - Epoch [40/100], Loss: 0.0059
+2025-05-08 10:52:11,592 - Epoch [50/100], Loss: 0.0059
+2025-05-08 10:52:16,594 - Epoch [60/100], Loss: 0.0059
+2025-05-08 10:52:21,669 - Epoch [70/100], Loss: 0.0059
+2025-05-08 10:52:26,570 - Epoch [80/100], Loss: 0.0056
+2025-05-08 10:52:31,435 - Epoch [90/100], Loss: 0.0054
+2025-05-08 10:52:36,416 - Epoch [100/100], Loss: 0.0052
+2025-05-08 10:52:36,473 - 
+--- Metrics for Feeder SSEN-282200820002 ---
+2025-05-08 10:52:36,473 -   RMSE: 945.60
+2025-05-08 10:52:36,473 -   MAE: 672.26
+2025-05-08 10:52:36,473 -   MSE: 894166.62
+2025-05-08 10:52:36,473 -   MAPE: 13.83%
+2025-05-08 10:52:36,473 -   R²: 0.8079
+2025-05-08 10:52:36,474 - Added 2024-12-SSEN-2822008200.csv to processed files list
+2025-05-08 10:52:36,474 - 
+Processing file: 2024-12-SSEN-2816005020.csv
+2025-05-08 10:52:36,483 - 
+Processing feeder: SSEN-281600502002
+2025-05-08 10:52:41,351 - Epoch [10/100], Loss: 0.0218
+2025-05-08 10:52:46,248 - Epoch [20/100], Loss: 0.0181
+2025-05-08 10:52:51,236 - Epoch [30/100], Loss: 0.0130
+2025-05-08 10:52:56,169 - Epoch [40/100], Loss: 0.0135
+2025-05-08 10:53:01,138 - Epoch [50/100], Loss: 0.0130
+2025-05-08 10:53:06,272 - Epoch [60/100], Loss: 0.0134
+2025-05-08 10:53:11,275 - Epoch [70/100], Loss: 0.0130
+2025-05-08 10:53:16,235 - Epoch [80/100], Loss: 0.0129
+2025-05-08 10:53:21,246 - Epoch [90/100], Loss: 0.0129
+2025-05-08 10:53:26,295 - Epoch [100/100], Loss: 0.0129
+2025-05-08 10:53:26,356 - 
+--- Metrics for Feeder SSEN-281600502002 ---
+2025-05-08 10:53:26,356 -   RMSE: 2016.70
+2025-05-08 10:53:26,356 -   MAE: 1580.68
+2025-05-08 10:53:26,356 -   MSE: 4067068.50
+2025-05-08 10:53:26,356 -   MAPE: 25.90%
+2025-05-08 10:53:26,356 -   R²: 0.6472
+2025-05-08 10:53:26,357 - Added 2024-12-SSEN-2816005020.csv to processed files list
+2025-05-08 10:53:26,358 - 
+Processing file: 2024-12-SSEN-2818006085.csv
+2025-05-08 10:53:26,385 - 
+Processing feeder: SSEN-281800608501
+2025-05-08 10:53:31,329 - Epoch [10/100], Loss: 0.0121
+2025-05-08 10:53:36,217 - Epoch [20/100], Loss: 0.0109
+2025-05-08 10:53:41,178 - Epoch [30/100], Loss: 0.0105
+2025-05-08 10:53:46,214 - Epoch [40/100], Loss: 0.0102
+2025-05-08 10:53:51,266 - Epoch [50/100], Loss: 0.0096
+2025-05-08 10:53:56,253 - Epoch [60/100], Loss: 0.0095
+2025-05-08 10:54:01,347 - Epoch [70/100], Loss: 0.0092
+2025-05-08 10:54:06,568 - Epoch [80/100], Loss: 0.0092
+2025-05-08 10:54:11,413 - Epoch [90/100], Loss: 0.0092
+2025-05-08 10:54:16,771 - Epoch [100/100], Loss: 0.0093
+2025-05-08 10:54:16,834 - 
+--- Metrics for Feeder SSEN-281800608501 ---
+2025-05-08 10:54:16,834 -   RMSE: 551.62
+2025-05-08 10:54:16,834 -   MAE: 383.35
+2025-05-08 10:54:16,834 -   MSE: 304279.91
+2025-05-08 10:54:16,834 -   MAPE: 18.97%
+2025-05-08 10:54:16,834 -   R²: 0.5231
+2025-05-08 10:54:16,834 - 
+Processing feeder: SSEN-281800608502
+2025-05-08 10:54:22,097 - Epoch [10/100], Loss: 0.0167
+2025-05-08 10:54:27,186 - Epoch [20/100], Loss: 0.0123
+2025-05-08 10:54:32,154 - Epoch [30/100], Loss: 0.0108
+2025-05-08 10:54:36,997 - Epoch [40/100], Loss: 0.0096
+2025-05-08 10:54:42,395 - Epoch [50/100], Loss: 0.0095
+2025-05-08 10:54:47,297 - Epoch [60/100], Loss: 0.0091
+2025-05-08 10:54:52,391 - Epoch [70/100], Loss: 0.0090
+2025-05-08 10:54:57,590 - Epoch [80/100], Loss: 0.0090
+2025-05-08 10:55:02,519 - Epoch [90/100], Loss: 0.0091
+2025-05-08 10:55:08,268 - Epoch [100/100], Loss: 0.0091
+2025-05-08 10:55:08,315 - 
+--- Metrics for Feeder SSEN-281800608502 ---
+2025-05-08 10:55:08,315 -   RMSE: 963.82
+2025-05-08 10:55:08,315 -   MAE: 762.54
+2025-05-08 10:55:08,315 -   MSE: 928949.12
+2025-05-08 10:55:08,315 -   MAPE: 13.81%
+2025-05-08 10:55:08,315 -   R²: 0.6164
+2025-05-08 10:55:08,315 - 
+Processing feeder: SSEN-281800608504
+2025-05-08 10:55:13,215 - Epoch [10/100], Loss: 0.0122
+2025-05-08 10:55:18,252 - Epoch [20/100], Loss: 0.0096
+2025-05-08 10:55:23,250 - Epoch [30/100], Loss: 0.0078
+2025-05-08 10:55:28,126 - Epoch [40/100], Loss: 0.0070
+2025-05-08 10:55:33,283 - Epoch [50/100], Loss: 0.0067
+2025-05-08 10:55:38,151 - Epoch [60/100], Loss: 0.0062
+2025-05-08 10:55:43,007 - Epoch [70/100], Loss: 0.0059
+2025-05-08 10:55:48,077 - Epoch [80/100], Loss: 0.0059
+2025-05-08 10:55:52,948 - Epoch [90/100], Loss: 0.0057
+2025-05-08 10:55:58,111 - Epoch [100/100], Loss: 0.0057
+2025-05-08 10:55:58,168 - 
+--- Metrics for Feeder SSEN-281800608504 ---
+2025-05-08 10:55:58,168 -   RMSE: 1925.61
+2025-05-08 10:55:58,168 -   MAE: 1541.23
+2025-05-08 10:55:58,168 -   MSE: 3707990.75
+2025-05-08 10:55:58,168 -   MAPE: 8.98%
+2025-05-08 10:55:58,168 -   R²: 0.8574
+2025-05-08 10:55:58,168 - 
+Processing feeder: SSEN-281800608505
+2025-05-08 10:56:03,141 - Epoch [10/100], Loss: 0.0138
+2025-05-08 10:56:08,226 - Epoch [20/100], Loss: 0.0113
+2025-05-08 10:56:13,256 - Epoch [30/100], Loss: 0.0099
+2025-05-08 10:56:18,339 - Epoch [40/100], Loss: 0.0096
+2025-05-08 10:56:23,376 - Epoch [50/100], Loss: 0.0098
+2025-05-08 10:56:28,290 - Epoch [60/100], Loss: 0.0095
+2025-05-08 10:56:33,282 - Epoch [70/100], Loss: 0.0096
+2025-05-08 10:56:38,206 - Epoch [80/100], Loss: 0.0095
+2025-05-08 10:56:43,095 - Epoch [90/100], Loss: 0.0093
+2025-05-08 10:56:48,118 - Epoch [100/100], Loss: 0.0093
+2025-05-08 10:56:48,178 - 
+--- Metrics for Feeder SSEN-281800608505 ---
+2025-05-08 10:56:48,178 -   RMSE: 914.38
+2025-05-08 10:56:48,178 -   MAE: 670.82
+2025-05-08 10:56:48,178 -   MSE: 836083.44
+2025-05-08 10:56:48,178 -   MAPE: 18.79%
+2025-05-08 10:56:48,178 -   R²: 0.6659
+2025-05-08 10:56:48,179 - Added 2024-12-SSEN-2818006085.csv to processed files list
+2025-05-08 10:56:48,179 - 
+Processing file: 2024-12-SSEN-2803002260.csv
+2025-05-08 10:56:48,207 - 
+Processing feeder: SSEN-280300226001
+2025-05-08 10:56:53,194 - Epoch [10/100], Loss: 0.0146
+2025-05-08 10:56:58,122 - Epoch [20/100], Loss: 0.0100
+2025-05-08 10:57:03,377 - Epoch [30/100], Loss: 0.0081
+2025-05-08 10:57:08,801 - Epoch [40/100], Loss: 0.0079
+2025-05-08 10:57:13,888 - Epoch [50/100], Loss: 0.0078
+2025-05-08 10:57:18,816 - Epoch [60/100], Loss: 0.0076
+2025-05-08 10:57:23,763 - Epoch [70/100], Loss: 0.0079
+2025-05-08 10:57:28,780 - Epoch [80/100], Loss: 0.0076
+2025-05-08 10:57:33,840 - Epoch [90/100], Loss: 0.0074
+2025-05-08 10:57:38,846 - Epoch [100/100], Loss: 0.0074
+2025-05-08 10:57:38,907 - 
+--- Metrics for Feeder SSEN-280300226001 ---
+2025-05-08 10:57:38,907 -   RMSE: 838.35
+2025-05-08 10:57:38,907 -   MAE: 657.84
+2025-05-08 10:57:38,907 -   MSE: 702830.38
+2025-05-08 10:57:38,908 -   MAPE: 21.09%
+2025-05-08 10:57:38,908 -   R²: 0.5712
+2025-05-08 10:57:38,908 - 
+Processing feeder: SSEN-280300226002
+2025-05-08 10:57:43,875 - Epoch [10/100], Loss: 0.0150
+2025-05-08 10:57:49,192 - Epoch [20/100], Loss: 0.0105
+2025-05-08 10:57:54,260 - Epoch [30/100], Loss: 0.0090
+2025-05-08 10:57:59,211 - Epoch [40/100], Loss: 0.0085
+2025-05-08 10:58:04,362 - Epoch [50/100], Loss: 0.0077
+2025-05-08 10:58:09,500 - Epoch [60/100], Loss: 0.0075
+2025-05-08 10:58:14,465 - Epoch [70/100], Loss: 0.0076
+2025-05-08 10:58:19,513 - Epoch [80/100], Loss: 0.0076
+2025-05-08 10:58:24,509 - Epoch [90/100], Loss: 0.0074
+2025-05-08 10:58:29,454 - Epoch [100/100], Loss: 0.0073
+2025-05-08 10:58:29,511 - 
+--- Metrics for Feeder SSEN-280300226002 ---
+2025-05-08 10:58:29,511 -   RMSE: 1266.06
+2025-05-08 10:58:29,511 -   MAE: 958.73
+2025-05-08 10:58:29,511 -   MSE: 1602919.25
+2025-05-08 10:58:29,511 -   MAPE: 11.24%
+2025-05-08 10:58:29,511 -   R²: 0.8417
+2025-05-08 10:58:29,511 - 
+Processing feeder: SSEN-280300226003
+2025-05-08 10:58:34,713 - Epoch [10/100], Loss: 0.0158
+2025-05-08 10:58:39,741 - Epoch [20/100], Loss: 0.0135
+2025-05-08 10:58:44,653 - Epoch [30/100], Loss: 0.0109
+2025-05-08 10:58:49,505 - Epoch [40/100], Loss: 0.0094
+2025-05-08 10:58:54,315 - Epoch [50/100], Loss: 0.0091
+2025-05-08 10:58:59,173 - Epoch [60/100], Loss: 0.0086
+2025-05-08 10:59:03,964 - Epoch [70/100], Loss: 0.0084
+2025-05-08 10:59:09,402 - Epoch [80/100], Loss: 0.0083
+2025-05-08 10:59:14,527 - Epoch [90/100], Loss: 0.0086
+2025-05-08 10:59:19,626 - Epoch [100/100], Loss: 0.0082
+2025-05-08 10:59:19,682 - 
+--- Metrics for Feeder SSEN-280300226003 ---
+2025-05-08 10:59:19,682 -   RMSE: 1319.35
+2025-05-08 10:59:19,682 -   MAE: 1059.59
+2025-05-08 10:59:19,682 -   MSE: 1740674.12
+2025-05-08 10:59:19,682 -   MAPE: 13.24%
+2025-05-08 10:59:19,682 -   R²: 0.8021
+2025-05-08 10:59:19,682 - 
+Processing feeder: SSEN-280300226004
+2025-05-08 10:59:24,568 - Epoch [10/100], Loss: 0.0082
+2025-05-08 10:59:29,659 - Epoch [20/100], Loss: 0.0056
+2025-05-08 10:59:34,766 - Epoch [30/100], Loss: 0.0052
+2025-05-08 10:59:39,711 - Epoch [40/100], Loss: 0.0046
+2025-05-08 10:59:44,528 - Epoch [50/100], Loss: 0.0046
+2025-05-08 10:59:49,298 - Epoch [60/100], Loss: 0.0044
+2025-05-08 10:59:54,195 - Epoch [70/100], Loss: 0.0043
+2025-05-08 10:59:59,143 - Epoch [80/100], Loss: 0.0043
+2025-05-08 11:00:03,943 - Epoch [90/100], Loss: 0.0043
+2025-05-08 11:00:08,993 - Epoch [100/100], Loss: 0.0042
+2025-05-08 11:00:09,051 - 
+--- Metrics for Feeder SSEN-280300226004 ---
+2025-05-08 11:00:09,051 -   RMSE: 527.35
+2025-05-08 11:00:09,051 -   MAE: 371.98
+2025-05-08 11:00:09,051 -   MSE: 278101.53
+2025-05-08 11:00:09,051 -   MAPE: 13.36%
+2025-05-08 11:00:09,051 -   R²: 0.7354
+2025-05-08 11:00:09,051 - 
+Processing feeder: SSEN-280300226005
+2025-05-08 11:00:14,029 - Epoch [10/100], Loss: 0.0125
+2025-05-08 11:00:18,936 - Epoch [20/100], Loss: 0.0103
+2025-05-08 11:00:23,692 - Epoch [30/100], Loss: 0.0090
+2025-05-08 11:00:28,592 - Epoch [40/100], Loss: 0.0079
+2025-05-08 11:00:33,350 - Epoch [50/100], Loss: 0.0079
+2025-05-08 11:00:38,474 - Epoch [60/100], Loss: 0.0077
+2025-05-08 11:00:43,547 - Epoch [70/100], Loss: 0.0076
+2025-05-08 11:00:48,709 - Epoch [80/100], Loss: 0.0076
+2025-05-08 11:00:53,697 - Epoch [90/100], Loss: 0.0074
+2025-05-08 11:00:58,691 - Epoch [100/100], Loss: 0.0073
+2025-05-08 11:00:58,751 - 
+--- Metrics for Feeder SSEN-280300226005 ---
+2025-05-08 11:00:58,751 -   RMSE: 775.32
+2025-05-08 11:00:58,751 -   MAE: 575.68
+2025-05-08 11:00:58,751 -   MSE: 601121.75
+2025-05-08 11:00:58,751 -   MAPE: 16.23%
+2025-05-08 11:00:58,751 -   R²: 0.7434
+2025-05-08 11:00:58,751 - Added 2024-12-SSEN-2803002260.csv to processed files list
+2025-05-08 11:00:58,751 - 
+Processing file: 2024-12-SSEN-2512008070.csv
+2025-05-08 11:00:58,779 - 
+Processing feeder: SSEN-251200807001
+2025-05-08 11:01:03,814 - Epoch [10/100], Loss: 0.0138
+2025-05-08 11:01:08,979 - Epoch [20/100], Loss: 0.0084
+2025-05-08 11:01:14,023 - Epoch [30/100], Loss: 0.0070
+2025-05-08 11:01:18,925 - Epoch [40/100], Loss: 0.0058
+2025-05-08 11:01:23,858 - Epoch [50/100], Loss: 0.0058
+2025-05-08 11:01:28,805 - Epoch [60/100], Loss: 0.0053
+2025-05-08 11:01:33,791 - Epoch [70/100], Loss: 0.0051
+2025-05-08 11:01:38,695 - Epoch [80/100], Loss: 0.0049
+2025-05-08 11:01:43,691 - Epoch [90/100], Loss: 0.0049
+2025-05-08 11:01:48,673 - Epoch [100/100], Loss: 0.0049
+2025-05-08 11:01:48,729 - 
+--- Metrics for Feeder SSEN-251200807001 ---
+2025-05-08 11:01:48,729 -   RMSE: 1354.02
+2025-05-08 11:01:48,730 -   MAE: 1021.74
+2025-05-08 11:01:48,730 -   MSE: 1833365.00
+2025-05-08 11:01:48,730 -   MAPE: 11.47%
+2025-05-08 11:01:48,730 -   R²: 0.7163
+2025-05-08 11:01:48,730 - 
+Processing feeder: SSEN-251200807002
+2025-05-08 11:01:53,658 - Epoch [10/100], Loss: 0.0191
+2025-05-08 11:01:58,588 - Epoch [20/100], Loss: 0.0142
+2025-05-08 11:02:04,176 - Epoch [30/100], Loss: 0.0123
+2025-05-08 11:02:09,368 - Epoch [40/100], Loss: 0.0115
+2025-05-08 11:02:14,343 - Epoch [50/100], Loss: 0.0111
+2025-05-08 11:02:19,306 - Epoch [60/100], Loss: 0.0115
+2025-05-08 11:02:24,362 - Epoch [70/100], Loss: 0.0110
+2025-05-08 11:02:29,278 - Epoch [80/100], Loss: 0.0111
+2025-05-08 11:02:34,163 - Epoch [90/100], Loss: 0.0110
+2025-05-08 11:02:39,238 - Epoch [100/100], Loss: 0.0110
+2025-05-08 11:02:39,302 - 
+--- Metrics for Feeder SSEN-251200807002 ---
+2025-05-08 11:02:39,302 -   RMSE: 966.23
+2025-05-08 11:02:39,302 -   MAE: 713.94
+2025-05-08 11:02:39,302 -   MSE: 933604.81
+2025-05-08 11:02:39,302 -   MAPE: 19.04%
+2025-05-08 11:02:39,302 -   R²: 0.5504
+2025-05-08 11:02:39,302 - 
+Processing feeder: SSEN-251200807003
+2025-05-08 11:02:44,218 - Epoch [10/100], Loss: 0.0098
+2025-05-08 11:02:49,103 - Epoch [20/100], Loss: 0.0064
+2025-05-08 11:02:53,913 - Epoch [30/100], Loss: 0.0054
+2025-05-08 11:02:58,784 - Epoch [40/100], Loss: 0.0046
+2025-05-08 11:03:03,769 - Epoch [50/100], Loss: 0.0042
+2025-05-08 11:03:11,389 - Epoch [60/100], Loss: 0.0041
+2025-05-08 11:03:20,830 - Epoch [70/100], Loss: 0.0038
+2025-05-08 11:03:29,189 - Epoch [80/100], Loss: 0.0038
+2025-05-08 11:03:34,687 - Epoch [90/100], Loss: 0.0037
+2025-05-08 11:03:39,457 - Epoch [100/100], Loss: 0.0034
+2025-05-08 11:03:39,516 - 
+--- Metrics for Feeder SSEN-251200807003 ---
+2025-05-08 11:03:39,517 -   RMSE: 1374.55
+2025-05-08 11:03:39,517 -   MAE: 1066.58
+2025-05-08 11:03:39,517 -   MSE: 1889382.25
+2025-05-08 11:03:39,517 -   MAPE: 9.86%
+2025-05-08 11:03:39,517 -   R²: 0.8990
+2025-05-08 11:03:39,517 - 
+Processing feeder: SSEN-251200807004
+2025-05-08 11:03:44,350 - Epoch [10/100], Loss: 0.0128
+2025-05-08 11:03:50,142 - Epoch [20/100], Loss: 0.0093
+2025-05-08 11:03:55,298 - Epoch [30/100], Loss: 0.0076
+2025-05-08 11:04:00,301 - Epoch [40/100], Loss: 0.0072
+2025-05-08 11:04:05,735 - Epoch [50/100], Loss: 0.0069
+2025-05-08 11:04:10,712 - Epoch [60/100], Loss: 0.0061
+2025-05-08 11:04:15,830 - Epoch [70/100], Loss: 0.0064
+2025-05-08 11:04:21,121 - Epoch [80/100], Loss: 0.0056
+2025-05-08 11:04:26,118 - Epoch [90/100], Loss: 0.0055
+2025-05-08 11:04:31,105 - Epoch [100/100], Loss: 0.0056
+2025-05-08 11:04:31,162 - 
+--- Metrics for Feeder SSEN-251200807004 ---
+2025-05-08 11:04:31,162 -   RMSE: 1469.88
+2025-05-08 11:04:31,162 -   MAE: 1177.36
+2025-05-08 11:04:31,162 -   MSE: 2160545.75
+2025-05-08 11:04:31,162 -   MAPE: 11.39%
+2025-05-08 11:04:31,162 -   R²: 0.8825
+2025-05-08 11:04:31,162 - 
+Processing feeder: SSEN-251200807005
+2025-05-08 11:04:36,321 - Epoch [10/100], Loss: 0.0172
+2025-05-08 11:04:41,220 - Epoch [20/100], Loss: 0.0113
+2025-05-08 11:04:46,156 - Epoch [30/100], Loss: 0.0101
+2025-05-08 11:04:51,096 - Epoch [40/100], Loss: 0.0098
+2025-05-08 11:04:55,999 - Epoch [50/100], Loss: 0.0099
+2025-05-08 11:05:00,880 - Epoch [60/100], Loss: 0.0101
+2025-05-08 11:05:05,937 - Epoch [70/100], Loss: 0.0099
+2025-05-08 11:05:11,053 - Epoch [80/100], Loss: 0.0098
+2025-05-08 11:05:16,067 - Epoch [90/100], Loss: 0.0099
+2025-05-08 11:05:20,978 - Epoch [100/100], Loss: 0.0097
+2025-05-08 11:05:21,039 - 
+--- Metrics for Feeder SSEN-251200807005 ---
+2025-05-08 11:05:21,039 -   RMSE: 755.01
+2025-05-08 11:05:21,039 -   MAE: 555.74
+2025-05-08 11:05:21,039 -   MSE: 570038.75
+2025-05-08 11:05:21,039 -   MAPE: 29.80%
+2025-05-08 11:05:21,039 -   R²: 0.5736
+2025-05-08 11:05:21,041 - Added 2024-12-SSEN-2512008070.csv to processed files list
+2025-05-08 11:05:21,041 - 
+Processing file: 2024-12-SSEN-2811013140.csv
+2025-05-08 11:05:21,057 - 
+Processing feeder: SSEN-281101314001
+2025-05-08 11:05:26,006 - Epoch [10/100], Loss: 0.0123
+2025-05-08 11:05:30,885 - Epoch [20/100], Loss: 0.0076
+2025-05-08 11:05:36,027 - Epoch [30/100], Loss: 0.0061
+2025-05-08 11:05:41,093 - Epoch [40/100], Loss: 0.0057
+2025-05-08 11:05:45,737 - Epoch [50/100], Loss: 0.0051
+2025-05-08 11:05:50,673 - Epoch [60/100], Loss: 0.0049
+2025-05-08 11:05:55,479 - Epoch [70/100], Loss: 0.0050
+2025-05-08 11:05:59,985 - Epoch [80/100], Loss: 0.0049
+2025-05-08 11:06:04,859 - Epoch [90/100], Loss: 0.0050
+2025-05-08 11:06:09,866 - Epoch [100/100], Loss: 0.0051
+2025-05-08 11:06:09,918 - 
+--- Metrics for Feeder SSEN-281101314001 ---
+2025-05-08 11:06:09,919 -   RMSE: 1681.93
+2025-05-08 11:06:09,919 -   MAE: 1278.39
+2025-05-08 11:06:09,919 -   MSE: 2828904.25
+2025-05-08 11:06:09,919 -   MAPE: 11.19%
+2025-05-08 11:06:09,919 -   R²: 0.6997
+2025-05-08 11:06:09,920 - Added 2024-12-SSEN-2811013140.csv to processed files list
+2025-05-08 11:06:09,920 - 
+Processing file: 2024-12-SSEN-2816009020.csv
+2025-05-08 11:06:09,931 - 
+Processing feeder: SSEN-281600902001
+2025-05-08 11:06:14,966 - Epoch [10/100], Loss: 0.0143
+2025-05-08 11:06:19,962 - Epoch [20/100], Loss: 0.0101
+2025-05-08 11:06:24,845 - Epoch [30/100], Loss: 0.0080
+2025-05-08 11:06:29,721 - Epoch [40/100], Loss: 0.0065
+2025-05-08 11:06:34,617 - Epoch [50/100], Loss: 0.0066
+2025-05-08 11:06:39,517 - Epoch [60/100], Loss: 0.0065
+2025-05-08 11:06:44,449 - Epoch [70/100], Loss: 0.0065
+2025-05-08 11:06:49,346 - Epoch [80/100], Loss: 0.0063
+2025-05-08 11:06:54,209 - Epoch [90/100], Loss: 0.0062
+2025-05-08 11:06:59,146 - Epoch [100/100], Loss: 0.0062
+2025-05-08 11:06:59,202 - 
+--- Metrics for Feeder SSEN-281600902001 ---
+2025-05-08 11:06:59,202 -   RMSE: 1984.77
+2025-05-08 11:06:59,202 -   MAE: 1537.89
+2025-05-08 11:06:59,202 -   MSE: 3939323.25
+2025-05-08 11:06:59,202 -   MAPE: 11.78%
+2025-05-08 11:06:59,202 -   R²: 0.6739
+2025-05-08 11:06:59,204 - Added 2024-12-SSEN-2816009020.csv to processed files list
+2025-05-08 11:06:59,204 - 
+Processing file: 2024-12-SSEN-2818004080.csv
+2025-05-08 11:06:59,221 - 
+Processing feeder: SSEN-281800408001
+2025-05-08 11:07:04,533 - Epoch [10/100], Loss: 0.0130
+2025-05-08 11:07:09,576 - Epoch [20/100], Loss: 0.0095
+2025-05-08 11:07:14,664 - Epoch [30/100], Loss: 0.0091
+2025-05-08 11:07:19,711 - Epoch [40/100], Loss: 0.0092
+2025-05-08 11:07:24,659 - Epoch [50/100], Loss: 0.0084
+2025-05-08 11:07:29,609 - Epoch [60/100], Loss: 0.0084
+2025-05-08 11:07:34,448 - Epoch [70/100], Loss: 0.0084
+2025-05-08 11:07:39,508 - Epoch [80/100], Loss: 0.0083
+2025-05-08 11:07:44,713 - Epoch [90/100], Loss: 0.0082
+2025-05-08 11:07:50,010 - Epoch [100/100], Loss: 0.0081
+2025-05-08 11:07:50,070 - 
+--- Metrics for Feeder SSEN-281800408001 ---
+2025-05-08 11:07:50,070 -   RMSE: 1459.74
+2025-05-08 11:07:50,070 -   MAE: 1096.33
+2025-05-08 11:07:50,070 -   MSE: 2130849.50
+2025-05-08 11:07:50,070 -   MAPE: 13.58%
+2025-05-08 11:07:50,070 -   R²: 0.6784
+2025-05-08 11:07:50,070 - 
+Processing feeder: SSEN-281800408003
+2025-05-08 11:07:55,003 - Epoch [10/100], Loss: 0.0176
+2025-05-08 11:08:00,019 - Epoch [20/100], Loss: 0.0143
+2025-05-08 11:08:05,213 - Epoch [30/100], Loss: 0.0128
+2025-05-08 11:08:10,922 - Epoch [40/100], Loss: 0.0123
+2025-05-08 11:08:15,846 - Epoch [50/100], Loss: 0.0125
+2025-05-08 11:08:20,660 - Epoch [60/100], Loss: 0.0125
+2025-05-08 11:08:25,699 - Epoch [70/100], Loss: 0.0122
+2025-05-08 11:08:30,513 - Epoch [80/100], Loss: 0.0121
+2025-05-08 11:08:35,391 - Epoch [90/100], Loss: 0.0120
+2025-05-08 11:08:40,262 - Epoch [100/100], Loss: 0.0120
+2025-05-08 11:08:40,319 - 
+--- Metrics for Feeder SSEN-281800408003 ---
+2025-05-08 11:08:40,319 -   RMSE: 888.00
+2025-05-08 11:08:40,319 -   MAE: 655.11
+2025-05-08 11:08:40,319 -   MSE: 788546.25
+2025-05-08 11:08:40,319 -   MAPE: 22.58%
+2025-05-08 11:08:40,319 -   R²: 0.4489
+2025-05-08 11:08:40,319 - 
+Processing feeder: SSEN-281800408004
+2025-05-08 11:08:45,254 - Epoch [10/100], Loss: 0.0130
+2025-05-08 11:08:50,141 - Epoch [20/100], Loss: 0.0120
+2025-05-08 11:08:55,005 - Epoch [30/100], Loss: 0.0110
+2025-05-08 11:08:59,838 - Epoch [40/100], Loss: 0.0092
+2025-05-08 11:09:04,889 - Epoch [50/100], Loss: 0.0088
+2025-05-08 11:09:09,867 - Epoch [60/100], Loss: 0.0083
+2025-05-08 11:09:14,749 - Epoch [70/100], Loss: 0.0079
+2025-05-08 11:09:19,759 - Epoch [80/100], Loss: 0.0081
+2025-05-08 11:09:24,655 - Epoch [90/100], Loss: 0.0080
+2025-05-08 11:09:29,463 - Epoch [100/100], Loss: 0.0078
+2025-05-08 11:09:29,519 - 
+--- Metrics for Feeder SSEN-281800408004 ---
+2025-05-08 11:09:29,519 -   RMSE: 1623.87
+2025-05-08 11:09:29,520 -   MAE: 1296.23
+2025-05-08 11:09:29,520 -   MSE: 2636943.75
+2025-05-08 11:09:29,520 -   MAPE: 16.05%
+2025-05-08 11:09:29,520 -   R²: 0.6366
+2025-05-08 11:09:29,520 - Added 2024-12-SSEN-2818004080.csv to processed files list
+2025-05-08 11:09:29,520 - 
+Processing file: 2024-12-SSEN-2512008110.csv
+2025-05-08 11:09:29,541 - 
+Processing feeder: SSEN-251200811001
+2025-05-08 11:09:34,421 - Epoch [10/100], Loss: 0.0152
+2025-05-08 11:09:39,344 - Epoch [20/100], Loss: 0.0111
+2025-05-08 11:09:44,265 - Epoch [30/100], Loss: 0.0096
+2025-05-08 11:09:49,469 - Epoch [40/100], Loss: 0.0092
+2025-05-08 11:09:54,368 - Epoch [50/100], Loss: 0.0087
+2025-05-08 11:09:59,202 - Epoch [60/100], Loss: 0.0086
+2025-05-08 11:10:04,116 - Epoch [70/100], Loss: 0.0086
+2025-05-08 11:10:09,001 - Epoch [80/100], Loss: 0.0083
+2025-05-08 11:10:13,901 - Epoch [90/100], Loss: 0.0082
+2025-05-08 11:10:18,841 - Epoch [100/100], Loss: 0.0077
+2025-05-08 11:10:18,908 - 
+--- Metrics for Feeder SSEN-251200811001 ---
+2025-05-08 11:10:18,908 -   RMSE: 962.11
+2025-05-08 11:10:18,908 -   MAE: 714.02
+2025-05-08 11:10:18,908 -   MSE: 925651.62
+2025-05-08 11:10:18,908 -   MAPE: 14.39%
+2025-05-08 11:10:18,908 -   R²: 0.7899
+2025-05-08 11:10:18,908 - 
+Processing feeder: SSEN-251200811003
+2025-05-08 11:10:23,826 - Epoch [10/100], Loss: 0.0154
+2025-05-08 11:10:28,783 - Epoch [20/100], Loss: 0.0107
+2025-05-08 11:10:33,753 - Epoch [30/100], Loss: 0.0082
+2025-05-08 11:10:38,584 - Epoch [40/100], Loss: 0.0074
+2025-05-08 11:10:43,492 - Epoch [50/100], Loss: 0.0072
+2025-05-08 11:10:48,712 - Epoch [60/100], Loss: 0.0065
+2025-05-08 11:10:53,553 - Epoch [70/100], Loss: 0.0063
+2025-05-08 11:10:58,519 - Epoch [80/100], Loss: 0.0062
+2025-05-08 11:11:03,399 - Epoch [90/100], Loss: 0.0060
+2025-05-08 11:11:08,719 - Epoch [100/100], Loss: 0.0059
+2025-05-08 11:11:08,777 - 
+--- Metrics for Feeder SSEN-251200811003 ---
+2025-05-08 11:11:08,777 -   RMSE: 1466.92
+2025-05-08 11:11:08,777 -   MAE: 1143.72
+2025-05-08 11:11:08,777 -   MSE: 2151859.00
+2025-05-08 11:11:08,777 -   MAPE: 11.44%
+2025-05-08 11:11:08,777 -   R²: 0.8259
+2025-05-08 11:11:08,777 - 
+Processing feeder: SSEN-251200811004
+2025-05-08 11:11:13,702 - Epoch [10/100], Loss: 0.0116
+2025-05-08 11:11:18,610 - Epoch [20/100], Loss: 0.0089
+2025-05-08 11:11:23,471 - Epoch [30/100], Loss: 0.0074
+2025-05-08 11:11:28,485 - Epoch [40/100], Loss: 0.0068
+2025-05-08 11:11:33,458 - Epoch [50/100], Loss: 0.0065
+2025-05-08 11:11:39,328 - Epoch [60/100], Loss: 0.0065
+2025-05-08 11:11:44,909 - Epoch [70/100], Loss: 0.0063
+2025-05-08 11:11:49,900 - Epoch [80/100], Loss: 0.0060
+2025-05-08 11:11:54,536 - Epoch [90/100], Loss: 0.0056
+2025-05-08 11:11:58,990 - Epoch [100/100], Loss: 0.0054
+2025-05-08 11:11:59,033 - 
+--- Metrics for Feeder SSEN-251200811004 ---
+2025-05-08 11:11:59,034 -   RMSE: 1339.08
+2025-05-08 11:11:59,034 -   MAE: 1075.63
+2025-05-08 11:11:59,034 -   MSE: 1793122.75
+2025-05-08 11:11:59,034 -   MAPE: 12.24%
+2025-05-08 11:11:59,034 -   R²: 0.7460
+2025-05-08 11:11:59,034 - Added 2024-12-SSEN-2512008110.csv to processed files list
+2025-05-08 11:11:59,034 - 
+Processing file: 2024-12-SSEN-2511011105.csv
+2025-05-08 11:11:59,052 - 
+Processing feeder: SSEN-251101110501
+2025-05-08 11:12:03,703 - Epoch [10/100], Loss: 0.0142
+2025-05-08 11:12:09,127 - Epoch [20/100], Loss: 0.0112
+2025-05-08 11:12:14,585 - Epoch [30/100], Loss: 0.0095
+2025-05-08 11:12:19,749 - Epoch [40/100], Loss: 0.0087
+2025-05-08 11:12:25,097 - Epoch [50/100], Loss: 0.0082
+2025-05-08 11:12:30,033 - Epoch [60/100], Loss: 0.0081
+2025-05-08 11:12:35,090 - Epoch [70/100], Loss: 0.0075
+2025-05-08 11:12:40,102 - Epoch [80/100], Loss: 0.0074
+2025-05-08 11:12:45,564 - Epoch [90/100], Loss: 0.0074
+2025-05-08 11:12:50,766 - Epoch [100/100], Loss: 0.0076
+2025-05-08 11:12:50,827 - 
+--- Metrics for Feeder SSEN-251101110501 ---
+2025-05-08 11:12:50,827 -   RMSE: 1041.03
+2025-05-08 11:12:50,827 -   MAE: 803.61
+2025-05-08 11:12:50,827 -   MSE: 1083733.75
+2025-05-08 11:12:50,827 -   MAPE: 14.19%
+2025-05-08 11:12:50,827 -   R²: 0.7735
+2025-05-08 11:12:50,827 - 
+Processing feeder: SSEN-251101110503
+2025-05-08 11:12:55,673 - Epoch [10/100], Loss: 0.0119
+2025-05-08 11:13:00,702 - Epoch [20/100], Loss: 0.0069
+2025-05-08 11:13:06,107 - Epoch [30/100], Loss: 0.0063
+2025-05-08 11:13:11,596 - Epoch [40/100], Loss: 0.0048
+2025-05-08 11:13:16,766 - Epoch [50/100], Loss: 0.0044
+2025-05-08 11:13:21,688 - Epoch [60/100], Loss: 0.0042
+2025-05-08 11:13:26,864 - Epoch [70/100], Loss: 0.0040
+2025-05-08 11:13:31,989 - Epoch [80/100], Loss: 0.0040
+2025-05-08 11:13:36,992 - Epoch [90/100], Loss: 0.0039
+2025-05-08 11:13:42,088 - Epoch [100/100], Loss: 0.0038
+2025-05-08 11:13:42,146 - 
+--- Metrics for Feeder SSEN-251101110503 ---
+2025-05-08 11:13:42,146 -   RMSE: 1798.78
+2025-05-08 11:13:42,146 -   MAE: 1351.88
+2025-05-08 11:13:42,146 -   MSE: 3235613.00
+2025-05-08 11:13:42,146 -   MAPE: 9.10%
+2025-05-08 11:13:42,146 -   R²: 0.8164
+2025-05-08 11:13:42,147 - Added 2024-12-SSEN-2511011105.csv to processed files list
+2025-05-08 11:13:42,147 - 
+Processing file: 2024-12-SSEN-2512004070.csv
+2025-05-08 11:13:42,170 - 
+Processing feeder: SSEN-251200407005
+2025-05-08 11:13:47,132 - Epoch [10/100], Loss: 0.0139
+2025-05-08 11:13:52,507 - Epoch [20/100], Loss: 0.0111
+2025-05-08 11:13:57,515 - Epoch [30/100], Loss: 0.0091
+2025-05-08 11:14:02,582 - Epoch [40/100], Loss: 0.0089
+2025-05-08 11:14:07,829 - Epoch [50/100], Loss: 0.0089
+2025-05-08 11:14:12,859 - Epoch [60/100], Loss: 0.0089
+2025-05-08 11:14:17,991 - Epoch [70/100], Loss: 0.0087
+2025-05-08 11:14:23,665 - Epoch [80/100], Loss: 0.0088
+2025-05-08 11:14:29,960 - Epoch [90/100], Loss: 0.0088
+2025-05-08 11:14:35,184 - Epoch [100/100], Loss: 0.0087
+2025-05-08 11:14:35,246 - 
+--- Metrics for Feeder SSEN-251200407005 ---
+2025-05-08 11:14:35,246 -   RMSE: 834.74
+2025-05-08 11:14:35,246 -   MAE: 608.87
+2025-05-08 11:14:35,246 -   MSE: 696797.31
+2025-05-08 11:14:35,246 -   MAPE: 14.51%
+2025-05-08 11:14:35,246 -   R²: 0.7320
+2025-05-08 11:14:35,248 - Added 2024-12-SSEN-2512004070.csv to processed files list
+2025-05-08 11:14:35,248 - 
+Processing file: 2024-12-SSEN-2822009240.csv
+2025-05-08 11:14:35,266 - 
+Processing feeder: SSEN-282200924001
+2025-05-08 11:14:40,638 - Epoch [10/100], Loss: 0.0203
+2025-05-08 11:14:45,703 - Epoch [20/100], Loss: 0.0143
+2025-05-08 11:14:50,606 - Epoch [30/100], Loss: 0.0102
+2025-05-08 11:14:55,595 - Epoch [40/100], Loss: 0.0098
+2025-05-08 11:15:00,528 - Epoch [50/100], Loss: 0.0099
+2025-05-08 11:15:05,429 - Epoch [60/100], Loss: 0.0101
+2025-05-08 11:15:10,422 - Epoch [70/100], Loss: 0.0097
+2025-05-08 11:15:15,535 - Epoch [80/100], Loss: 0.0098
+2025-05-08 11:15:20,827 - Epoch [90/100], Loss: 0.0097
+2025-05-08 11:15:25,799 - Epoch [100/100], Loss: 0.0098
+2025-05-08 11:15:25,858 - 
+--- Metrics for Feeder SSEN-282200924001 ---
+2025-05-08 11:15:25,858 -   RMSE: 993.48
+2025-05-08 11:15:25,858 -   MAE: 776.52
+2025-05-08 11:15:25,858 -   MSE: 987002.94
+2025-05-08 11:15:25,858 -   MAPE: 18.80%
+2025-05-08 11:15:25,858 -   R²: 0.5238
+2025-05-08 11:15:25,858 - 
+Processing feeder: SSEN-282200924002
+2025-05-08 11:15:30,938 - Epoch [10/100], Loss: 0.0101
+2025-05-08 11:15:36,420 - Epoch [20/100], Loss: 0.0068
+2025-05-08 11:15:42,536 - Epoch [30/100], Loss: 0.0054
+2025-05-08 11:15:47,717 - Epoch [40/100], Loss: 0.0048
+2025-05-08 11:15:52,806 - Epoch [50/100], Loss: 0.0042
+2025-05-08 11:15:57,979 - Epoch [60/100], Loss: 0.0044
+2025-05-08 11:16:03,152 - Epoch [70/100], Loss: 0.0045
+2025-05-08 11:16:08,513 - Epoch [80/100], Loss: 0.0042
+2025-05-08 11:16:13,600 - Epoch [90/100], Loss: 0.0046
+2025-05-08 11:16:18,481 - Epoch [100/100], Loss: 0.0043
+2025-05-08 11:16:18,539 - 
+--- Metrics for Feeder SSEN-282200924002 ---
+2025-05-08 11:16:18,539 -   RMSE: 1744.41
+2025-05-08 11:16:18,539 -   MAE: 1369.51
+2025-05-08 11:16:18,539 -   MSE: 3042955.00
+2025-05-08 11:16:18,539 -   MAPE: 9.17%
+2025-05-08 11:16:18,539 -   R²: 0.7995
+2025-05-08 11:16:18,540 - Added 2024-12-SSEN-2822009240.csv to processed files list
+2025-05-08 11:16:18,540 - 
+Processing file: 2024-12-SSEN-2808002270.csv
+2025-05-08 11:16:18,565 - 
+Processing feeder: SSEN-280800227001
+2025-05-08 11:16:23,592 - Epoch [10/100], Loss: 0.0199
+2025-05-08 11:16:28,502 - Epoch [20/100], Loss: 0.0108
+2025-05-08 11:16:33,520 - Epoch [30/100], Loss: 0.0098
+2025-05-08 11:16:38,747 - Epoch [40/100], Loss: 0.0093
+2025-05-08 11:16:44,258 - Epoch [50/100], Loss: 0.0089
+2025-05-08 11:16:49,260 - Epoch [60/100], Loss: 0.0092
+2025-05-08 11:16:54,207 - Epoch [70/100], Loss: 0.0088
+2025-05-08 11:16:59,093 - Epoch [80/100], Loss: 0.0085
+2025-05-08 11:17:04,389 - Epoch [90/100], Loss: 0.0084
+2025-05-08 11:17:09,485 - Epoch [100/100], Loss: 0.0084
+2025-05-08 11:17:09,543 - 
+--- Metrics for Feeder SSEN-280800227001 ---
+2025-05-08 11:17:09,543 -   RMSE: 2177.65
+2025-05-08 11:17:09,543 -   MAE: 1767.59
+2025-05-08 11:17:09,543 -   MSE: 4742146.50
+2025-05-08 11:17:09,543 -   MAPE: 15.18%
+2025-05-08 11:17:09,543 -   R²: 0.7446
+2025-05-08 11:17:09,543 - 
+Processing feeder: SSEN-280800227002
+2025-05-08 11:17:14,833 - Epoch [10/100], Loss: 0.0199
+2025-05-08 11:17:20,069 - Epoch [20/100], Loss: 0.0117
+2025-05-08 11:17:25,059 - Epoch [30/100], Loss: 0.0098
+2025-05-08 11:17:30,119 - Epoch [40/100], Loss: 0.0099
+2025-05-08 11:17:35,012 - Epoch [50/100], Loss: 0.0098
+2025-05-08 11:17:40,002 - Epoch [60/100], Loss: 0.0097
+2025-05-08 11:17:44,939 - Epoch [70/100], Loss: 0.0096
+2025-05-08 11:17:50,178 - Epoch [80/100], Loss: 0.0098
+2025-05-08 11:17:55,328 - Epoch [90/100], Loss: 0.0095
+2025-05-08 11:18:00,487 - Epoch [100/100], Loss: 0.0095
+2025-05-08 11:18:00,546 - 
+--- Metrics for Feeder SSEN-280800227002 ---
+2025-05-08 11:18:00,546 -   RMSE: 2030.36
+2025-05-08 11:18:00,546 -   MAE: 1500.72
+2025-05-08 11:18:00,546 -   MSE: 4122356.75
+2025-05-08 11:18:00,546 -   MAPE: 15.49%
+2025-05-08 11:18:00,546 -   R²: 0.6970
+2025-05-08 11:18:00,546 - 
+Processing feeder: SSEN-280800227004
+2025-05-08 11:18:05,655 - Epoch [10/100], Loss: 0.0247
+2025-05-08 11:18:10,730 - Epoch [20/100], Loss: 0.0176
+2025-05-08 11:18:15,790 - Epoch [30/100], Loss: 0.0156
+2025-05-08 11:18:20,770 - Epoch [40/100], Loss: 0.0142
+2025-05-08 11:18:25,819 - Epoch [50/100], Loss: 0.0143
+2025-05-08 11:18:30,653 - Epoch [60/100], Loss: 0.0140
+2025-05-08 11:18:35,710 - Epoch [70/100], Loss: 0.0141
+2025-05-08 11:18:40,686 - Epoch [80/100], Loss: 0.0138
+2025-05-08 11:18:46,055 - Epoch [90/100], Loss: 0.0139
+2025-05-08 11:18:51,011 - Epoch [100/100], Loss: 0.0138
+2025-05-08 11:18:51,071 - 
+--- Metrics for Feeder SSEN-280800227004 ---
+2025-05-08 11:18:51,071 -   RMSE: 1240.17
+2025-05-08 11:18:51,071 -   MAE: 976.59
+2025-05-08 11:18:51,071 -   MSE: 1538020.75
+2025-05-08 11:18:51,072 -   MAPE: 27.31%
+2025-05-08 11:18:51,072 -   R²: 0.3904
+2025-05-08 11:18:51,072 - 
+Processing feeder: SSEN-280800227005
+2025-05-08 11:18:55,964 - Epoch [10/100], Loss: 0.0206
+2025-05-08 11:19:01,134 - Epoch [20/100], Loss: 0.0149
+2025-05-08 11:19:06,248 - Epoch [30/100], Loss: 0.0133
+2025-05-08 11:19:11,088 - Epoch [40/100], Loss: 0.0123
+2025-05-08 11:19:16,297 - Epoch [50/100], Loss: 0.0122
+2025-05-08 11:19:21,335 - Epoch [60/100], Loss: 0.0120
+2025-05-08 11:19:26,451 - Epoch [70/100], Loss: 0.0115
+2025-05-08 11:19:31,477 - Epoch [80/100], Loss: 0.0114
+2025-05-08 11:19:36,471 - Epoch [90/100], Loss: 0.0111
+2025-05-08 11:19:41,406 - Epoch [100/100], Loss: 0.0107
+2025-05-08 11:19:41,465 - 
+--- Metrics for Feeder SSEN-280800227005 ---
+2025-05-08 11:19:41,465 -   RMSE: 1170.62
+2025-05-08 11:19:41,465 -   MAE: 939.08
+2025-05-08 11:19:41,465 -   MSE: 1370350.62
+2025-05-08 11:19:41,465 -   MAPE: 30.85%
+2025-05-08 11:19:41,465 -   R²: 0.2886
+2025-05-08 11:19:41,466 - Added 2024-12-SSEN-2808002270.csv to processed files list
+2025-05-08 11:19:41,466 - 
+Processing file: 2024-12-SSEN-2818003260.csv
+2025-05-08 11:19:41,486 - 
+Processing feeder: SSEN-281800326002
+2025-05-08 11:19:46,363 - Epoch [10/100], Loss: 0.0241
+2025-05-08 11:19:51,529 - Epoch [20/100], Loss: 0.0212
+2025-05-08 11:19:56,831 - Epoch [30/100], Loss: 0.0177
+2025-05-08 11:20:01,848 - Epoch [40/100], Loss: 0.0162
+2025-05-08 11:20:07,903 - Epoch [50/100], Loss: 0.0158
+2025-05-08 11:20:12,930 - Epoch [60/100], Loss: 0.0154
+2025-05-08 11:20:17,895 - Epoch [70/100], Loss: 0.0152
+2025-05-08 11:20:22,739 - Epoch [80/100], Loss: 0.0151
+2025-05-08 11:20:27,575 - Epoch [90/100], Loss: 0.0154
+2025-05-08 11:20:32,479 - Epoch [100/100], Loss: 0.0154
+2025-05-08 11:20:32,539 - 
+--- Metrics for Feeder SSEN-281800326002 ---
+2025-05-08 11:20:32,539 -   RMSE: 507.16
+2025-05-08 11:20:32,539 -   MAE: 395.72
+2025-05-08 11:20:32,539 -   MSE: 257212.05
+2025-05-08 11:20:32,540 -   MAPE: 24.07%
+2025-05-08 11:20:32,540 -   R²: 0.5980
+2025-05-08 11:20:32,540 - 
+Processing feeder: SSEN-281800326004
+2025-05-08 11:20:37,868 - Epoch [10/100], Loss: 0.0151
+2025-05-08 11:20:42,835 - Epoch [20/100], Loss: 0.0107
+2025-05-08 11:20:48,407 - Epoch [30/100], Loss: 0.0092
+2025-05-08 11:20:53,233 - Epoch [40/100], Loss: 0.0084
+2025-05-08 11:20:58,095 - Epoch [50/100], Loss: 0.0079
+2025-05-08 11:21:02,943 - Epoch [60/100], Loss: 0.0079
+2025-05-08 11:21:07,946 - Epoch [70/100], Loss: 0.0081
+2025-05-08 11:21:12,737 - Epoch [80/100], Loss: 0.0077
+2025-05-08 11:21:17,914 - Epoch [90/100], Loss: 0.0073
+2025-05-08 11:21:23,040 - Epoch [100/100], Loss: 0.0071
+2025-05-08 11:21:23,097 - 
+--- Metrics for Feeder SSEN-281800326004 ---
+2025-05-08 11:21:23,097 -   RMSE: 1191.16
+2025-05-08 11:21:23,097 -   MAE: 921.16
+2025-05-08 11:21:23,097 -   MSE: 1418859.62
+2025-05-08 11:21:23,097 -   MAPE: 13.12%
+2025-05-08 11:21:23,097 -   R²: 0.8357
+2025-05-08 11:21:23,098 - Added 2024-12-SSEN-2818003260.csv to processed files list
+2025-05-08 11:21:23,098 - 
+Processing file: 2024-12-SSEN-2512007035.csv
+2025-05-08 11:21:23,122 - 
+Processing feeder: SSEN-251200703502
+2025-05-08 11:21:28,215 - Epoch [10/100], Loss: 0.0155
+2025-05-08 11:21:33,111 - Epoch [20/100], Loss: 0.0120
+2025-05-08 11:21:38,123 - Epoch [30/100], Loss: 0.0104
+2025-05-08 11:21:43,017 - Epoch [40/100], Loss: 0.0105
+2025-05-08 11:21:48,002 - Epoch [50/100], Loss: 0.0104
+2025-05-08 11:21:52,879 - Epoch [60/100], Loss: 0.0103
+2025-05-08 11:21:57,785 - Epoch [70/100], Loss: 0.0103
+2025-05-08 11:22:02,600 - Epoch [80/100], Loss: 0.0103
+2025-05-08 11:22:07,496 - Epoch [90/100], Loss: 0.0103
+2025-05-08 11:22:12,534 - Epoch [100/100], Loss: 0.0102
+2025-05-08 11:22:12,590 - 
+--- Metrics for Feeder SSEN-251200703502 ---
+2025-05-08 11:22:12,591 -   RMSE: 1090.48
+2025-05-08 11:22:12,591 -   MAE: 842.30
+2025-05-08 11:22:12,591 -   MSE: 1189157.38
+2025-05-08 11:22:12,591 -   MAPE: 18.64%
+2025-05-08 11:22:12,591 -   R²: 0.6226
+2025-05-08 11:22:12,591 - 
+Processing feeder: SSEN-251200703503
+2025-05-08 11:22:17,432 - Epoch [10/100], Loss: 0.0181
+2025-05-08 11:22:22,404 - Epoch [20/100], Loss: 0.0125
+2025-05-08 11:22:27,277 - Epoch [30/100], Loss: 0.0110
+2025-05-08 11:22:32,396 - Epoch [40/100], Loss: 0.0104
+2025-05-08 11:22:37,215 - Epoch [50/100], Loss: 0.0101
+2025-05-08 11:22:42,077 - Epoch [60/100], Loss: 0.0097
+2025-05-08 11:22:46,900 - Epoch [70/100], Loss: 0.0097
+2025-05-08 11:22:51,770 - Epoch [80/100], Loss: 0.0095
+2025-05-08 11:22:56,512 - Epoch [90/100], Loss: 0.0094
+2025-05-08 11:23:01,325 - Epoch [100/100], Loss: 0.0095
+2025-05-08 11:23:01,382 - 
+--- Metrics for Feeder SSEN-251200703503 ---
+2025-05-08 11:23:01,382 -   RMSE: 1278.56
+2025-05-08 11:23:01,382 -   MAE: 966.56
+2025-05-08 11:23:01,382 -   MSE: 1634728.00
+2025-05-08 11:23:01,382 -   MAPE: 15.41%
+2025-05-08 11:23:01,382 -   R²: 0.6612
+2025-05-08 11:23:01,382 - 
+Processing feeder: SSEN-251200703504
+2025-05-08 11:23:06,395 - Epoch [10/100], Loss: 0.0077
+2025-05-08 11:23:11,241 - Epoch [20/100], Loss: 0.0054
+2025-05-08 11:23:16,160 - Epoch [30/100], Loss: 0.0047
+2025-05-08 11:23:21,080 - Epoch [40/100], Loss: 0.0046
+2025-05-08 11:23:25,967 - Epoch [50/100], Loss: 0.0045
+2025-05-08 11:23:30,866 - Epoch [60/100], Loss: 0.0043
+2025-05-08 11:23:35,741 - Epoch [70/100], Loss: 0.0043
+2025-05-08 11:23:40,819 - Epoch [80/100], Loss: 0.0043
+2025-05-08 11:23:45,872 - Epoch [90/100], Loss: 0.0043
+2025-05-08 11:23:50,850 - Epoch [100/100], Loss: 0.0042
+2025-05-08 11:23:50,902 - 
+--- Metrics for Feeder SSEN-251200703504 ---
+2025-05-08 11:23:50,902 -   RMSE: 900.76
+2025-05-08 11:23:50,902 -   MAE: 695.81
+2025-05-08 11:23:50,902 -   MSE: 811370.81
+2025-05-08 11:23:50,902 -   MAPE: 14.55%
+2025-05-08 11:23:50,902 -   R²: 0.7757
+2025-05-08 11:23:50,904 - Added 2024-12-SSEN-2512007035.csv to processed files list
+2025-05-08 11:23:50,904 - 
+Processing file: 2024-12-SSEN-2822005485.csv
+2025-05-08 11:23:50,920 - 
+Processing feeder: SSEN-282200548502
+2025-05-08 11:23:55,924 - Epoch [10/100], Loss: 0.0133
+2025-05-08 11:24:00,979 - Epoch [20/100], Loss: 0.0094
+2025-05-08 11:24:05,993 - Epoch [30/100], Loss: 0.0083
+2025-05-08 11:24:10,914 - Epoch [40/100], Loss: 0.0081
+2025-05-08 11:24:16,036 - Epoch [50/100], Loss: 0.0077
+2025-05-08 11:24:21,425 - Epoch [60/100], Loss: 0.0074
+2025-05-08 11:24:26,425 - Epoch [70/100], Loss: 0.0073
+2025-05-08 11:24:31,418 - Epoch [80/100], Loss: 0.0071
+2025-05-08 11:24:36,491 - Epoch [90/100], Loss: 0.0071
+2025-05-08 11:24:41,609 - Epoch [100/100], Loss: 0.0069
+2025-05-08 11:24:41,676 - 
+--- Metrics for Feeder SSEN-282200548502 ---
+2025-05-08 11:24:41,676 -   RMSE: 762.05
+2025-05-08 11:24:41,676 -   MAE: 573.62
+2025-05-08 11:24:41,676 -   MSE: 580713.12
+2025-05-08 11:24:41,676 -   MAPE: 15.12%
+2025-05-08 11:24:41,676 -   R²: 0.7598
+2025-05-08 11:24:41,676 - 
+Processing feeder: SSEN-282200548503
+2025-05-08 11:24:46,520 - Epoch [10/100], Loss: 0.0141
+2025-05-08 11:24:51,585 - Epoch [20/100], Loss: 0.0117
+2025-05-08 11:24:56,567 - Epoch [30/100], Loss: 0.0109
+2025-05-08 11:25:01,461 - Epoch [40/100], Loss: 0.0108
+2025-05-08 11:25:06,574 - Epoch [50/100], Loss: 0.0103
+2025-05-08 11:25:11,505 - Epoch [60/100], Loss: 0.0099
+2025-05-08 11:25:16,485 - Epoch [70/100], Loss: 0.0095
+2025-05-08 11:25:21,535 - Epoch [80/100], Loss: 0.0095
+2025-05-08 11:25:26,582 - Epoch [90/100], Loss: 0.0094
+2025-05-08 11:25:31,635 - Epoch [100/100], Loss: 0.0093
+2025-05-08 11:25:31,692 - 
+--- Metrics for Feeder SSEN-282200548503 ---
+2025-05-08 11:25:31,692 -   RMSE: 857.54
+2025-05-08 11:25:31,692 -   MAE: 640.41
+2025-05-08 11:25:31,692 -   MSE: 735376.56
+2025-05-08 11:25:31,692 -   MAPE: 23.67%
+2025-05-08 11:25:31,692 -   R²: 0.5588
+2025-05-08 11:25:31,694 - Added 2024-12-SSEN-2822005485.csv to processed files list
+2025-05-08 11:25:31,694 - 
+Processing file: 2024-12-SSEN-2818002140.csv
+2025-05-08 11:25:31,720 - 
+Processing feeder: SSEN-281800214001
+2025-05-08 11:25:36,749 - Epoch [10/100], Loss: 0.0180
+2025-05-08 11:25:41,652 - Epoch [20/100], Loss: 0.0098
+2025-05-08 11:25:46,545 - Epoch [30/100], Loss: 0.0095
+2025-05-08 11:25:51,543 - Epoch [40/100], Loss: 0.0094
+2025-05-08 11:25:56,537 - Epoch [50/100], Loss: 0.0093
+2025-05-08 11:26:01,529 - Epoch [60/100], Loss: 0.0091
+2025-05-08 11:26:06,597 - Epoch [70/100], Loss: 0.0088
+2025-05-08 11:26:11,480 - Epoch [80/100], Loss: 0.0086
+2025-05-08 11:26:16,593 - Epoch [90/100], Loss: 0.0090
+2025-05-08 11:26:21,640 - Epoch [100/100], Loss: 0.0078
+2025-05-08 11:26:21,690 - 
+--- Metrics for Feeder SSEN-281800214001 ---
+2025-05-08 11:26:21,691 -   RMSE: 2572.91
+2025-05-08 11:26:21,691 -   MAE: 1916.80
+2025-05-08 11:26:21,691 -   MSE: 6619875.00
+2025-05-08 11:26:21,691 -   MAPE: 12.01%
+2025-05-08 11:26:21,691 -   R²: 0.6328
+2025-05-08 11:26:21,691 - 
+Processing feeder: SSEN-281800214002
+2025-05-08 11:26:26,648 - Epoch [10/100], Loss: 0.0118
+2025-05-08 11:26:31,629 - Epoch [20/100], Loss: 0.0091
+2025-05-08 11:26:36,586 - Epoch [30/100], Loss: 0.0083
+2025-05-08 11:26:41,562 - Epoch [40/100], Loss: 0.0084
+2025-05-08 11:26:46,568 - Epoch [50/100], Loss: 0.0073
+2025-05-08 11:26:51,690 - Epoch [60/100], Loss: 0.0071
+2025-05-08 11:26:56,667 - Epoch [70/100], Loss: 0.0062
+2025-05-08 11:27:01,576 - Epoch [80/100], Loss: 0.0059
+2025-05-08 11:27:06,530 - Epoch [90/100], Loss: 0.0061
+2025-05-08 11:27:11,535 - Epoch [100/100], Loss: 0.0059
+2025-05-08 11:27:11,593 - 
+--- Metrics for Feeder SSEN-281800214002 ---
+2025-05-08 11:27:11,594 -   RMSE: 1473.70
+2025-05-08 11:27:11,594 -   MAE: 1107.87
+2025-05-08 11:27:11,594 -   MSE: 2171785.50
+2025-05-08 11:27:11,594 -   MAPE: 8.10%
+2025-05-08 11:27:11,594 -   R²: 0.8363
+2025-05-08 11:27:11,594 - 
+Processing feeder: SSEN-281800214004
+2025-05-08 11:27:16,467 - Epoch [10/100], Loss: 0.0199
+2025-05-08 11:27:21,404 - Epoch [20/100], Loss: 0.0127
+2025-05-08 11:27:26,364 - Epoch [30/100], Loss: 0.0106
+2025-05-08 11:27:31,226 - Epoch [40/100], Loss: 0.0107
+2025-05-08 11:27:36,156 - Epoch [50/100], Loss: 0.0099
+2025-05-08 11:27:41,206 - Epoch [60/100], Loss: 0.0097
+2025-05-08 11:27:46,268 - Epoch [70/100], Loss: 0.0098
+2025-05-08 11:27:51,365 - Epoch [80/100], Loss: 0.0093
+2025-05-08 11:27:56,253 - Epoch [90/100], Loss: 0.0091
+2025-05-08 11:28:01,248 - Epoch [100/100], Loss: 0.0089
+2025-05-08 11:28:01,303 - 
+--- Metrics for Feeder SSEN-281800214004 ---
+2025-05-08 11:28:01,303 -   RMSE: 2619.53
+2025-05-08 11:28:01,303 -   MAE: 1965.95
+2025-05-08 11:28:01,303 -   MSE: 6861921.00
+2025-05-08 11:28:01,303 -   MAPE: 14.09%
+2025-05-08 11:28:01,303 -   R²: 0.6931
+2025-05-08 11:28:01,303 - 
+Processing feeder: SSEN-281800214005
+2025-05-08 11:28:06,298 - Epoch [10/100], Loss: 0.0169
+2025-05-08 11:28:11,366 - Epoch [20/100], Loss: 0.0129
+2025-05-08 11:28:16,452 - Epoch [30/100], Loss: 0.0107
+2025-05-08 11:28:21,353 - Epoch [40/100], Loss: 0.0103
+2025-05-08 11:28:26,684 - Epoch [50/100], Loss: 0.0099
+2025-05-08 11:28:32,870 - Epoch [60/100], Loss: 0.0096
+2025-05-08 11:28:37,905 - Epoch [70/100], Loss: 0.0095
+2025-05-08 11:28:42,957 - Epoch [80/100], Loss: 0.0098
+2025-05-08 11:28:48,065 - Epoch [90/100], Loss: 0.0090
+2025-05-08 11:28:53,033 - Epoch [100/100], Loss: 0.0090
+2025-05-08 11:28:53,092 - 
+--- Metrics for Feeder SSEN-281800214005 ---
+2025-05-08 11:28:53,092 -   RMSE: 1376.89
+2025-05-08 11:28:53,092 -   MAE: 1077.58
+2025-05-08 11:28:53,092 -   MSE: 1895813.75
+2025-05-08 11:28:53,092 -   MAPE: 13.87%
+2025-05-08 11:28:53,092 -   R²: 0.7630
+2025-05-08 11:28:53,092 - Added 2024-12-SSEN-2818002140.csv to processed files list
+2025-05-08 11:28:53,092 - 
+Processing file: 2024-12-SSEN-2811013220.csv
+2025-05-08 11:28:53,115 - 
+Processing feeder: SSEN-281101322001
+2025-05-08 11:28:58,115 - Epoch [10/100], Loss: 0.0121
+2025-05-08 11:29:03,002 - Epoch [20/100], Loss: 0.0081
+2025-05-08 11:29:07,965 - Epoch [30/100], Loss: 0.0068
+2025-05-08 11:29:12,910 - Epoch [40/100], Loss: 0.0065
+2025-05-08 11:29:17,838 - Epoch [50/100], Loss: 0.0064
+2025-05-08 11:29:22,927 - Epoch [60/100], Loss: 0.0057
+2025-05-08 11:29:27,918 - Epoch [70/100], Loss: 0.0057
+2025-05-08 11:29:32,898 - Epoch [80/100], Loss: 0.0056
+2025-05-08 11:29:37,853 - Epoch [90/100], Loss: 0.0055
+2025-05-08 11:29:42,840 - Epoch [100/100], Loss: 0.0057
+2025-05-08 11:29:42,885 - 
+--- Metrics for Feeder SSEN-281101322001 ---
+2025-05-08 11:29:42,886 -   RMSE: 1585.53
+2025-05-08 11:29:42,886 -   MAE: 1213.85
+2025-05-08 11:29:42,886 -   MSE: 2513895.75
+2025-05-08 11:29:42,886 -   MAPE: 14.01%
+2025-05-08 11:29:42,886 -   R²: 0.7802
+2025-05-08 11:29:42,886 - 
+Processing feeder: SSEN-281101322002
+2025-05-08 11:29:47,828 - Epoch [10/100], Loss: 0.0152
+2025-05-08 11:29:52,844 - Epoch [20/100], Loss: 0.0107
+2025-05-08 11:29:57,807 - Epoch [30/100], Loss: 0.0084
+2025-05-08 11:30:02,881 - Epoch [40/100], Loss: 0.0077
+2025-05-08 11:30:07,828 - Epoch [50/100], Loss: 0.0075
+2025-05-08 11:30:12,915 - Epoch [60/100], Loss: 0.0071
+2025-05-08 11:30:17,808 - Epoch [70/100], Loss: 0.0071
+2025-05-08 11:30:22,693 - Epoch [80/100], Loss: 0.0071
+2025-05-08 11:30:27,634 - Epoch [90/100], Loss: 0.0072
+2025-05-08 11:30:32,518 - Epoch [100/100], Loss: 0.0070
+2025-05-08 11:30:32,568 - 
+--- Metrics for Feeder SSEN-281101322002 ---
+2025-05-08 11:30:32,568 -   RMSE: 1407.39
+2025-05-08 11:30:32,568 -   MAE: 1021.85
+2025-05-08 11:30:32,568 -   MSE: 1980754.00
+2025-05-08 11:30:32,568 -   MAPE: 15.12%
+2025-05-08 11:30:32,568 -   R²: 0.7659
+2025-05-08 11:30:32,568 - 
+Processing feeder: SSEN-281101322003
+2025-05-08 11:30:37,704 - Epoch [10/100], Loss: 0.0101
+2025-05-08 11:30:43,097 - Epoch [20/100], Loss: 0.0079
+2025-05-08 11:30:48,016 - Epoch [30/100], Loss: 0.0072
+2025-05-08 11:30:52,867 - Epoch [40/100], Loss: 0.0066
+2025-05-08 11:30:57,879 - Epoch [50/100], Loss: 0.0065
+2025-05-08 11:31:02,866 - Epoch [60/100], Loss: 0.0066
+2025-05-08 11:31:07,880 - Epoch [70/100], Loss: 0.0066
+2025-05-08 11:31:13,783 - Epoch [80/100], Loss: 0.0064
+2025-05-08 11:31:19,010 - Epoch [90/100], Loss: 0.0059
+2025-05-08 11:31:24,573 - Epoch [100/100], Loss: 0.0061
+2025-05-08 11:31:24,631 - 
+--- Metrics for Feeder SSEN-281101322003 ---
+2025-05-08 11:31:24,631 -   RMSE: 1568.62
+2025-05-08 11:31:24,631 -   MAE: 1111.93
+2025-05-08 11:31:24,631 -   MSE: 2460567.25
+2025-05-08 11:31:24,631 -   MAPE: 15.95%
+2025-05-08 11:31:24,631 -   R²: 0.6428
+2025-05-08 11:31:24,631 - Added 2024-12-SSEN-2811013220.csv to processed files list
+2025-05-08 11:31:24,631 - 
+Processing file: 2024-12-SSEN-2822022010.csv
+2025-05-08 11:31:24,639 - 
+Processing feeder: SSEN-282202201001
+2025-05-08 11:31:29,534 - Epoch [10/100], Loss: 0.0151
+2025-05-08 11:31:34,298 - Epoch [20/100], Loss: 0.0127
+2025-05-08 11:31:39,118 - Epoch [30/100], Loss: 0.0111
+2025-05-08 11:31:43,989 - Epoch [40/100], Loss: 0.0103
+2025-05-08 11:31:48,884 - Epoch [50/100], Loss: 0.0102
+2025-05-08 11:31:53,944 - Epoch [60/100], Loss: 0.0099
+2025-05-08 11:31:58,827 - Epoch [70/100], Loss: 0.0097
+2025-05-08 11:32:03,859 - Epoch [80/100], Loss: 0.0100
+2025-05-08 11:32:09,016 - Epoch [90/100], Loss: 0.0092
+2025-05-08 11:32:13,973 - Epoch [100/100], Loss: 0.0095
+2025-05-08 11:32:14,030 - 
+--- Metrics for Feeder SSEN-282202201001 ---
+2025-05-08 11:32:14,030 -   RMSE: 2907.83
+2025-05-08 11:32:14,030 -   MAE: 2393.17
+2025-05-08 11:32:14,030 -   MSE: 8455491.00
+2025-05-08 11:32:14,030 -   MAPE: 12.68%
+2025-05-08 11:32:14,031 -   R²: 0.7776
+2025-05-08 11:32:14,031 - Added 2024-12-SSEN-2822022010.csv to processed files list
+2025-05-08 11:32:14,031 - 
+Processing file: 2024-12-SSEN-2508006040.csv
+2025-05-08 11:32:14,044 - 
+Processing feeder: SSEN-250800604001
+2025-05-08 11:32:19,154 - Epoch [10/100], Loss: 0.0169
+2025-05-08 11:32:24,166 - Epoch [20/100], Loss: 0.0122
+2025-05-08 11:32:29,004 - Epoch [30/100], Loss: 0.0108
+2025-05-08 11:32:33,934 - Epoch [40/100], Loss: 0.0103
+2025-05-08 11:32:38,767 - Epoch [50/100], Loss: 0.0104
+2025-05-08 11:32:43,615 - Epoch [60/100], Loss: 0.0102
+2025-05-08 11:32:48,527 - Epoch [70/100], Loss: 0.0105
+2025-05-08 11:32:53,420 - Epoch [80/100], Loss: 0.0103
+2025-05-08 11:32:58,252 - Epoch [90/100], Loss: 0.0101
+2025-05-08 11:33:03,156 - Epoch [100/100], Loss: 0.0100
+2025-05-08 11:33:03,220 - 
+--- Metrics for Feeder SSEN-250800604001 ---
+2025-05-08 11:33:03,220 -   RMSE: 529.09
+2025-05-08 11:33:03,220 -   MAE: 379.50
+2025-05-08 11:33:03,220 -   MSE: 279934.50
+2025-05-08 11:33:03,220 -   MAPE: 15.95%
+2025-05-08 11:33:03,220 -   R²: 0.6188
+2025-05-08 11:33:03,220 - 
+Processing feeder: SSEN-250800604003
+2025-05-08 11:33:08,727 - Epoch [10/100], Loss: 0.0172
+2025-05-08 11:33:14,255 - Epoch [20/100], Loss: 0.0136
+2025-05-08 11:33:19,146 - Epoch [30/100], Loss: 0.0120
+2025-05-08 11:33:24,132 - Epoch [40/100], Loss: 0.0111
+2025-05-08 11:33:29,450 - Epoch [50/100], Loss: 0.0103
+2025-05-08 11:33:35,161 - Epoch [60/100], Loss: 0.0101
+2025-05-08 11:33:40,076 - Epoch [70/100], Loss: 0.0100
+2025-05-08 11:33:44,998 - Epoch [80/100], Loss: 0.0094
+2025-05-08 11:33:49,867 - Epoch [90/100], Loss: 0.0091
+2025-05-08 11:33:54,761 - Epoch [100/100], Loss: 0.0093
+2025-05-08 11:33:54,817 - 
+--- Metrics for Feeder SSEN-250800604003 ---
+2025-05-08 11:33:54,817 -   RMSE: 669.72
+2025-05-08 11:33:54,817 -   MAE: 492.17
+2025-05-08 11:33:54,817 -   MSE: 448527.97
+2025-05-08 11:33:54,817 -   MAPE: 19.55%
+2025-05-08 11:33:54,817 -   R²: 0.6498
+2025-05-08 11:33:54,818 - Added 2024-12-SSEN-2508006040.csv to processed files list
+2025-05-08 11:33:54,818 - 
+Processing file: 2024-12-SSEN-2818007010.csv
+2025-05-08 11:33:54,834 - 
+Processing feeder: SSEN-281800701001
+2025-05-08 11:33:59,791 - Epoch [10/100], Loss: 0.0137
+2025-05-08 11:34:04,665 - Epoch [20/100], Loss: 0.0106
+2025-05-08 11:34:09,459 - Epoch [30/100], Loss: 0.0089
+2025-05-08 11:34:14,433 - Epoch [40/100], Loss: 0.0078
+2025-05-08 11:34:19,221 - Epoch [50/100], Loss: 0.0078
+2025-05-08 11:34:24,115 - Epoch [60/100], Loss: 0.0070
+2025-05-08 11:34:28,912 - Epoch [70/100], Loss: 0.0070
+2025-05-08 11:34:33,677 - Epoch [80/100], Loss: 0.0070
+2025-05-08 11:34:38,463 - Epoch [90/100], Loss: 0.0069
+2025-05-08 11:34:43,410 - Epoch [100/100], Loss: 0.0066
+2025-05-08 11:34:43,471 - 
+--- Metrics for Feeder SSEN-281800701001 ---
+2025-05-08 11:34:43,471 -   RMSE: 2002.91
+2025-05-08 11:34:43,471 -   MAE: 1501.84
+2025-05-08 11:34:43,471 -   MSE: 4011640.25
+2025-05-08 11:34:43,471 -   MAPE: 9.75%
+2025-05-08 11:34:43,471 -   R²: 0.8280
+2025-05-08 11:34:43,471 - 
+Processing feeder: SSEN-281800701002
+2025-05-08 11:34:48,404 - Epoch [10/100], Loss: 0.0095
+2025-05-08 11:34:53,488 - Epoch [20/100], Loss: 0.0090
+2025-05-08 11:34:58,396 - Epoch [30/100], Loss: 0.0084
+2025-05-08 11:35:03,522 - Epoch [40/100], Loss: 0.0080
+2025-05-08 11:35:08,539 - Epoch [50/100], Loss: 0.0082
+2025-05-08 11:35:13,455 - Epoch [60/100], Loss: 0.0079
+2025-05-08 11:35:18,587 - Epoch [70/100], Loss: 0.0078
+2025-05-08 11:35:23,460 - Epoch [80/100], Loss: 0.0079
+2025-05-08 11:35:28,301 - Epoch [90/100], Loss: 0.0077
+2025-05-08 11:35:33,309 - Epoch [100/100], Loss: 0.0076
+2025-05-08 11:35:33,356 - 
+--- Metrics for Feeder SSEN-281800701002 ---
+2025-05-08 11:35:33,357 -   RMSE: 777.66
+2025-05-08 11:35:33,357 -   MAE: 547.80
+2025-05-08 11:35:33,357 -   MSE: 604762.56
+2025-05-08 11:35:33,357 -   MAPE: 18.33%
+2025-05-08 11:35:33,357 -   R²: 0.3403
+2025-05-08 11:35:33,357 - 
+Processing feeder: SSEN-281800701003
+2025-05-08 11:35:38,305 - Epoch [10/100], Loss: 0.0144
+2025-05-08 11:35:43,091 - Epoch [20/100], Loss: 0.0111
+2025-05-08 11:35:47,931 - Epoch [30/100], Loss: 0.0092
+2025-05-08 11:35:52,768 - Epoch [40/100], Loss: 0.0083
+2025-05-08 11:35:57,676 - Epoch [50/100], Loss: 0.0085
+2025-05-08 11:36:02,556 - Epoch [60/100], Loss: 0.0077
+2025-05-08 11:36:07,425 - Epoch [70/100], Loss: 0.0076
+2025-05-08 11:36:12,699 - Epoch [80/100], Loss: 0.0073
+2025-05-08 11:36:17,559 - Epoch [90/100], Loss: 0.0074
+2025-05-08 11:36:22,416 - Epoch [100/100], Loss: 0.0070
+2025-05-08 11:36:22,471 - 
+--- Metrics for Feeder SSEN-281800701003 ---
+2025-05-08 11:36:22,471 -   RMSE: 1762.63
+2025-05-08 11:36:22,471 -   MAE: 1363.99
+2025-05-08 11:36:22,471 -   MSE: 3106874.50
+2025-05-08 11:36:22,471 -   MAPE: 10.16%
+2025-05-08 11:36:22,471 -   R²: 0.8082
+2025-05-08 11:36:22,472 - Added 2024-12-SSEN-2818007010.csv to processed files list
+2025-05-08 11:36:22,472 - 
+Processing file: 2024-12-SSEN-2807006120.csv
+2025-05-08 11:36:22,492 - 
+Processing feeder: SSEN-280700612001
+2025-05-08 11:36:27,458 - Epoch [10/100], Loss: 0.0108
+2025-05-08 11:36:32,348 - Epoch [20/100], Loss: 0.0091
+2025-05-08 11:36:37,284 - Epoch [30/100], Loss: 0.0080
+2025-05-08 11:36:42,108 - Epoch [40/100], Loss: 0.0072
+2025-05-08 11:36:47,002 - Epoch [50/100], Loss: 0.0067
+2025-05-08 11:36:51,821 - Epoch [60/100], Loss: 0.0065
+2025-05-08 11:36:57,519 - Epoch [70/100], Loss: 0.0064
+2025-05-08 11:37:03,204 - Epoch [80/100], Loss: 0.0064
+2025-05-08 11:37:08,261 - Epoch [90/100], Loss: 0.0062
+2025-05-08 11:37:13,201 - Epoch [100/100], Loss: 0.0062
+2025-05-08 11:37:13,256 - 
+--- Metrics for Feeder SSEN-280700612001 ---
+2025-05-08 11:37:13,256 -   RMSE: 791.21
+2025-05-08 11:37:13,256 -   MAE: 630.33
+2025-05-08 11:37:13,256 -   MSE: 626011.75
+2025-05-08 11:37:13,256 -   MAPE: 20.76%
+2025-05-08 11:37:13,256 -   R²: 0.7970
+2025-05-08 11:37:13,256 - 
+Processing feeder: SSEN-280700612002
+2025-05-08 11:37:18,152 - Epoch [10/100], Loss: 0.0144
+2025-05-08 11:37:22,782 - Epoch [20/100], Loss: 0.0112
+2025-05-08 11:37:27,573 - Epoch [30/100], Loss: 0.0092
+2025-05-08 11:37:32,323 - Epoch [40/100], Loss: 0.0086
+2025-05-08 11:37:37,076 - Epoch [50/100], Loss: 0.0082
+2025-05-08 11:37:41,780 - Epoch [60/100], Loss: 0.0080
+2025-05-08 11:37:46,652 - Epoch [70/100], Loss: 0.0078
+2025-05-08 11:37:51,510 - Epoch [80/100], Loss: 0.0079
+2025-05-08 11:37:56,315 - Epoch [90/100], Loss: 0.0077
+2025-05-08 11:38:01,314 - Epoch [100/100], Loss: 0.0076
+2025-05-08 11:38:01,370 - 
+--- Metrics for Feeder SSEN-280700612002 ---
+2025-05-08 11:38:01,370 -   RMSE: 1254.11
+2025-05-08 11:38:01,370 -   MAE: 966.67
+2025-05-08 11:38:01,370 -   MSE: 1572782.88
+2025-05-08 11:38:01,370 -   MAPE: 17.55%
+2025-05-08 11:38:01,370 -   R²: 0.7579
+2025-05-08 11:38:01,370 - 
+Processing feeder: SSEN-280700612003
+2025-05-08 11:38:07,125 - Epoch [10/100], Loss: 0.0142
+2025-05-08 11:38:11,962 - Epoch [20/100], Loss: 0.0086
+2025-05-08 11:38:16,828 - Epoch [30/100], Loss: 0.0067
+2025-05-08 11:38:21,907 - Epoch [40/100], Loss: 0.0062
+2025-05-08 11:38:26,880 - Epoch [50/100], Loss: 0.0058
+2025-05-08 11:38:31,814 - Epoch [60/100], Loss: 0.0057
+2025-05-08 11:38:36,965 - Epoch [70/100], Loss: 0.0055
+2025-05-08 11:38:42,436 - Epoch [80/100], Loss: 0.0056
+2025-05-08 11:38:47,191 - Epoch [90/100], Loss: 0.0054
+2025-05-08 11:38:52,403 - Epoch [100/100], Loss: 0.0054
+2025-05-08 11:38:52,523 - 
+--- Metrics for Feeder SSEN-280700612003 ---
+2025-05-08 11:38:52,523 -   RMSE: 1742.28
+2025-05-08 11:38:52,523 -   MAE: 1328.23
+2025-05-08 11:38:52,523 -   MSE: 3035554.25
+2025-05-08 11:38:52,523 -   MAPE: 11.72%
+2025-05-08 11:38:52,523 -   R²: 0.7991
+2025-05-08 11:38:52,523 - 
+Processing feeder: SSEN-280700612004
+2025-05-08 11:38:57,461 - Epoch [10/100], Loss: 0.0103
+2025-05-08 11:39:02,256 - Epoch [20/100], Loss: 0.0081
+2025-05-08 11:39:07,769 - Epoch [30/100], Loss: 0.0068
+2025-05-08 11:39:13,498 - Epoch [40/100], Loss: 0.0061
+2025-05-08 11:39:18,847 - Epoch [50/100], Loss: 0.0059
+2025-05-08 11:39:24,003 - Epoch [60/100], Loss: 0.0061
+2025-05-08 11:39:28,946 - Epoch [70/100], Loss: 0.0057
+2025-05-08 11:39:33,893 - Epoch [80/100], Loss: 0.0059
+2025-05-08 11:39:38,760 - Epoch [90/100], Loss: 0.0056
+2025-05-08 11:39:43,608 - Epoch [100/100], Loss: 0.0055
+2025-05-08 11:39:43,667 - 
+--- Metrics for Feeder SSEN-280700612004 ---
+2025-05-08 11:39:43,667 -   RMSE: 1175.23
+2025-05-08 11:39:43,667 -   MAE: 920.48
+2025-05-08 11:39:43,667 -   MSE: 1381157.75
+2025-05-08 11:39:43,667 -   MAPE: 16.69%
+2025-05-08 11:39:43,667 -   R²: 0.7610
+2025-05-08 11:39:43,668 - Added 2024-12-SSEN-2807006120.csv to processed files list
+2025-05-08 11:39:43,668 - 
+Processing file: 2024-12-SSEN-2808007120.csv
+2025-05-08 11:39:43,698 - 
+Processing feeder: SSEN-280800712001
+2025-05-08 11:39:48,680 - Epoch [10/100], Loss: 0.0146
+2025-05-08 11:39:53,479 - Epoch [20/100], Loss: 0.0111
+2025-05-08 11:39:58,465 - Epoch [30/100], Loss: 0.0099
+2025-05-08 11:40:03,515 - Epoch [40/100], Loss: 0.0090
+2025-05-08 11:40:08,655 - Epoch [50/100], Loss: 0.0088
+2025-05-08 11:40:13,522 - Epoch [60/100], Loss: 0.0086
+2025-05-08 11:40:18,483 - Epoch [70/100], Loss: 0.0087
+2025-05-08 11:40:23,467 - Epoch [80/100], Loss: 0.0086
+2025-05-08 11:40:28,493 - Epoch [90/100], Loss: 0.0086
+2025-05-08 11:40:33,483 - Epoch [100/100], Loss: 0.0085
+2025-05-08 11:40:33,536 - 
+--- Metrics for Feeder SSEN-280800712001 ---
+2025-05-08 11:40:33,536 -   RMSE: 904.68
+2025-05-08 11:40:33,536 -   MAE: 625.74
+2025-05-08 11:40:33,536 -   MSE: 818442.00
+2025-05-08 11:40:33,536 -   MAPE: 15.33%
+2025-05-08 11:40:33,536 -   R²: 0.7635
+2025-05-08 11:40:33,537 - 
+Processing feeder: SSEN-280800712002
+2025-05-08 11:40:38,415 - Epoch [10/100], Loss: 0.0123
+2025-05-08 11:40:43,354 - Epoch [20/100], Loss: 0.0088
+2025-05-08 11:40:48,322 - Epoch [30/100], Loss: 0.0079
+2025-05-08 11:40:53,350 - Epoch [40/100], Loss: 0.0070
+2025-05-08 11:40:58,352 - Epoch [50/100], Loss: 0.0065
+2025-05-08 11:41:03,239 - Epoch [60/100], Loss: 0.0064
+2025-05-08 11:41:08,163 - Epoch [70/100], Loss: 0.0062
+2025-05-08 11:41:13,054 - Epoch [80/100], Loss: 0.0064
+2025-05-08 11:41:18,070 - Epoch [90/100], Loss: 0.0063
+2025-05-08 11:41:22,959 - Epoch [100/100], Loss: 0.0063
+2025-05-08 11:41:23,009 - 
+--- Metrics for Feeder SSEN-280800712002 ---
+2025-05-08 11:41:23,009 -   RMSE: 1274.33
+2025-05-08 11:41:23,009 -   MAE: 959.08
+2025-05-08 11:41:23,009 -   MSE: 1623916.00
+2025-05-08 11:41:23,009 -   MAPE: 10.69%
+2025-05-08 11:41:23,009 -   R²: 0.6248
+2025-05-08 11:41:23,009 - 
+Processing feeder: SSEN-280800712004
+2025-05-08 11:41:28,020 - Epoch [10/100], Loss: 0.0137
+2025-05-08 11:41:32,899 - Epoch [20/100], Loss: 0.0102
+2025-05-08 11:41:37,924 - Epoch [30/100], Loss: 0.0091
+2025-05-08 11:41:42,871 - Epoch [40/100], Loss: 0.0084
+2025-05-08 11:41:48,086 - Epoch [50/100], Loss: 0.0081
+2025-05-08 11:41:52,996 - Epoch [60/100], Loss: 0.0076
+2025-05-08 11:41:57,875 - Epoch [70/100], Loss: 0.0074
+2025-05-08 11:42:02,782 - Epoch [80/100], Loss: 0.0074
+2025-05-08 11:42:07,827 - Epoch [90/100], Loss: 0.0074
+2025-05-08 11:42:12,785 - Epoch [100/100], Loss: 0.0071
+2025-05-08 11:42:12,845 - 
+--- Metrics for Feeder SSEN-280800712004 ---
+2025-05-08 11:42:12,845 -   RMSE: 909.36
+2025-05-08 11:42:12,845 -   MAE: 657.42
+2025-05-08 11:42:12,845 -   MSE: 826938.00
+2025-05-08 11:42:12,845 -   MAPE: 19.03%
+2025-05-08 11:42:12,845 -   R²: 0.7233
+2025-05-08 11:42:12,845 - 
+Processing feeder: SSEN-280800712005
+2025-05-08 11:42:17,793 - Epoch [10/100], Loss: 0.0146
+2025-05-08 11:42:22,624 - Epoch [20/100], Loss: 0.0112
+2025-05-08 11:42:27,543 - Epoch [30/100], Loss: 0.0098
+2025-05-08 11:42:32,539 - Epoch [40/100], Loss: 0.0083
+2025-05-08 11:42:37,545 - Epoch [50/100], Loss: 0.0074
+2025-05-08 11:42:42,432 - Epoch [60/100], Loss: 0.0070
+2025-05-08 11:42:47,458 - Epoch [70/100], Loss: 0.0066
+2025-05-08 11:42:52,412 - Epoch [80/100], Loss: 0.0062
+2025-05-08 11:42:57,421 - Epoch [90/100], Loss: 0.0057
+2025-05-08 11:43:02,400 - Epoch [100/100], Loss: 0.0056
+2025-05-08 11:43:02,457 - 
+--- Metrics for Feeder SSEN-280800712005 ---
+2025-05-08 11:43:02,458 -   RMSE: 1495.81
+2025-05-08 11:43:02,458 -   MAE: 1177.40
+2025-05-08 11:43:02,458 -   MSE: 2237440.75
+2025-05-08 11:43:02,458 -   MAPE: 10.36%
+2025-05-08 11:43:02,458 -   R²: 0.8574
+2025-05-08 11:43:02,458 - 
+Processing feeder: SSEN-280800712006
+2025-05-08 11:43:07,441 - Epoch [10/100], Loss: 0.0153
+2025-05-08 11:43:12,387 - Epoch [20/100], Loss: 0.0129
+2025-05-08 11:43:17,320 - Epoch [30/100], Loss: 0.0116
+2025-05-08 11:43:22,297 - Epoch [40/100], Loss: 0.0110
+2025-05-08 11:43:27,255 - Epoch [50/100], Loss: 0.0109
+2025-05-08 11:43:32,178 - Epoch [60/100], Loss: 0.0107
+2025-05-08 11:43:37,060 - Epoch [70/100], Loss: 0.0107
+2025-05-08 11:43:41,864 - Epoch [80/100], Loss: 0.0104
+2025-05-08 11:43:46,833 - Epoch [90/100], Loss: 0.0105
+2025-05-08 11:43:51,741 - Epoch [100/100], Loss: 0.0104
+2025-05-08 11:43:51,795 - 
+--- Metrics for Feeder SSEN-280800712006 ---
+2025-05-08 11:43:51,795 -   RMSE: 631.56
+2025-05-08 11:43:51,795 -   MAE: 498.77
+2025-05-08 11:43:51,795 -   MSE: 398874.19
+2025-05-08 11:43:51,795 -   MAPE: 14.60%
+2025-05-08 11:43:51,795 -   R²: 0.6680
+2025-05-08 11:43:51,796 - Added 2024-12-SSEN-2808007120.csv to processed files list
+2025-05-08 11:43:51,796 - 
+Processing file: 2024-12-SSEN-2822026060.csv
+2025-05-08 11:43:51,815 - 
+Processing feeder: SSEN-282202606003
+2025-05-08 11:43:56,759 - Epoch [10/100], Loss: 0.0153
+2025-05-08 11:44:01,625 - Epoch [20/100], Loss: 0.0115
+2025-05-08 11:44:06,491 - Epoch [30/100], Loss: 0.0087
+2025-05-08 11:44:11,415 - Epoch [40/100], Loss: 0.0075
+2025-05-08 11:44:16,222 - Epoch [50/100], Loss: 0.0069
+2025-05-08 11:44:21,167 - Epoch [60/100], Loss: 0.0068
+2025-05-08 11:44:25,981 - Epoch [70/100], Loss: 0.0070
+2025-05-08 11:44:30,928 - Epoch [80/100], Loss: 0.0068
+2025-05-08 11:44:35,797 - Epoch [90/100], Loss: 0.0065
+2025-05-08 11:44:40,712 - Epoch [100/100], Loss: 0.0065
+2025-05-08 11:44:40,771 - 
+--- Metrics for Feeder SSEN-282202606003 ---
+2025-05-08 11:44:40,771 -   RMSE: 2787.42
+2025-05-08 11:44:40,771 -   MAE: 2280.46
+2025-05-08 11:44:40,771 -   MSE: 7769722.00
+2025-05-08 11:44:40,771 -   MAPE: 9.44%
+2025-05-08 11:44:40,771 -   R²: 0.8170
+2025-05-08 11:44:40,771 - 
+Processing feeder: SSEN-282202606005
+2025-05-08 11:44:45,791 - Epoch [10/100], Loss: 0.0118
+2025-05-08 11:44:50,660 - Epoch [20/100], Loss: 0.0094
+2025-05-08 11:44:55,629 - Epoch [30/100], Loss: 0.0082
+2025-05-08 11:45:00,563 - Epoch [40/100], Loss: 0.0081
+2025-05-08 11:45:05,632 - Epoch [50/100], Loss: 0.0073
+2025-05-08 11:45:10,677 - Epoch [60/100], Loss: 0.0072
+2025-05-08 11:45:15,613 - Epoch [70/100], Loss: 0.0072
+2025-05-08 11:45:20,538 - Epoch [80/100], Loss: 0.0071
+2025-05-08 11:45:25,539 - Epoch [90/100], Loss: 0.0070
+2025-05-08 11:45:30,442 - Epoch [100/100], Loss: 0.0072
+2025-05-08 11:45:30,501 - 
+--- Metrics for Feeder SSEN-282202606005 ---
+2025-05-08 11:45:30,501 -   RMSE: 1357.05
+2025-05-08 11:45:30,501 -   MAE: 1016.89
+2025-05-08 11:45:30,501 -   MSE: 1841582.00
+2025-05-08 11:45:30,501 -   MAPE: 12.00%
+2025-05-08 11:45:30,501 -   R²: 0.7703
+2025-05-08 11:45:30,502 - Added 2024-12-SSEN-2822026060.csv to processed files list
+2025-05-08 11:45:30,502 - 
+Processing file: 2024-12-SSEN-2809607052.csv
+2025-05-08 11:45:30,513 - 
+Processing feeder: SSEN-280960705201
+2025-05-08 11:45:35,621 - Epoch [10/100], Loss: 0.0151
+2025-05-08 11:45:40,595 - Epoch [20/100], Loss: 0.0116
+2025-05-08 11:45:45,444 - Epoch [30/100], Loss: 0.0096
+2025-05-08 11:45:50,485 - Epoch [40/100], Loss: 0.0090
+2025-05-08 11:45:55,447 - Epoch [50/100], Loss: 0.0088
+2025-05-08 11:46:00,350 - Epoch [60/100], Loss: 0.0081
+2025-05-08 11:46:05,234 - Epoch [70/100], Loss: 0.0078
+2025-05-08 11:46:10,057 - Epoch [80/100], Loss: 0.0077
+2025-05-08 11:46:14,997 - Epoch [90/100], Loss: 0.0078
+2025-05-08 11:46:19,972 - Epoch [100/100], Loss: 0.0077
+2025-05-08 11:46:20,025 - 
+--- Metrics for Feeder SSEN-280960705201 ---
+2025-05-08 11:46:20,025 -   RMSE: 879.54
+2025-05-08 11:46:20,025 -   MAE: 650.00
+2025-05-08 11:46:20,025 -   MSE: 773589.06
+2025-05-08 11:46:20,025 -   MAPE: 12.44%
+2025-05-08 11:46:20,025 -   R²: 0.8165
+2025-05-08 11:46:20,025 - 
+Processing feeder: SSEN-280960705202
+2025-05-08 11:46:25,002 - Epoch [10/100], Loss: 0.0118
+2025-05-08 11:46:29,854 - Epoch [20/100], Loss: 0.0101
+2025-05-08 11:46:34,758 - Epoch [30/100], Loss: 0.0094
+2025-05-08 11:46:39,712 - Epoch [40/100], Loss: 0.0084
+2025-05-08 11:46:44,769 - Epoch [50/100], Loss: 0.0077
+2025-05-08 11:46:49,738 - Epoch [60/100], Loss: 0.0076
+2025-05-08 11:46:54,790 - Epoch [70/100], Loss: 0.0072
+2025-05-08 11:46:59,753 - Epoch [80/100], Loss: 0.0073
+2025-05-08 11:47:04,712 - Epoch [90/100], Loss: 0.0074
+2025-05-08 11:47:09,856 - Epoch [100/100], Loss: 0.0073
+2025-05-08 11:47:09,903 - 
+--- Metrics for Feeder SSEN-280960705202 ---
+2025-05-08 11:47:09,903 -   RMSE: 1649.30
+2025-05-08 11:47:09,903 -   MAE: 1300.61
+2025-05-08 11:47:09,903 -   MSE: 2720187.75
+2025-05-08 11:47:09,903 -   MAPE: 15.92%
+2025-05-08 11:47:09,903 -   R²: 0.8007
+2025-05-08 11:47:09,903 - Added 2024-12-SSEN-2809607052.csv to processed files list
+2025-05-08 11:47:09,903 - 
+Processing file: 2024-12-SSEN-2809609057.csv
+2025-05-08 11:47:09,923 - 
+Processing feeder: SSEN-280960905701
+2025-05-08 11:47:14,961 - Epoch [10/100], Loss: 0.0184
+2025-05-08 11:47:19,935 - Epoch [20/100], Loss: 0.0131
+2025-05-08 11:47:24,753 - Epoch [30/100], Loss: 0.0120
+2025-05-08 11:47:29,674 - Epoch [40/100], Loss: 0.0122
+2025-05-08 11:47:34,598 - Epoch [50/100], Loss: 0.0119
+2025-05-08 11:47:39,486 - Epoch [60/100], Loss: 0.0119
+2025-05-08 11:47:44,361 - Epoch [70/100], Loss: 0.0117
+2025-05-08 11:47:49,383 - Epoch [80/100], Loss: 0.0113
+2025-05-08 11:47:54,378 - Epoch [90/100], Loss: 0.0112
+2025-05-08 11:47:59,395 - Epoch [100/100], Loss: 0.0109
+2025-05-08 11:47:59,453 - 
+--- Metrics for Feeder SSEN-280960905701 ---
+2025-05-08 11:47:59,453 -   RMSE: 614.19
+2025-05-08 11:47:59,453 -   MAE: 433.38
+2025-05-08 11:47:59,453 -   MSE: 377231.28
+2025-05-08 11:47:59,453 -   MAPE: 21.22%
+2025-05-08 11:47:59,453 -   R²: 0.6564
+2025-05-08 11:47:59,453 - 
+Processing feeder: SSEN-280960905702
+2025-05-08 11:48:04,529 - Epoch [10/100], Loss: 0.0197
+2025-05-08 11:48:09,706 - Epoch [20/100], Loss: 0.0158
+2025-05-08 11:48:15,221 - Epoch [30/100], Loss: 0.0141
+2025-05-08 11:48:20,122 - Epoch [40/100], Loss: 0.0142
+2025-05-08 11:48:25,144 - Epoch [50/100], Loss: 0.0138
+2025-05-08 11:48:30,245 - Epoch [60/100], Loss: 0.0135
+2025-05-08 11:48:35,805 - Epoch [70/100], Loss: 0.0135
+2025-05-08 11:48:40,910 - Epoch [80/100], Loss: 0.0136
+2025-05-08 11:48:45,986 - Epoch [90/100], Loss: 0.0137
+2025-05-08 11:48:50,868 - Epoch [100/100], Loss: 0.0133
+2025-05-08 11:48:50,928 - 
+--- Metrics for Feeder SSEN-280960905702 ---
+2025-05-08 11:48:50,928 -   RMSE: 742.53
+2025-05-08 11:48:50,928 -   MAE: 542.77
+2025-05-08 11:48:50,928 -   MSE: 551355.06
+2025-05-08 11:48:50,928 -   MAPE: 21.20%
+2025-05-08 11:48:50,928 -   R²: 0.4544
+2025-05-08 11:48:50,928 - 
+Processing feeder: SSEN-280960905703
+2025-05-08 11:48:55,960 - Epoch [10/100], Loss: 0.0123
+2025-05-08 11:49:00,989 - Epoch [20/100], Loss: 0.0099
+2025-05-08 11:49:06,002 - Epoch [30/100], Loss: 0.0084
+2025-05-08 11:49:11,931 - Epoch [40/100], Loss: 0.0074
+2025-05-08 11:49:17,382 - Epoch [50/100], Loss: 0.0065
+2025-05-08 11:49:22,828 - Epoch [60/100], Loss: 0.0058
+2025-05-08 11:49:27,961 - Epoch [70/100], Loss: 0.0056
+2025-05-08 11:49:33,359 - Epoch [80/100], Loss: 0.0054
+2025-05-08 11:49:38,615 - Epoch [90/100], Loss: 0.0055
+2025-05-08 11:49:43,835 - Epoch [100/100], Loss: 0.0050
+2025-05-08 11:49:43,888 - 
+--- Metrics for Feeder SSEN-280960905703 ---
+2025-05-08 11:49:43,888 -   RMSE: 1830.74
+2025-05-08 11:49:43,888 -   MAE: 1369.57
+2025-05-08 11:49:43,888 -   MSE: 3351607.50
+2025-05-08 11:49:43,888 -   MAPE: 10.52%
+2025-05-08 11:49:43,888 -   R²: 0.8384
+2025-05-08 11:49:43,888 - 
+Processing feeder: SSEN-280960905704
+2025-05-08 11:49:48,833 - Epoch [10/100], Loss: 0.0126
+2025-05-08 11:49:53,840 - Epoch [20/100], Loss: 0.0108
+2025-05-08 11:49:59,099 - Epoch [30/100], Loss: 0.0096
+2025-05-08 11:50:04,020 - Epoch [40/100], Loss: 0.0086
+2025-05-08 11:50:09,013 - Epoch [50/100], Loss: 0.0081
+2025-05-08 11:50:13,833 - Epoch [60/100], Loss: 0.0083
+2025-05-08 11:50:18,713 - Epoch [70/100], Loss: 0.0078
+2025-05-08 11:50:23,594 - Epoch [80/100], Loss: 0.0077
+2025-05-08 11:50:28,619 - Epoch [90/100], Loss: 0.0078
+2025-05-08 11:50:33,597 - Epoch [100/100], Loss: 0.0075
+2025-05-08 11:50:33,655 - 
+--- Metrics for Feeder SSEN-280960905704 ---
+2025-05-08 11:50:33,655 -   RMSE: 1005.44
+2025-05-08 11:50:33,655 -   MAE: 805.16
+2025-05-08 11:50:33,655 -   MSE: 1010901.12
+2025-05-08 11:50:33,655 -   MAPE: 20.25%
+2025-05-08 11:50:33,655 -   R²: 0.7536
+2025-05-08 11:50:33,655 - Added 2024-12-SSEN-2809609057.csv to processed files list
+2025-05-08 11:50:33,655 - 
+Processing file: 2024-12-SSEN-2803010060.csv
+2025-05-08 11:50:33,676 - 
+Processing feeder: SSEN-280301006001
+2025-05-08 11:50:39,859 - Epoch [10/100], Loss: 0.0086
+2025-05-08 11:50:45,037 - Epoch [20/100], Loss: 0.0067
+2025-05-08 11:50:49,880 - Epoch [30/100], Loss: 0.0057
+2025-05-08 11:50:54,847 - Epoch [40/100], Loss: 0.0050
+2025-05-08 11:51:00,202 - Epoch [50/100], Loss: 0.0048
+2025-05-08 11:51:05,428 - Epoch [60/100], Loss: 0.0046
+2025-05-08 11:51:10,673 - Epoch [70/100], Loss: 0.0046
+2025-05-08 11:51:15,532 - Epoch [80/100], Loss: 0.0045
+2025-05-08 11:51:20,340 - Epoch [90/100], Loss: 0.0043
+2025-05-08 11:51:25,210 - Epoch [100/100], Loss: 0.0044
+2025-05-08 11:51:25,266 - 
+--- Metrics for Feeder SSEN-280301006001 ---
+2025-05-08 11:51:25,266 -   RMSE: 1568.96
+2025-05-08 11:51:25,266 -   MAE: 1169.04
+2025-05-08 11:51:25,266 -   MSE: 2461640.75
+2025-05-08 11:51:25,266 -   MAPE: 12.58%
+2025-05-08 11:51:25,266 -   R²: 0.7974
+2025-05-08 11:51:25,266 - 
+Processing feeder: SSEN-280301006003
+2025-05-08 11:51:30,163 - Epoch [10/100], Loss: 0.0195
+2025-05-08 11:51:34,950 - Epoch [20/100], Loss: 0.0154
+2025-05-08 11:51:39,724 - Epoch [30/100], Loss: 0.0134
+2025-05-08 11:51:44,946 - Epoch [40/100], Loss: 0.0126
+2025-05-08 11:51:50,021 - Epoch [50/100], Loss: 0.0123
+2025-05-08 11:51:54,883 - Epoch [60/100], Loss: 0.0119
+2025-05-08 11:51:59,691 - Epoch [70/100], Loss: 0.0120
+2025-05-08 11:52:04,607 - Epoch [80/100], Loss: 0.0117
+2025-05-08 11:52:09,306 - Epoch [90/100], Loss: 0.0117
+2025-05-08 11:52:14,434 - Epoch [100/100], Loss: 0.0114
+2025-05-08 11:52:14,490 - 
+--- Metrics for Feeder SSEN-280301006003 ---
+2025-05-08 11:52:14,490 -   RMSE: 1143.30
+2025-05-08 11:52:14,490 -   MAE: 923.17
+2025-05-08 11:52:14,490 -   MSE: 1307126.12
+2025-05-08 11:52:14,490 -   MAPE: 17.32%
+2025-05-08 11:52:14,490 -   R²: 0.6032
+2025-05-08 11:52:14,491 - Added 2024-12-SSEN-2803010060.csv to processed files list
+2025-05-08 11:52:14,491 - 
+Processing file: 2024-12-SSEN-2818003060.csv
+2025-05-08 11:52:14,508 - 
+Processing feeder: SSEN-281800306001
+2025-05-08 11:52:20,167 - Epoch [10/100], Loss: 0.0127
+2025-05-08 11:52:25,101 - Epoch [20/100], Loss: 0.0101
+2025-05-08 11:52:30,090 - Epoch [30/100], Loss: 0.0090
+2025-05-08 11:52:35,070 - Epoch [40/100], Loss: 0.0081
+2025-05-08 11:52:39,964 - Epoch [50/100], Loss: 0.0079
+2025-05-08 11:52:44,802 - Epoch [60/100], Loss: 0.0077
+2025-05-08 11:52:49,743 - Epoch [70/100], Loss: 0.0077
+2025-05-08 11:52:54,577 - Epoch [80/100], Loss: 0.0076
+2025-05-08 11:52:59,511 - Epoch [90/100], Loss: 0.0077
+2025-05-08 11:53:04,405 - Epoch [100/100], Loss: 0.0075
+2025-05-08 11:53:04,460 - 
+--- Metrics for Feeder SSEN-281800306001 ---
+2025-05-08 11:53:04,460 -   RMSE: 783.67
+2025-05-08 11:53:04,460 -   MAE: 608.00
+2025-05-08 11:53:04,460 -   MSE: 614139.94
+2025-05-08 11:53:04,460 -   MAPE: 17.48%
+2025-05-08 11:53:04,460 -   R²: 0.7952
+2025-05-08 11:53:04,460 - 
+Processing feeder: SSEN-281800306003
+2025-05-08 11:53:09,426 - Epoch [10/100], Loss: 0.0110
+2025-05-08 11:53:14,287 - Epoch [20/100], Loss: 0.0081
+2025-05-08 11:53:19,301 - Epoch [30/100], Loss: 0.0063
+2025-05-08 11:53:24,164 - Epoch [40/100], Loss: 0.0054
+2025-05-08 11:53:29,259 - Epoch [50/100], Loss: 0.0046
+2025-05-08 11:53:34,285 - Epoch [60/100], Loss: 0.0046
+2025-05-08 11:53:39,334 - Epoch [70/100], Loss: 0.0044
+2025-05-08 11:53:44,488 - Epoch [80/100], Loss: 0.0044
+2025-05-08 11:53:49,494 - Epoch [90/100], Loss: 0.0043
+2025-05-08 11:53:54,339 - Epoch [100/100], Loss: 0.0043
+2025-05-08 11:53:54,396 - 
+--- Metrics for Feeder SSEN-281800306003 ---
+2025-05-08 11:53:54,396 -   RMSE: 1663.11
+2025-05-08 11:53:54,396 -   MAE: 1263.25
+2025-05-08 11:53:54,396 -   MSE: 2765934.50
+2025-05-08 11:53:54,396 -   MAPE: 9.14%
+2025-05-08 11:53:54,396 -   R²: 0.8691
+2025-05-08 11:53:54,397 - Added 2024-12-SSEN-2818003060.csv to processed files list
+2025-05-08 11:53:54,397 - 
+Processing file: 2024-12-SSEN-2803006170.csv
+2025-05-08 11:53:54,417 - 
+Processing feeder: SSEN-280300617001
+2025-05-08 11:53:59,817 - Epoch [10/100], Loss: 0.0155
+2025-05-08 11:54:05,033 - Epoch [20/100], Loss: 0.0104
+2025-05-08 11:54:10,083 - Epoch [30/100], Loss: 0.0086
+2025-05-08 11:54:15,314 - Epoch [40/100], Loss: 0.0084
+2025-05-08 11:54:20,655 - Epoch [50/100], Loss: 0.0080
+2025-05-08 11:54:25,579 - Epoch [60/100], Loss: 0.0078
+2025-05-08 11:54:30,507 - Epoch [70/100], Loss: 0.0080
+2025-05-08 11:54:35,528 - Epoch [80/100], Loss: 0.0078
+2025-05-08 11:54:40,827 - Epoch [90/100], Loss: 0.0078
+2025-05-08 11:54:46,064 - Epoch [100/100], Loss: 0.0078
+2025-05-08 11:54:46,126 - 
+--- Metrics for Feeder SSEN-280300617001 ---
+2025-05-08 11:54:46,126 -   RMSE: 971.73
+2025-05-08 11:54:46,126 -   MAE: 749.07
+2025-05-08 11:54:46,126 -   MSE: 944250.62
+2025-05-08 11:54:46,126 -   MAPE: 27.49%
+2025-05-08 11:54:46,126 -   R²: 0.2316
+2025-05-08 11:54:46,126 - 
+Processing feeder: SSEN-280300617003
+2025-05-08 11:54:51,557 - Epoch [10/100], Loss: 0.0188
+2025-05-08 11:54:56,473 - Epoch [20/100], Loss: 0.0139
+2025-05-08 11:55:01,453 - Epoch [30/100], Loss: 0.0126
+2025-05-08 11:55:06,414 - Epoch [40/100], Loss: 0.0115
+2025-05-08 11:55:11,399 - Epoch [50/100], Loss: 0.0122
+2025-05-08 11:55:16,434 - Epoch [60/100], Loss: 0.0113
+2025-05-08 11:55:21,513 - Epoch [70/100], Loss: 0.0105
+2025-05-08 11:55:26,396 - Epoch [80/100], Loss: 0.0104
+2025-05-08 11:55:31,191 - Epoch [90/100], Loss: 0.0103
+2025-05-08 11:55:36,086 - Epoch [100/100], Loss: 0.0102
+2025-05-08 11:55:36,143 - 
+--- Metrics for Feeder SSEN-280300617003 ---
+2025-05-08 11:55:36,143 -   RMSE: 1584.28
+2025-05-08 11:55:36,143 -   MAE: 1244.05
+2025-05-08 11:55:36,143 -   MSE: 2509930.50
+2025-05-08 11:55:36,143 -   MAPE: 15.04%
+2025-05-08 11:55:36,143 -   R²: 0.6109
+2025-05-08 11:55:36,143 - 
+Processing feeder: SSEN-280300617004
+2025-05-08 11:55:40,981 - Epoch [10/100], Loss: 0.0186
+2025-05-08 11:55:45,889 - Epoch [20/100], Loss: 0.0133
+2025-05-08 11:55:50,747 - Epoch [30/100], Loss: 0.0111
+2025-05-08 11:55:55,564 - Epoch [40/100], Loss: 0.0097
+2025-05-08 11:56:00,507 - Epoch [50/100], Loss: 0.0090
+2025-05-08 11:56:05,329 - Epoch [60/100], Loss: 0.0087
+2025-05-08 11:56:10,215 - Epoch [70/100], Loss: 0.0090
+2025-05-08 11:56:15,115 - Epoch [80/100], Loss: 0.0082
+2025-05-08 11:56:20,025 - Epoch [90/100], Loss: 0.0080
+2025-05-08 11:56:24,840 - Epoch [100/100], Loss: 0.0077
+2025-05-08 11:56:24,896 - 
+--- Metrics for Feeder SSEN-280300617004 ---
+2025-05-08 11:56:24,896 -   RMSE: 1516.84
+2025-05-08 11:56:24,896 -   MAE: 1201.30
+2025-05-08 11:56:24,896 -   MSE: 2300810.00
+2025-05-08 11:56:24,896 -   MAPE: 13.16%
+2025-05-08 11:56:24,896 -   R²: 0.6805
+2025-05-08 11:56:24,897 - Added 2024-12-SSEN-2803006170.csv to processed files list
+2025-05-08 11:56:24,897 - 
+Processing file: 2024-12-SSEN-2822009040.csv
+2025-05-08 11:56:24,911 - 
+Processing feeder: SSEN-282200904002
+2025-05-08 11:56:30,561 - Epoch [10/100], Loss: 0.0178
+2025-05-08 11:56:35,805 - Epoch [20/100], Loss: 0.0115
+2025-05-08 11:56:40,760 - Epoch [30/100], Loss: 0.0103
+2025-05-08 11:56:45,845 - Epoch [40/100], Loss: 0.0100
+2025-05-08 11:56:51,000 - Epoch [50/100], Loss: 0.0100
+2025-05-08 11:56:56,750 - Epoch [60/100], Loss: 0.0096
+2025-05-08 11:57:01,864 - Epoch [70/100], Loss: 0.0095
+2025-05-08 11:57:07,657 - Epoch [80/100], Loss: 0.0097
+2025-05-08 11:57:13,907 - Epoch [90/100], Loss: 0.0092
+2025-05-08 11:57:19,303 - Epoch [100/100], Loss: 0.0090
+2025-05-08 11:57:19,369 - 
+--- Metrics for Feeder SSEN-282200904002 ---
+2025-05-08 11:57:19,369 -   RMSE: 2077.64
+2025-05-08 11:57:19,369 -   MAE: 1666.27
+2025-05-08 11:57:19,369 -   MSE: 4316567.00
+2025-05-08 11:57:19,369 -   MAPE: 12.47%
+2025-05-08 11:57:19,369 -   R²: 0.6726
+2025-05-08 11:57:19,371 - Added 2024-12-SSEN-2822009040.csv to processed files list
+2025-05-08 11:57:19,371 - 
+Processing file: 2024-12-SSEN-2529012020.csv
+2025-05-08 11:57:19,421 - 
+Processing feeder: SSEN-252901202001
+2025-05-08 11:57:24,758 - Epoch [10/100], Loss: 0.0159
+2025-05-08 11:57:29,829 - Epoch [20/100], Loss: 0.0097
+2025-05-08 11:57:34,742 - Epoch [30/100], Loss: 0.0071
+2025-05-08 11:57:39,701 - Epoch [40/100], Loss: 0.0066
+2025-05-08 11:57:44,607 - Epoch [50/100], Loss: 0.0064
+2025-05-08 11:57:49,975 - Epoch [60/100], Loss: 0.0064
+2025-05-08 11:57:55,324 - Epoch [70/100], Loss: 0.0062
+2025-05-08 11:58:00,399 - Epoch [80/100], Loss: 0.0061
+2025-05-08 11:58:05,612 - Epoch [90/100], Loss: 0.0062
+2025-05-08 11:58:10,591 - Epoch [100/100], Loss: 0.0063
+2025-05-08 11:58:10,650 - 
+--- Metrics for Feeder SSEN-252901202001 ---
+2025-05-08 11:58:10,650 -   RMSE: 917.00
+2025-05-08 11:58:10,650 -   MAE: 689.52
+2025-05-08 11:58:10,650 -   MSE: 840880.00
+2025-05-08 11:58:10,650 -   MAPE: 16.09%
+2025-05-08 11:58:10,650 -   R²: 0.8037
+2025-05-08 11:58:10,650 - 
+Processing feeder: SSEN-252901202002
+2025-05-08 11:58:15,711 - Epoch [10/100], Loss: 0.0133
+2025-05-08 11:58:20,754 - Epoch [20/100], Loss: 0.0113
+2025-05-08 11:58:25,769 - Epoch [30/100], Loss: 0.0096
+2025-05-08 11:58:30,936 - Epoch [40/100], Loss: 0.0086
+2025-05-08 11:58:36,088 - Epoch [50/100], Loss: 0.0080
+2025-05-08 11:58:41,242 - Epoch [60/100], Loss: 0.0078
+2025-05-08 11:58:46,303 - Epoch [70/100], Loss: 0.0075
+2025-05-08 11:58:51,288 - Epoch [80/100], Loss: 0.0076
+2025-05-08 11:58:56,560 - Epoch [90/100], Loss: 0.0074
+2025-05-08 11:59:01,625 - Epoch [100/100], Loss: 0.0073
+2025-05-08 11:59:01,682 - 
+--- Metrics for Feeder SSEN-252901202002 ---
+2025-05-08 11:59:01,682 -   RMSE: 1258.17
+2025-05-08 11:59:01,682 -   MAE: 953.09
+2025-05-08 11:59:01,682 -   MSE: 1582993.12
+2025-05-08 11:59:01,682 -   MAPE: 11.45%
+2025-05-08 11:59:01,683 -   R²: 0.8386
+2025-05-08 11:59:01,683 - 
+Processing feeder: SSEN-252901202003
+2025-05-08 11:59:06,935 - Epoch [10/100], Loss: 0.0140
+2025-05-08 11:59:11,891 - Epoch [20/100], Loss: 0.0096
+2025-05-08 11:59:16,822 - Epoch [30/100], Loss: 0.0082
+2025-05-08 11:59:21,833 - Epoch [40/100], Loss: 0.0074
+2025-05-08 11:59:26,789 - Epoch [50/100], Loss: 0.0073
+2025-05-08 11:59:31,649 - Epoch [60/100], Loss: 0.0070
+2025-05-08 11:59:36,544 - Epoch [70/100], Loss: 0.0071
+2025-05-08 11:59:41,493 - Epoch [80/100], Loss: 0.0064
+2025-05-08 11:59:46,426 - Epoch [90/100], Loss: 0.0063
+2025-05-08 11:59:51,771 - Epoch [100/100], Loss: 0.0064
+2025-05-08 11:59:51,831 - 
+--- Metrics for Feeder SSEN-252901202003 ---
+2025-05-08 11:59:51,831 -   RMSE: 1488.40
+2025-05-08 11:59:51,831 -   MAE: 1171.35
+2025-05-08 11:59:51,831 -   MSE: 2215324.25
+2025-05-08 11:59:51,831 -   MAPE: 12.90%
+2025-05-08 11:59:51,831 -   R²: 0.8568
+2025-05-08 11:59:51,831 - 
+Processing feeder: SSEN-252901202004
+2025-05-08 11:59:57,022 - Epoch [10/100], Loss: 0.0192
+2025-05-08 12:00:02,160 - Epoch [20/100], Loss: 0.0162
+2025-05-08 12:00:07,196 - Epoch [30/100], Loss: 0.0150
+2025-05-08 12:00:12,102 - Epoch [40/100], Loss: 0.0145
+2025-05-08 12:00:17,056 - Epoch [50/100], Loss: 0.0145
+2025-05-08 12:00:22,129 - Epoch [60/100], Loss: 0.0138
+2025-05-08 12:00:27,072 - Epoch [70/100], Loss: 0.0134
+2025-05-08 12:00:32,014 - Epoch [80/100], Loss: 0.0132
+2025-05-08 12:00:37,079 - Epoch [90/100], Loss: 0.0129
+2025-05-08 12:00:41,983 - Epoch [100/100], Loss: 0.0131
+2025-05-08 12:00:42,040 - 
+--- Metrics for Feeder SSEN-252901202004 ---
+2025-05-08 12:00:42,040 -   RMSE: 850.41
+2025-05-08 12:00:42,040 -   MAE: 635.94
+2025-05-08 12:00:42,040 -   MSE: 723190.12
+2025-05-08 12:00:42,040 -   MAPE: 24.56%
+2025-05-08 12:00:42,040 -   R²: 0.5340
+2025-05-08 12:00:42,040 - 
+Processing feeder: SSEN-252901202005
+2025-05-08 12:00:47,212 - Epoch [10/100], Loss: 0.0144
+2025-05-08 12:00:52,304 - Epoch [20/100], Loss: 0.0105
+2025-05-08 12:00:57,253 - Epoch [30/100], Loss: 0.0089
+2025-05-08 12:01:02,131 - Epoch [40/100], Loss: 0.0084
+2025-05-08 12:01:07,185 - Epoch [50/100], Loss: 0.0079
+2025-05-08 12:01:12,099 - Epoch [60/100], Loss: 0.0079
+2025-05-08 12:01:17,017 - Epoch [70/100], Loss: 0.0079
+2025-05-08 12:01:21,929 - Epoch [80/100], Loss: 0.0078
+2025-05-08 12:01:26,848 - Epoch [90/100], Loss: 0.0076
+2025-05-08 12:01:31,795 - Epoch [100/100], Loss: 0.0077
+2025-05-08 12:01:31,852 - 
+--- Metrics for Feeder SSEN-252901202005 ---
+2025-05-08 12:01:31,852 -   RMSE: 1499.64
+2025-05-08 12:01:31,852 -   MAE: 1092.07
+2025-05-08 12:01:31,852 -   MSE: 2248915.00
+2025-05-08 12:01:31,852 -   MAPE: 13.92%
+2025-05-08 12:01:31,852 -   R²: 0.7734
+2025-05-08 12:01:31,852 - 
+Processing feeder: SSEN-252901202006
+2025-05-08 12:01:36,848 - Epoch [10/100], Loss: 0.0190
+2025-05-08 12:01:41,836 - Epoch [20/100], Loss: 0.0128
+2025-05-08 12:01:46,781 - Epoch [30/100], Loss: 0.0104
+2025-05-08 12:01:51,730 - Epoch [40/100], Loss: 0.0097
+2025-05-08 12:01:56,674 - Epoch [50/100], Loss: 0.0095
+2025-05-08 12:02:01,573 - Epoch [60/100], Loss: 0.0095
+2025-05-08 12:02:06,836 - Epoch [70/100], Loss: 0.0098
+2025-05-08 12:02:12,159 - Epoch [80/100], Loss: 0.0095
+2025-05-08 12:02:17,441 - Epoch [90/100], Loss: 0.0093
+2025-05-08 12:02:22,407 - Epoch [100/100], Loss: 0.0093
+2025-05-08 12:02:22,464 - 
+--- Metrics for Feeder SSEN-252901202006 ---
+2025-05-08 12:02:22,465 -   RMSE: 1119.38
+2025-05-08 12:02:22,465 -   MAE: 889.37
+2025-05-08 12:02:22,465 -   MSE: 1253007.88
+2025-05-08 12:02:22,465 -   MAPE: 16.16%
+2025-05-08 12:02:22,465 -   R²: 0.7573
+2025-05-08 12:02:22,466 - Added 2024-12-SSEN-2529012020.csv to processed files list
+2025-05-08 12:02:22,466 - 
+Processing file: 2024-12-SSEN-2807002150.csv
+2025-05-08 12:02:22,486 - 
+Processing feeder: SSEN-280700215001
+2025-05-08 12:02:27,640 - Epoch [10/100], Loss: 0.0009
+2025-05-08 12:02:32,555 - Epoch [20/100], Loss: 0.0009
+2025-05-08 12:02:37,537 - Epoch [30/100], Loss: 0.0009
+2025-05-08 12:02:42,502 - Epoch [40/100], Loss: 0.0009
+2025-05-08 12:02:47,497 - Epoch [50/100], Loss: 0.0009
+2025-05-08 12:02:52,729 - Epoch [60/100], Loss: 0.0009
+2025-05-08 12:02:57,563 - Epoch [70/100], Loss: 0.0009
+2025-05-08 12:03:02,517 - Epoch [80/100], Loss: 0.0009
+2025-05-08 12:03:07,715 - Epoch [90/100], Loss: 0.0009
+2025-05-08 12:03:12,961 - Epoch [100/100], Loss: 0.0009
+2025-05-08 12:03:13,018 - 
+--- Metrics for Feeder SSEN-280700215001 ---
+2025-05-08 12:03:13,018 -   RMSE: 26865.42
+2025-05-08 12:03:13,018 -   MAE: 26442.12
+2025-05-08 12:03:13,018 -   MSE: 721750528.00
+2025-05-08 12:03:13,018 -   MAPE: 283.94%
+2025-05-08 12:03:13,018 -   R²: -31.3502
+2025-05-08 12:03:13,018 - 
+Processing feeder: SSEN-280700215002
+2025-05-08 12:03:18,274 - Epoch [10/100], Loss: 0.0154
+2025-05-08 12:03:23,539 - Epoch [20/100], Loss: 0.0115
+2025-05-08 12:03:28,784 - Epoch [30/100], Loss: 0.0106
+2025-05-08 12:03:34,942 - Epoch [40/100], Loss: 0.0105
+2025-05-08 12:03:40,300 - Epoch [50/100], Loss: 0.0098
+2025-05-08 12:03:45,669 - Epoch [60/100], Loss: 0.0091
+2025-05-08 12:03:51,019 - Epoch [70/100], Loss: 0.0088
+2025-05-08 12:03:56,224 - Epoch [80/100], Loss: 0.0087
+2025-05-08 12:04:01,569 - Epoch [90/100], Loss: 0.0087
+2025-05-08 12:04:07,258 - Epoch [100/100], Loss: 0.0087
+2025-05-08 12:04:07,322 - 
+--- Metrics for Feeder SSEN-280700215002 ---
+2025-05-08 12:04:07,322 -   RMSE: 960.79
+2025-05-08 12:04:07,322 -   MAE: 697.69
+2025-05-08 12:04:07,322 -   MSE: 923117.12
+2025-05-08 12:04:07,322 -   MAPE: 16.71%
+2025-05-08 12:04:07,322 -   R²: 0.6839
+2025-05-08 12:04:07,322 - 
+Processing feeder: SSEN-280700215003
+2025-05-08 12:04:12,790 - Epoch [10/100], Loss: 0.0125
+2025-05-08 12:04:18,250 - Epoch [20/100], Loss: 0.0079
+2025-05-08 12:04:23,720 - Epoch [30/100], Loss: 0.0068
+2025-05-08 12:04:29,104 - Epoch [40/100], Loss: 0.0064
+2025-05-08 12:04:34,558 - Epoch [50/100], Loss: 0.0060
+2025-05-08 12:04:39,935 - Epoch [60/100], Loss: 0.0062
+2025-05-08 12:04:45,323 - Epoch [70/100], Loss: 0.0059
+2025-05-08 12:04:50,773 - Epoch [80/100], Loss: 0.0058
+2025-05-08 12:04:56,193 - Epoch [90/100], Loss: 0.0056
+2025-05-08 12:05:01,615 - Epoch [100/100], Loss: 0.0056
+2025-05-08 12:05:01,677 - 
+--- Metrics for Feeder SSEN-280700215003 ---
+2025-05-08 12:05:01,677 -   RMSE: 917.98
+2025-05-08 12:05:01,677 -   MAE: 660.29
+2025-05-08 12:05:01,677 -   MSE: 842685.50
+2025-05-08 12:05:01,677 -   MAPE: 14.16%
+2025-05-08 12:05:01,677 -   R²: 0.8443
+2025-05-08 12:05:01,678 - Added 2024-12-SSEN-2807002150.csv to processed files list
+2025-05-08 12:05:01,678 - 
+Processing file: 2024-12-SSEN-2822005120.csv
+2025-05-08 12:05:01,702 - 
+Processing feeder: SSEN-282200512001
+2025-05-08 12:05:07,101 - Epoch [10/100], Loss: 0.0152
+2025-05-08 12:05:12,145 - Epoch [20/100], Loss: 0.0102
+2025-05-08 12:05:17,087 - Epoch [30/100], Loss: 0.0087
+2025-05-08 12:05:22,090 - Epoch [40/100], Loss: 0.0081
+2025-05-08 12:05:27,080 - Epoch [50/100], Loss: 0.0076
+2025-05-08 12:05:31,938 - Epoch [60/100], Loss: 0.0078
+2025-05-08 12:05:37,251 - Epoch [70/100], Loss: 0.0074
+2025-05-08 12:05:42,245 - Epoch [80/100], Loss: 0.0074
+2025-05-08 12:05:47,195 - Epoch [90/100], Loss: 0.0071
+2025-05-08 12:05:52,170 - Epoch [100/100], Loss: 0.0071
+2025-05-08 12:05:52,226 - 
+--- Metrics for Feeder SSEN-282200512001 ---
+2025-05-08 12:05:52,226 -   RMSE: 1428.69
+2025-05-08 12:05:52,226 -   MAE: 1184.61
+2025-05-08 12:05:52,226 -   MSE: 2041141.88
+2025-05-08 12:05:52,226 -   MAPE: 11.23%
+2025-05-08 12:05:52,226 -   R²: 0.6789
+2025-05-08 12:05:52,226 - 
+Processing feeder: SSEN-282200512002
+2025-05-08 12:05:57,366 - Epoch [10/100], Loss: 0.0125
+2025-05-08 12:06:02,375 - Epoch [20/100], Loss: 0.0100
+2025-05-08 12:06:07,431 - Epoch [30/100], Loss: 0.0093
+2025-05-08 12:06:12,465 - Epoch [40/100], Loss: 0.0084
+2025-05-08 12:06:17,369 - Epoch [50/100], Loss: 0.0082
+2025-05-08 12:06:22,309 - Epoch [60/100], Loss: 0.0082
+2025-05-08 12:06:27,284 - Epoch [70/100], Loss: 0.0082
+2025-05-08 12:06:32,199 - Epoch [80/100], Loss: 0.0085
+2025-05-08 12:06:37,196 - Epoch [90/100], Loss: 0.0082
+2025-05-08 12:06:42,275 - Epoch [100/100], Loss: 0.0082
+2025-05-08 12:06:42,330 - 
+--- Metrics for Feeder SSEN-282200512002 ---
+2025-05-08 12:06:42,330 -   RMSE: 1264.25
+2025-05-08 12:06:42,330 -   MAE: 995.02
+2025-05-08 12:06:42,330 -   MSE: 1598340.12
+2025-05-08 12:06:42,330 -   MAPE: 19.04%
+2025-05-08 12:06:42,330 -   R²: 0.5829
+2025-05-08 12:06:42,330 - 
+Processing feeder: SSEN-282200512003
+2025-05-08 12:06:47,417 - Epoch [10/100], Loss: 0.0174
+2025-05-08 12:06:52,760 - Epoch [20/100], Loss: 0.0135
+2025-05-08 12:06:58,256 - Epoch [30/100], Loss: 0.0112
+2025-05-08 12:07:03,931 - Epoch [40/100], Loss: 0.0106
+2025-05-08 12:07:09,531 - Epoch [50/100], Loss: 0.0101
+2025-05-08 12:07:15,016 - Epoch [60/100], Loss: 0.0097
+2025-05-08 12:07:20,098 - Epoch [70/100], Loss: 0.0095
+2025-05-08 12:07:25,142 - Epoch [80/100], Loss: 0.0093
+2025-05-08 12:07:30,517 - Epoch [90/100], Loss: 0.0092
+2025-05-08 12:07:36,101 - Epoch [100/100], Loss: 0.0091
+2025-05-08 12:07:36,166 - 
+--- Metrics for Feeder SSEN-282200512003 ---
+2025-05-08 12:07:36,166 -   RMSE: 689.06
+2025-05-08 12:07:36,166 -   MAE: 532.52
+2025-05-08 12:07:36,166 -   MSE: 474806.00
+2025-05-08 12:07:36,166 -   MAPE: 15.52%
+2025-05-08 12:07:36,166 -   R²: 0.7378
+2025-05-08 12:07:36,166 - 
+Processing feeder: SSEN-282200512004
+2025-05-08 12:07:42,474 - Epoch [10/100], Loss: 0.0134
+2025-05-08 12:07:47,935 - Epoch [20/100], Loss: 0.0106
+2025-05-08 12:07:53,106 - Epoch [30/100], Loss: 0.0093
+2025-05-08 12:07:58,305 - Epoch [40/100], Loss: 0.0083
+2025-05-08 12:08:03,333 - Epoch [50/100], Loss: 0.0081
+2025-05-08 12:08:08,784 - Epoch [60/100], Loss: 0.0080
+2025-05-08 12:08:14,058 - Epoch [70/100], Loss: 0.0081
+2025-05-08 12:08:19,059 - Epoch [80/100], Loss: 0.0079
+2025-05-08 12:08:24,671 - Epoch [90/100], Loss: 0.0079
+2025-05-08 12:08:30,360 - Epoch [100/100], Loss: 0.0079
+2025-05-08 12:08:30,419 - 
+--- Metrics for Feeder SSEN-282200512004 ---
+2025-05-08 12:08:30,419 -   RMSE: 1234.32
+2025-05-08 12:08:30,419 -   MAE: 938.58
+2025-05-08 12:08:30,419 -   MSE: 1523535.88
+2025-05-08 12:08:30,419 -   MAPE: 13.37%
+2025-05-08 12:08:30,419 -   R²: 0.5476
+2025-05-08 12:08:30,420 - Added 2024-12-SSEN-2822005120.csv to processed files list
+2025-05-08 12:08:30,420 - 
+Processing file: 2024-12-SSEN-2512003090.csv
+2025-05-08 12:08:30,443 - 
+Processing feeder: SSEN-251200309001
+2025-05-08 12:08:35,527 - Epoch [10/100], Loss: 0.0092
+2025-05-08 12:08:40,650 - Epoch [20/100], Loss: 0.0077
+2025-05-08 12:08:45,591 - Epoch [30/100], Loss: 0.0068
+2025-05-08 12:08:50,548 - Epoch [40/100], Loss: 0.0065
+2025-05-08 12:08:55,763 - Epoch [50/100], Loss: 0.0060
+2025-05-08 12:09:00,898 - Epoch [60/100], Loss: 0.0060
+2025-05-08 12:09:06,155 - Epoch [70/100], Loss: 0.0059
+2025-05-08 12:09:12,632 - Epoch [80/100], Loss: 0.0060
+2025-05-08 12:09:17,978 - Epoch [90/100], Loss: 0.0057
+2025-05-08 12:09:23,163 - Epoch [100/100], Loss: 0.0059
+2025-05-08 12:09:23,214 - 
+--- Metrics for Feeder SSEN-251200309001 ---
+2025-05-08 12:09:23,214 -   RMSE: 797.68
+2025-05-08 12:09:23,214 -   MAE: 535.67
+2025-05-08 12:09:23,214 -   MSE: 636296.75
+2025-05-08 12:09:23,214 -   MAPE: 14.63%
+2025-05-08 12:09:23,214 -   R²: 0.6380
+2025-05-08 12:09:23,214 - 
+Processing feeder: SSEN-251200309003
+2025-05-08 12:09:28,336 - Epoch [10/100], Loss: 0.0093
+2025-05-08 12:09:33,427 - Epoch [20/100], Loss: 0.0081
+2025-05-08 12:09:38,611 - Epoch [30/100], Loss: 0.0073
+2025-05-08 12:09:43,648 - Epoch [40/100], Loss: 0.0069
+2025-05-08 12:09:48,585 - Epoch [50/100], Loss: 0.0067
+2025-05-08 12:09:53,673 - Epoch [60/100], Loss: 0.0067
+2025-05-08 12:09:58,704 - Epoch [70/100], Loss: 0.0067
+2025-05-08 12:10:03,836 - Epoch [80/100], Loss: 0.0066
+2025-05-08 12:10:09,098 - Epoch [90/100], Loss: 0.0066
+2025-05-08 12:10:14,338 - Epoch [100/100], Loss: 0.0063
+2025-05-08 12:10:14,399 - 
+--- Metrics for Feeder SSEN-251200309003 ---
+2025-05-08 12:10:14,400 -   RMSE: 1224.85
+2025-05-08 12:10:14,400 -   MAE: 888.27
+2025-05-08 12:10:14,400 -   MSE: 1500269.50
+2025-05-08 12:10:14,400 -   MAPE: 15.85%
+2025-05-08 12:10:14,400 -   R²: 0.5489
+2025-05-08 12:10:14,400 - 
+Processing feeder: SSEN-251200309004
+2025-05-08 12:10:19,656 - Epoch [10/100], Loss: 0.0117
+2025-05-08 12:10:24,723 - Epoch [20/100], Loss: 0.0082
+2025-05-08 12:10:29,752 - Epoch [30/100], Loss: 0.0072
+2025-05-08 12:10:34,952 - Epoch [40/100], Loss: 0.0067
+2025-05-08 12:10:39,924 - Epoch [50/100], Loss: 0.0066
+2025-05-08 12:10:45,228 - Epoch [60/100], Loss: 0.0064
+2025-05-08 12:10:50,307 - Epoch [70/100], Loss: 0.0065
+2025-05-08 12:10:55,656 - Epoch [80/100], Loss: 0.0064
+2025-05-08 12:11:01,296 - Epoch [90/100], Loss: 0.0064
+2025-05-08 12:11:06,627 - Epoch [100/100], Loss: 0.0063
+2025-05-08 12:11:06,689 - 
+--- Metrics for Feeder SSEN-251200309004 ---
+2025-05-08 12:11:06,689 -   RMSE: 1544.01
+2025-05-08 12:11:06,689 -   MAE: 1111.04
+2025-05-08 12:11:06,689 -   MSE: 2383981.50
+2025-05-08 12:11:06,689 -   MAPE: 14.71%
+2025-05-08 12:11:06,689 -   R²: 0.8177
+2025-05-08 12:11:06,690 - Added 2024-12-SSEN-2512003090.csv to processed files list
+2025-05-08 12:11:06,691 - 
+Processing file: 2024-12-SSEN-2822026100.csv
+2025-05-08 12:11:06,714 - 
+Processing feeder: SSEN-282202610001
+2025-05-08 12:11:11,803 - Epoch [10/100], Loss: 0.0185
+2025-05-08 12:11:16,725 - Epoch [20/100], Loss: 0.0138
+2025-05-08 12:11:21,858 - Epoch [30/100], Loss: 0.0101
+2025-05-08 12:11:27,040 - Epoch [40/100], Loss: 0.0099
+2025-05-08 12:11:32,032 - Epoch [50/100], Loss: 0.0095
+2025-05-08 12:11:37,160 - Epoch [60/100], Loss: 0.0095
+2025-05-08 12:11:42,269 - Epoch [70/100], Loss: 0.0095
+2025-05-08 12:11:47,202 - Epoch [80/100], Loss: 0.0093
+2025-05-08 12:11:52,171 - Epoch [90/100], Loss: 0.0096
+2025-05-08 12:11:57,315 - Epoch [100/100], Loss: 0.0092
+2025-05-08 12:11:57,374 - 
+--- Metrics for Feeder SSEN-282202610001 ---
+2025-05-08 12:11:57,375 -   RMSE: 2151.47
+2025-05-08 12:11:57,375 -   MAE: 1658.92
+2025-05-08 12:11:57,375 -   MSE: 4628832.50
+2025-05-08 12:11:57,375 -   MAPE: 8.93%
+2025-05-08 12:11:57,375 -   R²: 0.6570
+2025-05-08 12:11:57,375 - 
+Processing feeder: SSEN-282202610004
+2025-05-08 12:12:02,668 - Epoch [10/100], Loss: 0.0129
+2025-05-08 12:12:08,090 - Epoch [20/100], Loss: 0.0111
+2025-05-08 12:12:13,266 - Epoch [30/100], Loss: 0.0105
+2025-05-08 12:12:18,305 - Epoch [40/100], Loss: 0.0097
+2025-05-08 12:12:23,750 - Epoch [50/100], Loss: 0.0093
+2025-05-08 12:12:28,571 - Epoch [60/100], Loss: 0.0094
+2025-05-08 12:12:33,468 - Epoch [70/100], Loss: 0.0092
+2025-05-08 12:12:38,574 - Epoch [80/100], Loss: 0.0091
+2025-05-08 12:12:43,638 - Epoch [90/100], Loss: 0.0091
+2025-05-08 12:12:49,004 - Epoch [100/100], Loss: 0.0090
+2025-05-08 12:12:49,061 - 
+--- Metrics for Feeder SSEN-282202610004 ---
+2025-05-08 12:12:49,061 -   RMSE: 802.62
+2025-05-08 12:12:49,061 -   MAE: 571.19
+2025-05-08 12:12:49,061 -   MSE: 644201.88
+2025-05-08 12:12:49,061 -   MAPE: 14.49%
+2025-05-08 12:12:49,061 -   R²: 0.6349
+2025-05-08 12:12:49,061 - 
+Processing feeder: SSEN-282202610005
+2025-05-08 12:12:54,195 - Epoch [10/100], Loss: 0.0165
+2025-05-08 12:12:59,636 - Epoch [20/100], Loss: 0.0104
+2025-05-08 12:13:05,408 - Epoch [30/100], Loss: 0.0083
+2025-05-08 12:13:10,497 - Epoch [40/100], Loss: 0.0080
+2025-05-08 12:13:15,670 - Epoch [50/100], Loss: 0.0077
+2025-05-08 12:13:20,825 - Epoch [60/100], Loss: 0.0077
+2025-05-08 12:13:25,750 - Epoch [70/100], Loss: 0.0074
+2025-05-08 12:13:30,838 - Epoch [80/100], Loss: 0.0074
+2025-05-08 12:13:35,913 - Epoch [90/100], Loss: 0.0074
+2025-05-08 12:13:41,336 - Epoch [100/100], Loss: 0.0072
+2025-05-08 12:13:41,397 - 
+--- Metrics for Feeder SSEN-282202610005 ---
+2025-05-08 12:13:41,397 -   RMSE: 1149.61
+2025-05-08 12:13:41,397 -   MAE: 865.97
+2025-05-08 12:13:41,397 -   MSE: 1321601.12
+2025-05-08 12:13:41,397 -   MAPE: 10.40%
+2025-05-08 12:13:41,397 -   R²: 0.6861
+2025-05-08 12:13:41,398 - Added 2024-12-SSEN-2822026100.csv to processed files list
+2025-05-08 12:13:41,398 - 
+Processing file: 2024-12-SSEN-2816011080.csv
+2025-05-08 12:13:41,421 - 
+Processing feeder: SSEN-281601108001
+2025-05-08 12:13:47,985 - Epoch [10/100], Loss: 0.0132
+2025-05-08 12:13:53,883 - Epoch [20/100], Loss: 0.0108
+2025-05-08 12:13:58,995 - Epoch [30/100], Loss: 0.0092
+2025-05-08 12:14:04,031 - Epoch [40/100], Loss: 0.0080
+2025-05-08 12:14:09,313 - Epoch [50/100], Loss: 0.0070
+2025-05-08 12:14:14,204 - Epoch [60/100], Loss: 0.0070
+2025-05-08 12:14:19,013 - Epoch [70/100], Loss: 0.0067
+2025-05-08 12:14:24,046 - Epoch [80/100], Loss: 0.0068
+2025-05-08 12:14:28,996 - Epoch [90/100], Loss: 0.0065
+2025-05-08 12:14:33,998 - Epoch [100/100], Loss: 0.0067
+2025-05-08 12:14:34,059 - 
+--- Metrics for Feeder SSEN-281601108001 ---
+2025-05-08 12:14:34,059 -   RMSE: 1072.98
+2025-05-08 12:14:34,060 -   MAE: 758.16
+2025-05-08 12:14:34,060 -   MSE: 1151275.50
+2025-05-08 12:14:34,060 -   MAPE: 18.12%
+2025-05-08 12:14:34,060 -   R²: 0.6959
+2025-05-08 12:14:34,060 - 
+Processing feeder: SSEN-281601108003
+2025-05-08 12:14:39,030 - Epoch [10/100], Loss: 0.0168
+2025-05-08 12:14:44,030 - Epoch [20/100], Loss: 0.0115
+2025-05-08 12:14:48,942 - Epoch [30/100], Loss: 0.0095
+2025-05-08 12:14:53,946 - Epoch [40/100], Loss: 0.0094
+2025-05-08 12:14:58,927 - Epoch [50/100], Loss: 0.0096
+2025-05-08 12:15:03,963 - Epoch [60/100], Loss: 0.0091
+2025-05-08 12:15:08,998 - Epoch [70/100], Loss: 0.0090
+2025-05-08 12:15:14,065 - Epoch [80/100], Loss: 0.0086
+2025-05-08 12:15:19,180 - Epoch [90/100], Loss: 0.0076
+2025-05-08 12:15:24,248 - Epoch [100/100], Loss: 0.0072
+2025-05-08 12:15:24,304 - 
+--- Metrics for Feeder SSEN-281601108003 ---
+2025-05-08 12:15:24,304 -   RMSE: 1938.86
+2025-05-08 12:15:24,304 -   MAE: 1494.84
+2025-05-08 12:15:24,304 -   MSE: 3759174.50
+2025-05-08 12:15:24,304 -   MAPE: 22.83%
+2025-05-08 12:15:24,304 -   R²: 0.4890
+2025-05-08 12:15:24,304 - 
+Processing feeder: SSEN-281601108004
+2025-05-08 12:15:29,255 - Epoch [10/100], Loss: 0.0247
+2025-05-08 12:15:34,197 - Epoch [20/100], Loss: 0.0112
+2025-05-08 12:15:39,116 - Epoch [30/100], Loss: 0.0096
+2025-05-08 12:15:44,100 - Epoch [40/100], Loss: 0.0094
+2025-05-08 12:15:49,252 - Epoch [50/100], Loss: 0.0093
+2025-05-08 12:15:54,231 - Epoch [60/100], Loss: 0.0067
+2025-05-08 12:15:59,217 - Epoch [70/100], Loss: 0.0067
+2025-05-08 12:16:04,403 - Epoch [80/100], Loss: 0.0063
+2025-05-08 12:16:09,439 - Epoch [90/100], Loss: 0.0057
+2025-05-08 12:16:14,461 - Epoch [100/100], Loss: 0.0055
+2025-05-08 12:16:14,521 - 
+--- Metrics for Feeder SSEN-281601108004 ---
+2025-05-08 12:16:14,521 -   RMSE: 3047.55
+2025-05-08 12:16:14,521 -   MAE: 2322.94
+2025-05-08 12:16:14,521 -   MSE: 9287538.00
+2025-05-08 12:16:14,521 -   MAPE: 14.08%
+2025-05-08 12:16:14,522 -   R²: 0.7503
+2025-05-08 12:16:14,523 - Added 2024-12-SSEN-2816011080.csv to processed files list
+2025-05-08 12:16:14,523 - 
+Processing file: 2024-12-SSEN-2803010100.csv
+2025-05-08 12:16:14,538 - 
+Processing feeder: SSEN-280301010001
+2025-05-08 12:16:19,682 - Epoch [10/100], Loss: 0.0235
+2025-05-08 12:16:24,722 - Epoch [20/100], Loss: 0.0102
+2025-05-08 12:16:29,558 - Epoch [30/100], Loss: 0.0090
+2025-05-08 12:16:35,066 - Epoch [40/100], Loss: 0.0088
+2025-05-08 12:16:42,045 - Epoch [50/100], Loss: 0.0078
+2025-05-08 12:16:47,058 - Epoch [60/100], Loss: 0.0070
+2025-05-08 12:16:52,590 - Epoch [70/100], Loss: 0.0069
+2025-05-08 12:16:57,429 - Epoch [80/100], Loss: 0.0063
+2025-05-08 12:17:06,166 - Epoch [90/100], Loss: 0.0060
+2025-05-08 12:17:11,791 - Epoch [100/100], Loss: 0.0058
+2025-05-08 12:17:11,840 - 
+--- Metrics for Feeder SSEN-280301010001 ---
+2025-05-08 12:17:11,840 -   RMSE: 1529.01
+2025-05-08 12:17:11,840 -   MAE: 1180.38
+2025-05-08 12:17:11,840 -   MSE: 2337885.50
+2025-05-08 12:17:11,840 -   MAPE: 17.21%
+2025-05-08 12:17:11,840 -   R²: 0.8135
+2025-05-08 12:17:11,841 - Added 2024-12-SSEN-2803010100.csv to processed files list
+2025-05-08 12:17:11,841 - 
+Processing file: 2024-12-SSEN-2807003460.csv
+2025-05-08 12:17:11,861 - 
+Processing feeder: SSEN-280700346002
+2025-05-08 12:17:16,803 - Epoch [10/100], Loss: 0.0129
+2025-05-08 12:17:21,791 - Epoch [20/100], Loss: 0.0098
+2025-05-08 12:17:26,783 - Epoch [30/100], Loss: 0.0088
+2025-05-08 12:17:31,638 - Epoch [40/100], Loss: 0.0082
+2025-05-08 12:17:36,567 - Epoch [50/100], Loss: 0.0080
+2025-05-08 12:17:41,484 - Epoch [60/100], Loss: 0.0079
+2025-05-08 12:17:46,385 - Epoch [70/100], Loss: 0.0080
+2025-05-08 12:17:51,415 - Epoch [80/100], Loss: 0.0077
+2025-05-08 12:17:56,262 - Epoch [90/100], Loss: 0.0072
+2025-05-08 12:18:01,172 - Epoch [100/100], Loss: 0.0072
+2025-05-08 12:18:01,216 - 
+--- Metrics for Feeder SSEN-280700346002 ---
+2025-05-08 12:18:01,216 -   RMSE: 849.25
+2025-05-08 12:18:01,216 -   MAE: 614.34
+2025-05-08 12:18:01,216 -   MSE: 721219.06
+2025-05-08 12:18:01,216 -   MAPE: 10.77%
+2025-05-08 12:18:01,216 -   R²: 0.6969
+2025-05-08 12:18:01,216 - 
+Processing feeder: SSEN-280700346003
+2025-05-08 12:18:06,534 - Epoch [10/100], Loss: 0.0139
+2025-05-08 12:18:11,507 - Epoch [20/100], Loss: 0.0114
+2025-05-08 12:18:16,521 - Epoch [30/100], Loss: 0.0107
+2025-05-08 12:18:21,385 - Epoch [40/100], Loss: 0.0102
+2025-05-08 12:18:26,298 - Epoch [50/100], Loss: 0.0096
+2025-05-08 12:18:31,189 - Epoch [60/100], Loss: 0.0090
+2025-05-08 12:18:36,100 - Epoch [70/100], Loss: 0.0088
+2025-05-08 12:18:40,980 - Epoch [80/100], Loss: 0.0090
+2025-05-08 12:18:45,919 - Epoch [90/100], Loss: 0.0088
+2025-05-08 12:18:50,864 - Epoch [100/100], Loss: 0.0087
+2025-05-08 12:18:50,922 - 
+--- Metrics for Feeder SSEN-280700346003 ---
+2025-05-08 12:18:50,922 -   RMSE: 767.44
+2025-05-08 12:18:50,922 -   MAE: 574.33
+2025-05-08 12:18:50,922 -   MSE: 588963.38
+2025-05-08 12:18:50,922 -   MAPE: 19.98%
+2025-05-08 12:18:50,922 -   R²: 0.6010
+2025-05-08 12:18:50,922 - 
+Processing feeder: SSEN-280700346004
+2025-05-08 12:18:55,788 - Epoch [10/100], Loss: 0.0101
+2025-05-08 12:19:00,696 - Epoch [20/100], Loss: 0.0078
+2025-05-08 12:19:05,637 - Epoch [30/100], Loss: 0.0070
+2025-05-08 12:19:10,470 - Epoch [40/100], Loss: 0.0062
+2025-05-08 12:19:15,340 - Epoch [50/100], Loss: 0.0058
+2025-05-08 12:19:20,214 - Epoch [60/100], Loss: 0.0056
+2025-05-08 12:19:25,111 - Epoch [70/100], Loss: 0.0056
+2025-05-08 12:19:30,007 - Epoch [80/100], Loss: 0.0054
+2025-05-08 12:19:34,966 - Epoch [90/100], Loss: 0.0054
+2025-05-08 12:19:40,053 - Epoch [100/100], Loss: 0.0055
+2025-05-08 12:19:40,109 - 
+--- Metrics for Feeder SSEN-280700346004 ---
+2025-05-08 12:19:40,110 -   RMSE: 1584.56
+2025-05-08 12:19:40,110 -   MAE: 1205.03
+2025-05-08 12:19:40,110 -   MSE: 2510831.25
+2025-05-08 12:19:40,110 -   MAPE: 9.20%
+2025-05-08 12:19:40,110 -   R²: 0.7895
+2025-05-08 12:19:40,111 - Added 2024-12-SSEN-2807003460.csv to processed files list
+2025-05-08 12:19:40,111 - 
+Processing file: 2024-12-SSEN-2803005280.csv
+2025-05-08 12:19:40,128 - 
+Processing feeder: SSEN-280300528004
+2025-05-08 12:19:45,026 - Epoch [10/100], Loss: 0.0121
+2025-05-08 12:19:49,972 - Epoch [20/100], Loss: 0.0093
+2025-05-08 12:19:54,874 - Epoch [30/100], Loss: 0.0078
+2025-05-08 12:19:59,828 - Epoch [40/100], Loss: 0.0072
+2025-05-08 12:20:04,743 - Epoch [50/100], Loss: 0.0068
+2025-05-08 12:20:09,630 - Epoch [60/100], Loss: 0.0068
+2025-05-08 12:20:14,491 - Epoch [70/100], Loss: 0.0066
+2025-05-08 12:20:19,576 - Epoch [80/100], Loss: 0.0066
